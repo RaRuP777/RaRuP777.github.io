@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>Pedro J. Ramos: Tarea Tema3</title>
+		<script type="text/javascript"
+			src="js/T3.js">//llama al archivo externo que contiene el script
+		</script>
+		<link href="css/form.css" rel="stylesheet">
+	</head>
+	<body>
+		<p><a href="#" onClick="abrirVentana('http://www.iesgrancapitan.org/portal/')">Ir a IES Gran Capitan</a><br /></p>
+		<form id="formulario" action="get">
+			<fieldset>
+				<label>Nombre</label><input type="text" id="nombre" autofocus required/><br/>
+				<label>Dia</label><input type="text" id="dia" required/><br/>
+				<label>Mes</label><input type="text" id="mes" required/><br/>
+				<label>Año</label><input type="text" id="anno" required/><br/>
+			</fieldset><br/>
+			<input type="button" value="Enviar" onclick="enviar()" />
+		</form>
+		<noscript>
+			Error al cargar un c&oacute;digo JavaScript (no habilitados o no soportado)<!--Mensaje a mostrar cuando el navegador o no soporta scripts o no los tiene habilitados</!-->
+		</noscript>
+	</body>
+</html>

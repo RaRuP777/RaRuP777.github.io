@@ -1,0 +1,22 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 10 - Pedro J. Ramos</title>
+	<script type="text/javascript" 
+		src="js/ej10.js">
+	</script>
+</head>
+<body>
+	<p>Pulsa el botón para mostrar en texto el número introducido</p>
+	<form id="formulario" action="get">
+		<fieldset>
+			<label>Introduzca un número de 0 a 99: </label>
+			<input type="text" id="numero" size="2" autofocus required/><br/>
+		</fieldset>
+			<input type="button" value="Enviar" onclick="enviar()" />
+			<input type="reset" value="Borrar">
+	</form>
+	<br/><hr/><br/></p>
+	<p id="texto"></p>
+</body>
+</html>

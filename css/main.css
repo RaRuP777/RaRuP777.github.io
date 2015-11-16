@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #555;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 20px; 
+    background-color: #89ff44; 
+    background-position: top;
+    background-repeat: repeat-x
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color:#ff5044;
+    font-weight:400;
+    padding: 0;
+    margin: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+h1 { font-size:32px; margin-bottom: 20px; }
+h2 { font-size:26px; margin-bottom: 20px; line-height: 28px }
+h3 { font-size:20px; margin-bottom: 20px; }
+h4 { font-size:18px; margin-bottom: 10px; }
+h5 { font-size:16px }
+h6 { font-size:14px }
+
+.header { 
+    display: block 
+}
+
+.left { 
+    float: left 
+}
+
+.right { 
+    float: right 
+}
+
+a:link, a:visited { 
+    color: #00f; text-decoration: none
+}
+
+a:hover { 
+    color: #f00; 
+    text-decoration:underline 
+}
+
+a:hover,a:active { 
+    outline:none 
+}
+
+em { 
+    color: #555 
+}
+
+p { 
+    margin: 0 0 15px 0 
+}
+
+#templatemo_wrapper {
+    width: 960px;
+    padding: 0 10px;
+    margin: 0 auto
+}
+
+#templatemo_header {
+    height: 120px;
+    width: 100%;
+}
+
+#templatemo_menu {
+    height: 56px;
+}
+
+#templatemo_slider {
+    padding: 10px 0;
+    height: 350px;
+    margin-top: 40px;
+}
+
+#templatemo_main {
+    padding: 40px 0 20px;
+}
+
+#templatemo_bottom_wrapper {
+    width: 100%;
+    border-top: 5px solid #f7f5f3;
+    background: #ebe7e4
+}
+
+#templatemo_bottom {
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+#templatemo_footer_wrapper {
+    width: 100%;
+        
+    border-top: 5px solid #000;
+    background: #222222 
+}
+
+#templatemo_footer {
+    width: 960px;
+    vertical-align: bottom;
+    margin: 0 auto; 
+    padding: 10px 10px 5px;
+    color: white;
+}
+
+#templatemo_footer a{
+    color: red;
+}
+
+#templatemo_footer a:hover{
+    color: blue;
+}
+
+#site_title { 
+    float: left; margin-top: 40px; 
+}
+
+#site_title a { 
+    display: block; 
+    font-size: 50px; 
+    font-family: Georgia, "Times New Roman", Times, serif; height: 45px; 
+    color: #acacac;
+}
+
+.indice {
+    width: 40%;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 12px 12px;
+    padding: 15px;
+    margin: 1px 10px;
+    vertical-align: top;
+    height: 300px;
+    overflow: auto;
+}

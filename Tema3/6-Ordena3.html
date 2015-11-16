@@ -1,0 +1,26 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 6 - Pedro J. Ramos</title>
+	<script type="text/javascript" 
+		src="js/ej6.js">
+	</script>
+</head>
+<body>
+	<p>Pulsa el botón para ordenar los números introducidos</p>
+	<form id="formulario" action="get">
+		<fieldset>
+			<label>Introduzca un número: </label>
+			<input type="text" id="numero1" autofocus required/><br/>
+			<label>Introduzca un número: </label>
+			<input type="text" id="numero2" required/><br/>
+			<label>Introduzca un número: </label>
+			<input type="text" id="numero3" required/><br/>
+		</fieldset>
+			<input type="button" value="Enviar" onclick="enviar()" />
+			<input type="reset" value="Borrar">
+	</form>
+	<br/><hr/><br/></p>
+	<p id="texto"></p>
+</body>
+</html>

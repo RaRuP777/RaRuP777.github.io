@@ -8,21 +8,44 @@
 </head>
 <body>
 	<p id"teoricas">
-		alskdfjflksadjfaslfksajfsalkdfñjfadlkfsadjfslfjflsfsalfñjflsjfsalkfjsafklasjflkasfjaslkfjasfñlksajflñkasfjasñlkfjaslñkfjsañlfasjflñkasjfalñksfjaslñkfjasflñkasjflñksakjfsalñfjsañlfjsafl
+		<fieldset><ol>
+			<li><em>array = [elemt,elemt2,...]</em></li>
+			<li><em>pop()</em> elimina el ultimo elemento del array y <em>push(elemt)</em> añade un nuevo elmento en la ultima posición del array</li>
+			<li><em>shift(elemt)</em> añade un nuevo elmento en la primera posición del array y <em>unshift()</em>elimina la primera posición del array</li>
+			<li><em>pop() y push()</em> porque son más rápidos que los otros</li>
+			<li><em>join() y split()</em> son métodos de String pero son muy utilies en combinación con Array</li>
+			<li><em>splice()</em> puede utilizarse para elminar elementos de un array, sustituirlos por otros o inluso añadir elementos sin borrar ninguno. Su argumentos son: inicio, fin, elemt a añadir</li>
+			<li><em>slice()</em> se utilizar para extraer una porción de un array. Sus argumentos son: inicio, fin</li>
+			<li><em>typeof()</em> sobre un array nos devuelve el valor object</li>
+		</ol></fieldset>
 	</p>
-	<p id="ejercicios">
-	</p><input type="button" value="Method pop/push" onclick="t1()"/><br/>
-		<input type="button" value="Method shift/unshift" onclick="t2()"/><br/>
-		<input type="button" value="Iterating over array - 1" onclick="t31()"/><br/>
-		<input type="button" value="Iterating over array - 2" onclick="t32()"/><br/>
-		<input type="button" value="" onclick="t4()"/><br/>
-		<input type="button" value="" onclick="t5()"/><br/>
-		<input type="button" value="" onclick="t6()"/><br/>
-		<input type="button" value="" onclick="t7()"/><br/>
-		<input type="button" value="" onclick="t8()"/><br/>
-		<input type="button" value="" onclick="t9()"/><br/>
-		<input type="button" value="" onclick="t10()"/><br/>
-	<br/><hr/><br/></p>
+	<p id="ejercicios"><fieldset>
+		<input type="button" value="Method pop" onclick="t11()"/> - Al hacer .push añadimos un elemento al final del array<br/>
+		<input type="button" value="Method push" onclick="t12()"/> - Al hacer .pop eliminamos el ultimo elemento del array<br/>
+		<input type="button" value="Method shift/unshift" onclick="t2()"/> - Se muestra una posición aleatoria del array<br/>
+		<hr/>
+		<input type="button" value="Iterating over array - 1" onclick="t31()"/> - Mediante .indexOf encontramos la posición de un elemento<br/>
+		<input type="button" value="Iterating over array - 2" onclick="t32()"/> - Mediante .filter generamos un nuevo array con el contenido de un tipo de dato numérico<br/>
+		<input type="button" value="Join and split" onclick="t4()"/> - Mediante split convertimos una cadena en un array<br/>
+		<input type="button" value="Array is object, consequences" onclick="t5()"/> - Añadimos un elemento del tipo funcion a un array<br/>
+		<input type="button" value="Sparse arrays, details of length - 1" onclick="t61()"/> - Creamos un array y colocamos elementos en 1 y 99, vemos el tamaño del array resultante<br/>
+		<input type="button" value="Sparse arrays, details of length - 2" onclick="t62()"/> - Creamos un array y lococamos elementos en 1 y 5, mostramos el array<br/>
+		<input type="button" value="Sparse arrays, details of length - 3" onclick="t63()"/> - Creamos un array y colocamos elementos en 1 y 9, eliminamos dos elementos con pop y vemos el array que queda<br/>
+		<input type="button" value="Removing from an array" onclick="t71()"/> - Al borrar con detele se borra el contenido pero no la posición<br/>
+		<input type="button" value="Method splice - 1" onclick="t72()"/> - Al borrar con splice se borra el contenido y también la posición<br/>
+		<input type="button" value="Method splice - 2" onclick="t73()"/> - splice puede también borrar y añadir elementos en una sola sentencia<br/>
+		<input type="button" value="Method slice" onclick="t74()"/> - slice puede extraer una porción del array<br/>
+		<input type="button" value="Method reverse" onclick="t8()"/> - reverse muestra el un array del revés<br/>
+		<input type="button" value="Method sort" onclick="t9()"/> - sort ordena los elementos del array<br/>
+		<hr/>
+		<input type="button" value="More on array definition - 1" onclick="t101()"/> - Se puede definir un array con new Array()<br/>
+		<input type="button" value="More on array definition - 2" onclick="t102()"/> - Tambien se pueden definir array multidimensionales<br/>
+		<hr/>
+		<input type="button" value="Sumar los 100 primeros numeros primos" onclick="suma100Primos()"/><br/>
+		<hr/>
+		<input type="button" value="Recorrer un array con forEach" onclick="forEach()"/><br/>
+	</fieldset></p>
+	<br/><hr/><br/>
 	<p id="texto"></p>
 </body>
 </html>

@@ -140,7 +140,7 @@ function t102(){
 
 function suma100Primos(){
 	var total=0;
-	for (var i = 1; i<101; i++){
+	for (var i = 1; j<101; i++){
 		if(esPrimo(i))
 			total+=i;
 	}
@@ -157,4 +157,13 @@ function esPrimo(numero){
     	return true;
     else
     	return false;
+}
+
+function forEach(){
+	array = [1,2,3,4,5];
+	array.forEach(mostrarArray(array));
+}
+
+function mostrarArray(array){
+	documento.write(array);
 }

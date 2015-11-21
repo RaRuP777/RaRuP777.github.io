@@ -1,0 +1,29 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Array - Pedro J. Ramos</title>
+	<script type="text/javascript" 
+		src="js/array.js">
+	</script>
+</head>
+<body>
+	<p>Tenemos un array inicial con tres elementos [0,1,2]</p>
+	<form id="formulario" action="get">
+		<fieldset>
+			<label>Introduzca un elemento al final del array sin importar si esta duplicado: </label>
+			<input type="text" id="elemento" autofocus required/><br/>
+		<hr/>
+			<input type="reset" value="Borrar campos"><br/>
+			<input type="button" value="Añade el elemento al final" onclick="anadirAlFinal()" />
+		</fieldset>
+		<fieldset>
+			<label>Introduzca un elemento al final del array no permitiendo duplicados: </label>
+			<input type="text" id="elemento2" autofocus required/><br/>
+		<hr/>
+			<input type="reset" value="Borrar campos"><br/>
+			<input type="button" value="Añade el elemento al final" onclick="anadirSinDuplicados()" />
+		</fieldset>		
+	</form>
+	<p id="texto"><p>
+</body>
+</html>

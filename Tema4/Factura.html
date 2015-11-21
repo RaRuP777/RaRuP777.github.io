@@ -1,0 +1,28 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Factura - Pedro J. Ramos</title>
+	<script type="text/javascript" 
+		src="js/factura.js">
+	</script>
+</head>
+<body>
+	<form id="formulario" action="get">
+		<fieldset>
+			<label>Introduzca el Nombre del Cliente: </label>
+			<input type="text" id="nombreCliente" autofocus required/><br/>
+			<label>Introduzca el NIF del ciente: </label>
+			<input type="text" id="nifCliente" size ="9" required/><br/>
+			<label>Introduzca la dirección del Cliente: </label>
+			<input type="text" id="direccion"><br/>
+			<label>Introduzca el teléfono del ciente: </label>
+			<input type="text" id="telefono" size ="9"><br/>
+		<hr/>
+			<input type="reset" value="Borrar campos"><br/>
+		<hr/>
+			<input type="button" value="Crear un nuevo cliente y su Factura" onclick="clienteFactura()" />
+		</fieldset>	
+	</form>
+	<p id="texto"><p>
+</body>
+</html>

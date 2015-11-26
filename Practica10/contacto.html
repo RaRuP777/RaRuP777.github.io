@@ -1,0 +1,68 @@
+﻿<html>
+<head>
+	<meta charset="utf-8">
+	<title>Práctica 10 - Pedro J. Ramos</title>
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/menu.css" rel="stylesheet">
+	<link href="css/form.css" rel="stylesheet">
+	<link href="css/web.css" rel="stylesheet">
+	<script type="text/javascript"
+		src="canvas/canvas.js">
+	</script>
+</head>
+<body onLoad="dibujarCanvas();">
+	<div id="contenedor">
+		<header>
+			<canvas id="miCanvas" width="130" height="130">Su navegador no soporta Canvas.</canvas>
+			<h1>Práctica 10</h1>	
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html">VOLVER</a></li>
+			<ul>
+		</nav>
+		<br/>
+		<aside>
+		</aside>
+		<main>
+			<section>
+				<article>
+					<h3>Trabaja con Nosotros</h3>
+					<div>
+						<form id="form1" action="curriculum.php" method="post">
+							<fieldset>
+								<p><label>Nombre</label><input type="text" name="nombre" required /></p>
+								<p><label>Apellidos</label><input type="text" name="apellidos" required /></p>
+								<p><label>Fecha de Nacimiento</label><input type="cal" name="fecha" required /></p>
+								<p><label>Sexo</label>
+									<input type="radio" name="sexo" value="Hombre" />Hombre
+									<input type="radio" name="sexo" value="Mujer" />Mujer</p>
+								<p><label>Correo electrónico</label><input type="email" name="email" required /></p>
+								<p><label>Número de contacto</label><input type="text" name="telefono" required /></p>
+								<p><label>Experiencia laboral</label><textarea rows="6" cols="30" name="laboral" ></textarea></p>
+								<p><label>Estudios</label><textarea rows="6" cols="30" name="estudios"></textarea></p>
+								<p><label>Jornada laboral</label>
+									<select name="jornada">
+										<option value="Indiferente" selected >Indiferente</option>
+										<option value="Mañana">Por la mañana</option>
+										<option value="Por la tarde">Por la tarde</option>
+									</select></p>
+								<p><label>Idiomas</label>
+									<input type="checkbox" name="idiomas[]" value="Inglés" />Inglés
+									<input type="checkbox" name="idiomas[]" value="Francés" />Francés
+									<input type="checkbox" name="idiomas[]" value="Alemán" />Alemán
+									<input type="checkbox" name="idiomas[]" value="Otros" />Otros</p>
+								<input type="submit" name="enviar" value="Enviar"/>
+								<input type="reset" name="reset" value="Limpiar"/>
+							</fieldset>
+						</form>
+					</div>
+				</article>
+				<hr/>
+		</main>
+		<footer>
+			<p>Pedro J. Ramos</p>
+		</footer>
+	</div>
+</body>
+</html>

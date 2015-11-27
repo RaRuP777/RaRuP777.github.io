@@ -1,15 +1,20 @@
 form {
+  padding: 15px;
   position: relative;
   width  : 740px;
   height : 498px;
   margin : 0 auto;
 }
 fieldset{
-  background-color: #0FF;
+  background-color: #FFBFEF;
 }
 
 label {
   font : 1em "typewriter", sans-serif;
+}
+
+p{
+	font : 1.5em "typewriter", sans-serif;
 }
 
 input, textarea {
@@ -17,11 +22,11 @@ input, textarea {
   padding : 0 10px;
   margin  : 0;
   width   : 240px;
-  background: none;
+  background: rgba(0,0,0,.1);
 }
 
 input:focus, textarea:focus {
-  background   : rgba(0,0,0,.1);
+  background   : rgba(0,0,0,.3);
   border-radius: 5px;
   outline      : none;
 }
@@ -63,9 +68,8 @@ button:after {
   content: " >>>";
 }
 
-button:hover,
-button:focus {
+button:hover, button:focus {
   outline   : none;
-  background: #000;
+  background: rgba(0,0,0,.5);
   color   : #FFF;
 }

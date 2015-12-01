@@ -5,8 +5,9 @@ form {
   height : 498px;
   margin : 0 auto;
 }
-fieldset{
+fieldset, select{
   background-color: #FFBFEF;
+  border-color: green; 
 }
 
 label {

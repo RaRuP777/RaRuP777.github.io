@@ -1,0 +1,39 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>ArraysMatamaticos - Pedro J. Ramos</title>
+	<script type="text/javascript" 
+		src="js/arrayMatematicos.js">
+	</script>
+	<link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+	<form><fieldset>
+		<p>Primer Array</p>
+		<label>Introduzca la cantidad de filas del array </label>
+		<input type="text" id="filas1" size="2" autofocus required/><br/>
+		<label>Introduzca la cantidad de columnas del array </label>
+		<input type="text" id="columnas1" size="2" required/><br/>
+	<hr/>
+		<p>Segundo Array</p>
+		<label>Introduzca la cantidad de filas del array </label>
+		<input type="text" id="filas2" size="2" autofocus required/><br/>
+		<label>Introduzca la cantidad de columnas del array </label>
+		<input type="text" id="columnas2" size="2" required/><br/>
+	<hr/>
+		<input type="button" value="Generar" onclick="generar()" /><br><hr/>
+		<input type='button' value='Sumar'onclick='sumar()'/>
+		<input type='button' value='Restar'onclick='restar()'/>
+		<input type='button' value='Multiplicar'onclick='multiplicar()'/>
+		<input type='button' value='Trasponer'onclick='trasponer()'/>
+	</fieldset>
+	<table>
+		<tr>
+			<td><p id="error"></p></td>
+			<td><p id="texto"></p></td>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>

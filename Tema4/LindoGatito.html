@@ -1,0 +1,51 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Lindo Gatito - Pedro J. Ramos</title>
+	<script type="text/javascript" 
+		src="js/lindoGatito.js">
+	</script>
+	<link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/tabla.css">
+</head>
+<body>
+	<form><fieldset>
+		<p>Datos del gatito</p>
+		<table><tr>
+			<td><label>Nombre</label></td>
+			<td><input type="text" id="nombre" size="10" autofocus required/></td>
+		</tr>
+		<tr>
+			<td><label>Dia Nacimiento</label></td>
+			<td><input type="text" id="dia" size="2" required/></td>
+		</tr>
+		<tr>
+			<td><label>Mes Nacimiento (0-11)</label></td>
+			<td><input type="text" id="mes" size="2" autofocus required/></td>
+		</tr>
+		<tr>
+			<td><label>Año Nacimiento</label></td>
+			<td><input type="text" id="anno" size="4" required/><br/></td>
+		</tr>
+		<tr>
+			<td><label>Raza</label></td>
+			<td><select name="raza" required>
+			<option value="Mestizo" selected >Mestizo</option>
+			<option value="Persa">Persa</option>
+			<option value="Siames">Siames</option>
+			<option value="Romano">Romano</option>
+			<option value="Egipcio">Egipcio</option>
+		</select></td>
+		</tr>
+		<tr>
+			<td><label>Peso</label></td>
+			<td><input type="text" id="peso" size="2" required/></td>
+		</tr>
+		</table><hr/>
+		<input type="button" value="Generar" onclick="generar()" /><br><hr/>
+	</fieldset>
+	<p id="texto"><p>
+	</form>
+</body>
+</html>

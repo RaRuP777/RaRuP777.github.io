@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+	<head manifest="/manifiesto/manifiesto.cache">
+		<title>Web Practica 9 DIW</title>
+		<meta name="description" content="Web practica 9 Jaime Rabasco" />
+		<meta name="keywords" content="Web,diw,Jaime Rabasco,iesgc,daw" />
+		<meta http-equiv="refresh" content="500" />
+		<link rel=stylesheet href="css/estilo.css" type="text/css" />
+	</head>
+	<body>
+		<div id="cajaheader">
+
+		</div>
+		<div id="principal" itempscope itemtype="http://www.data-vocabulary.org/Person">
+			<header>
+				<div id="logo">
+					<object data="img/logo.svg" type="image/svg+xml"></object> <!-- Inkscape -->
+				</div>
+				<div id="tipo">	
+				<h1><span itemprop="name">Jaime Rabasco Ronda</span></h1> - 
+				<h2><span itemprop="title">Práctica 9 - Web Developer</span></h2>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="index.html"><canvas id="iconoinicio" width="50" height="50"></canvas><br />Inicio</a></li>
+						<li><a href="noticias.html"><canvas id="icononoticias" width="50" height="50"></canvas><br />Noticias</a></li>
+						<li><a href="sobremi.html"><canvas id="iconosobreMi" width="50" height="50"></canvas><br />Sobre mi</a></li>
+						<li><a href="contacto.html"><canvas id="iconocontacto" width="50" height="50"></canvas><br />Contacto</a></li>
+					</ul>
+				</nav>
+
+			</header>
+			<div id="contenido">
+				<section id="sobremi">
+					<span itemprop="photo"><div id="mifoto"></div>	</span>
+					<h6>Esta es la práctica 9 de la Asignatura Diseño de interfaces Web del Ciclo Formativo de Grado Superior de Desarrollo de Aplicaciones Web en el IES Gran Capitán de Córdoba. El enlace de la práctica es <span itemprop="url"><a href="#">index.html</a></span></h6> 
+				</section>
+				<aside>
+				<h5>Posts previos</h5>
+					<ul>
+						<li><a href=""><time>2013-01-01</time> / Feliz año nuevo</a></li>
+						<li><a href=""><time>2013-10-13</time> / Título articulo </a></li>
+						<li><a href=""><time>2013-10-13</time> / Título articulo</a></li>
+						<li><a href=""><time>2013-10-13</time> / Título articulo </a></li>
+						<li><a href=""><time>2013-10-13</time> / Título articulo </a></li>
+					</ul>
+				</aside>
+				<section>
+					<article>
+						<div id="logosesiones"></div>
+						<time>2013-11-15</time>
+						<h3>Sesiones en PHP</h3>
+						<h4>Nuevo articulo de DawBLog</h4>
+						<p>El Blog del Ciclo Superior de Desarrollo de Aplicaciones Web del instituto Gran Capitán nos trae un nuevo artículo muy interesante donde nos explica qué son las sesiones y cómo trabajar con ellas para crear aplicaciones web en PHP</p>
+					</article>
+					<article>
+					<div id="logotrailer"></div>
+						<time>2013-11-15</time>
+					<h3>El Hobbit</h3>
+					<h4>Trailer en Español de la pelicula</h4>
+					<p>Recientemente ha sido publicado el trailer de la esperada película El Hobitt</p>
+					<video controls="controls" width="300px" height="150px" preload="preload">
+						<source src="video/Trailer.ogv" type="video/ogg">
+						<source src="video/Trailer.mp4" type="video/mpeg">
+						<source src="video/Trailer.webm" type="video/webm">
+						Tu navegador no soporta video. Haz clic <a href="">AQUÍ</a> para descargar un navegador compatible
+					</video>
+					</article>
+					<article>
+					<div id="logojamendo"></div>
+						<time pubdate datetime="2013-11-15">15 de Noviembre de 2013</time>
+					<h3>Jamendo</h3>
+					<h4>Nueva entrada en la lista</h4>
+					<p>Recientemente el grupo musical Hot Fiction con la canción Manner of Travelling ha entrado de forma meteorica en la lista de las canciones más populares del portal Jamendo</p>
+					<audio controls="controls" preload="preload">
+						<source src="audio/cancion.mp3">
+						Tu navegador no soporta audio. Haz clic <a href="">AQUÍ</a> para descargar un navegador compatible
+					</audio>
+					</article>
+					
+				</section>
+			</div>
+			<footer>
+				<h6>
+					(c) 2013 - Práctica 9 - Jaime Rabasco Ronda
+				
+				</h6>
+				<script type="text/javascript">
+					if(localStorage.pagecount){localStorage.pagecount = Number(localStorage.pagecount)+1;}else{localStorage.pagecount = 1;}
+					document.write("Has visitado mi página " + localStorage.pagecount + " veces");
+				</script>
+				<script type="text/javascript">
+					if(sessionStorage.pagecount){sessionStorage.pagecount = Number(sessionStorage.pagecount)+1;}else{sessionStorage.pagecount = 1;}
+					document.write("En esta sesión, has visitado mi página :" + sessionStorage.pagecount + " veces");
+				</script>
+			</footer>
+		</div>
+			<script src="js/canvas.js" type="text/javascript"></script>
+	</body>
+</html>
+
+
+

@@ -1,0 +1,20 @@
+#v 1.0
+#Este manifiesto corresponde a mi blog
+
+CACHE MANIFEST
+index.html
+css/estilo.css
+img/azul.png
+img/blanco.png
+img/fondo.jpg
+img/negro.png
+img/logo.svg
+audio/audio.ogg
+video/video.mp4
+video/video.ogg
+video/video.webm
+fotos/dawblog.jpg
+fotos/JaimeRabascoRonda.jpg
+fotos/jamendo.jpg
+fotos/trailer.jpg
+js/canvas.js

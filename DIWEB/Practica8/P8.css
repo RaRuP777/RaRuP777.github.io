@@ -1,0 +1,43 @@
+* {
+	margin:0px;
+	padding:0px;
+}
+
+ul, ol {
+	list-style:none;
+}
+
+.menu > li {
+	float:left;
+}
+
+.menu li a {
+	background-color:#00F;
+	color:#fff;
+	text-decoration:none;
+	padding:10px 12px;
+	display:block;
+}
+
+.menu li a:hover {
+	background-color:#0FF;
+}
+
+.menu li ul {
+	display:none;
+	position:absolute;
+	min-width:140px;
+}
+
+.menu li:hover > ul {
+	display:block;
+}
+
+.menu li ul li {
+	position:relative;
+}
+
+.menu li ul li ul {
+	right:-140px;
+	top:0px;
+}

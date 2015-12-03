@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Fuentes</title>
+	<link href="estilos.css" rel="stylesheet">
+	<link href="fonts.css" rel="stylesheet">
+</head>
+<body>
+<div id="web">
+	<header>
+		<hgroup>
+			<h1>Práctica 7</h1>
+			<h2>Tutorial CSS3</h2>
+		</hgroup>
+	
+	</header>
+	<nav>
+		<ul>
+			<li>Noticis</li>
+			<li>Deportes</li>
+			<li>Educacion</li>
+			<li>Ciclo</li>
+		</ul>
+	</nav>
+	<main>
+		<section>
+			Aclaraciones previsas
+			<article>
+				<header><h3>Tipo de Fuentes OpenType</h3></header>
+				<div>
+					<p>Los formatos de fuentes OpenType disponibles son:<br/>
+						<ul>
+						<li>OTF. Es el formato base de una fuente (OpenType Font).
+						<li>EOT. Dise&ntilde;ada por Microsoft para ser utilizada de forma embebida en p&aacute;ginas (Web Embedded OpenType).
+						<li>WOFF. Desarrollada por la W3C en 2009, una fuente TrueType o una OpenType y metadatos adicionales y comprimido para favorecer la distribución desde el servidor (Web Open Font Format).
+					<ul></p>
+				</div>
+				<footer></footer>
+			</article>
+			<hr/>
+		</section>
+		<section>
+			Fuentes
+			<article>
+				<header><h3>font-face</h3></header>
+				<div>
+					<p id="font-face">La regla CSS @font-face, que nos permite utilizar cualquier tipografía en una página web independientemente de si el usuario la tiene instalada o no en su sistema<br/><br/>Admite tipos de formatos tipográficos como son .eot .ttf y .otf<br/><br/>Su sintaxis es la siguiente:<br/>
+					<em>@font-face{<br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-family:&lt;nombre_fuente&gt;;<br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src: &lt;source&gt;[,&lt;source&gt;]*;<br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[font-weight:&lt;weigth&gt;];<br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[font-style:&lt;style&gt;];<br/>
+					}</em><br/><br/>
+					Con esto definimos el tipo de letra y su ubicación en nuestro servidor. Si queremos utilizar
+					dicha fuente tan solo tenemos que llamarla con font-family en las reglas de estilo que
+					deseemos.<br/><hr/><br/>
+					La compatibilidad con los diferentes browsers se puede ver en esta gr&aacute;fica:<br/><br/>
+					<center><IMG SRC="img1.png"></center><br/><hr/></p>
+					Ejemplo:<br/><br/><center>
+					<p id="vivaldi">Esta l&iacute;nea de texto utiliza la font vivaldi</p>
+					<p id="gothic">Esta l&iacute;nea de texto utiliza la font gothic</p>
+					<IMG SRC="img2.png"></center><br/>
+				</div>
+				<footer></footer>
+			</article>
+			<hr/>
+			<article>
+				<header><h3>Ligaduras</h3></header>
+				<div>
+					<p id="ligaduras">Las ligaduras son algo opcional y particular de cada fuente. Es decir, una fuente dada puede tener o no ligaduras, puede tener unas particulares y aun esas pueden ser diferentes de las de otras fuentes.<br/><br/>
+					La etiqueta <em>feature-tag-value</em> se utiliza para incluir nuevas capacidades en los estilos<br/><br/>
+					La sintaxis de la etiqueta de la regla, es:<br/>
+					<em>&lt;feature-tag-value&gt; = &lt;string&gt; [&lt;integer&gt; | on | off ]</em>
+					<ul>
+						<li>El valor numérico si tiene significado para la etiqueta –dependerá de las
+						especificaciones de la propia etiqueta y de la fuente en concreto.
+						<li>El "on" u "off" si deseamos activar o desactivar lo que implica la o las
+						etiquetas. Por defecto es el valor de "on", que podremos obviar.
+						<li>Los valores que pueden escribirse en el atributo string pueden ser:
+					</ul>
+					<center>
+						<table border="5">
+							<tr><th>Etiqueta</th>
+								<th>Descripcion</th>
+							</tr>
+							<tr>
+								<td>liga / clig</td>
+								<td>Activa y desactiva las ligaduras normales o comunes</td>
+							</tr>
+							<tr>
+								<td>diga / dlig</td>
+								<td>Activa y descativa las ligaduras discrecionales</td>
+							</tr>
+							<tr>
+								<td>hist / hlig</td>
+								<td>Activa y desactiva las ligaduras hist&oacute;ricas</td>
+							</tr>
+							<tr>
+								<td>salt</td>
+								<td>Activa y desactiva los estilos alternativos</td>
+							</tr>
+							<tr>
+								<td>calt</td>
+								<td>Activa y desactiva las ligaduras contextuales alternativas</td>
+							</tr>
+							<tr>
+								<td>smcp</td>
+								<td>Activa y desactiva pequeñas letras may&uacure;sculas</td>
+							</tr>
+							<tr>
+								<td>ss01 ... ss20</td>
+								<td>Activa y desactiva capacidades de estilos diversos</td>
+							</tr>
+						</table>
+					</center>
+					</p><br/><hr/></p>
+					Ejemplos:<br/><br/><center>
+					<p id="gabriola">Esta l&iacute;nea de texto utiliza la font gabriola con ligaduras que esta alojada en el sistema</p>
+					<p id="megalopolis">Esta l&iacute;nea de texto utiliza la font megalopolis con ligadoras en archivos externos</p>
+					<IMG SRC="img3.png"></center><br/>
+				</div>
+				<footer></footer>
+			</article>
+		</section>
+	</main>
+	<footer><span>Pedro J. Ramos</span></footer>
+</div>
+</body>
+</html>

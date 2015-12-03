@@ -34,9 +34,9 @@ ArrayMatematicos.prototype.coincideDimensiones = function (array2){
 }
 
 ArrayMatematicos.prototype.sumar=function (array2){
-    total = new ArrayMatematicos(this.filas,this.columnas);
     if (!this.coincideDimensiones(array2))
         throw new DimensionesNoCompatibles("Dimensiones no compatibles para ser sumadas");
+    total = new ArrayMatematicos(this.filas,this.columnas);
     for (var i = 0; i < this.filas; i++) {
         for (var j = 0; j < this.columnas; j++) {
             total.datos[i][j]= this.datos[i][j] + array2.datos[i][j];
@@ -46,9 +46,9 @@ ArrayMatematicos.prototype.sumar=function (array2){
 }
 
 ArrayMatematicos.prototype.restar=function(array2) {
-    total = new ArrayMatematicos(this.filas,this.columnas);
     if (!this.coincideDimensiones(array2))
-        throw new DimensionesNoCompatibles("Dimensiones no compatibles para ser restadas");    
+        throw new DimensionesNoCompatibles("Dimensiones no compatibles para ser restadas");
+    total = new ArrayMatematicos(this.filas,this.columnas);        
     for (var i = 0; i < this.filas; i++) {
         for (var j = 0; j < this.columnas; j++) {
             total.datos[i][j] = this.datos[i][j] - array2.datos[i][j];
@@ -58,9 +58,9 @@ ArrayMatematicos.prototype.restar=function(array2) {
 }
 
 ArrayMatematicos.prototype.multiplicar=function(array2){
-    total = new ArrayMatematicos(this.filas,this.columnas);
     if (!this.coincideDimensiones(array2))
         throw new DimensionesNoCompatibles("Dimensiones no compatibles para ser multiplicadas");
+    total = new ArrayMatematicos(this.filas,this.columnas);
     for (var i = 0; i < this.filas; i++){
         for (var j = 0; j < total.columnas; j++){
             for (var k = 0; k < this.columnas; k++) {

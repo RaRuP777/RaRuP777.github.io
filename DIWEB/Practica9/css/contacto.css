@@ -1,0 +1,45 @@
+input[required]{
+	border-color:green;
+	box-shadow: 0px 0px 5px green;
+}
+
+input:invalid{
+	border-color:red;
+	box-shadow: 0px 0px 50px red;
+	border-radius: 0px 5px 0px 5px;
+}
+
+form table{
+	width:100%;
+	border: 0px solid white;
+	padding: 0px;
+	margin:auto;
+}
+
+form{
+	font-family:ubuntuRegular;
+	color:black;
+	text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+	border: 1px solid white;
+	border-radius: 0px 15px 0px 15px;
+	box-shadow: 10px 10px 25px rgba(0,0,0,0.5);
+	background: rgba(255,255,255,0.5);
+	margin:auto;
+	width:80%;
+	padding:10px;
+}
+form input, form textarea{
+	font-size:10px;
+	background:rgba(255,255,255,0.5);
+	border: 1px dotted rgba(255,255,255,1);
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+	border-radius: 5px;
+	transition: background 1s, box-shadow: 1s; border 1s;
+}
+
+form input:hover, form textarea:hover{
+	background:rgba(255,255,255,1);
+	box-shadow: 0px 0px 5px rgba(255,255,255,1);
+	-webkit-box-shadow: 0px 0px 5px rgba(255,255,255,1);
+	border: 1px dotted rgba(0,0,0,1);
+}

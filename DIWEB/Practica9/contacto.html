@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+	<head manifest="/manifiesto/manifiesto.cache">
+		<title>Web Practica 9 DIW</title>
+		<meta name="description" content="Web practica 9 Jaime Rabasco" />
+		<meta name="keywords" content="Web,diw,Jaime Rabasco,iesgc,daw" />
+		<meta http-equiv="refresh" content="500" />
+		<link rel=stylesheet href="css/contacto.css" type="text/css" />
+	</head>
+	<body>
+		
+			<div id="contenido">
+				<form action="php/enviamail.php" method="post">
+				
+					<table border=0>
+						<tr>
+							<td width=50%>
+								<p style="text-align:right;">Introduce tu nombre</p>
+							</td>
+							<td width=50%>
+								<input type="text" size=50% required name="nombre"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p style="text-align:right;">Introduce tu email</p>
+							</td>
+							<td>
+								<input type="email" size=50% value="ejemplo: usuario@dominio.com" name="email"/>
+							</td>
+						</tr>
+						<tr>
+							<td><p style="text-align:right;">Escribe tu mensaje</p>
+							</td>
+							<td>	
+								<textarea cols=50% rows=6 name="mensaje"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td>
+							</td>
+							<td>
+								<input type="submit" value="Enviar">
+							</td>
+						</tr>
+					</table>
+
+				</form>
+			</div>
+			
+		</div>
+			
+	</body>
+</html>
+
+
+

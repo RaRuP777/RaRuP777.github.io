@@ -1,0 +1,95 @@
+﻿#web{
+	width:960px;
+	margin:0 auto;
+	border-radius:20px;/*Después de footer y header*/
+	box-shadow:0px 0px 10px #000;/*Después de footer y header*/
+}
+
+header{
+	padding:1px;
+	text-align:center;
+	background-color:#3B5988;
+	color:white;
+	border-radius:20px 20px 0px 0px;
+}
+
+nav{
+	background-color: #132D63;
+	padding:2px;
+	text-align:center;
+}
+
+nav ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+nav ul>li{
+	display:inline-block;
+	width:150px;
+	color:white;
+	background-color:#6E8CCC;
+	border:1px outset #6E8CCC;
+	cursor:pointer;/*manita del ratón*/
+	padding:2px;
+}
+
+main,aside{
+	display: inline-block;
+	vertical-align: top;
+}
+
+#principal{
+	background-color:#6E8CCC;/*Mismo color que aside para si el contenido aumenta su tamaño, no se pierda el diseño*/
+}
+
+main{
+	background-color:#879DCC;
+	padding: 10px;
+	min-height:450px;
+	width:78%;
+}
+
+aside{
+	background-color:#6E8CCC;
+	min-height:450px;
+	width:19%;
+}
+
+aside section{ /* Parte final, cuando pongamos el contenido del aside */
+	text-align:center;
+	margin:20px 8px 2px 8px;
+	border-radius:20px;
+	min-height:170px;
+	background-color:white;
+}
+
+aside section h3{ /* Parte final, cuando pongamos el contenido del aside */
+	margin-top: 1px;
+}
+
+
+footer{
+	background-color:#3B5998;/*Mismo cabecera*/
+	text-align:center;
+	color:white;
+	padding:5px;
+	border-radius:0px 0px 20px 20px;
+}
+
+main section{
+	width:35%;
+	float:left;
+	padding:2%;
+	border:1px dashed #3B5998;
+	margin-left:40px;
+}
+
+article{
+	text-align:justify;
+}
+
+article div{
+	padding:2px;
+}

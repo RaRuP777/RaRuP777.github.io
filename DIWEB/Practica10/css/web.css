@@ -1,0 +1,92 @@
+body{
+	margin: 0;
+    background-image:url('/img/back.jpg');
+    text-align:center;
+}
+
+#contenedor{
+	width:1000px;
+	margin:0 auto;
+	border-radius:20px;
+	box-shadow:0px 0px 10px #4d4d2c;
+}
+
+header{
+	padding:1px;
+	text-align:left;
+	background-color:rgb(3,57,119);
+	color:#ffffff;
+	border-radius:20px 20px 0px 0px;
+}
+
+canvas,h1{
+	display: inline-block;
+}
+
+h1,h2,h3,h4,h5,h6{
+	text-shadow:2px 2px 5px rgba(0,0,0,1);
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	transform: translate(60px,-30px);
+}
+
+nav{
+	background-color: rgb(255,235,70);
+	padding:2px;
+}
+
+main{
+	width:70%;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 10px;
+	padding:2px;
+}
+
+aside{
+	background-color:#6E8CCC;
+	width: 25%;
+	display: inline-block;
+	border-radius: 10px;
+	margin-left: 10px;
+	padding:2px;
+}
+
+article{
+	text-align:justify;
+	border-radius: 10px;
+	background-color: rgba(110,140,204,0.5);
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}
+
+article:hover{
+	color: rgba(0,0,0,1);
+	background: rgba(111,255,255,0.5);
+	opacity: 1;
+	transform:scale(1.2,1.2);
+}
+
+footer{
+	padding:1px;
+	text-align:center;
+	background-color:rgb(3,57,119);
+	color:#000000;
+	border-radius:0px 0px 20px 20px;
+}
+
+hr{
+	border-color:black;
+}
+
+h3, p{
+	margin: 10px;
+	padding: 10px;
+	text-align: justify;
+	text-shadow:1px 1px 3px rgba(0,0,0,0.4);
+	color: black;
+}

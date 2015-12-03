@@ -1,0 +1,98 @@
+﻿#web{
+	border-radius:20px;/*Después de footer y header*/
+	box-shadow:0px 0px 10px #000;/*Después de footer y header*/
+	margin:0 auto;
+	width:960px;
+}
+
+header{
+	background-color:#3B5988;
+	border-radius:20px 20px 0px 0px;/*Después de footer*/
+	color:white;
+	padding:1px;
+	text-align:center;
+}
+
+main{
+	background-color:#879DCC;
+	min-height:450px;
+	padding:1%;
+	width:98%;
+}
+
+nav{
+	background-color: #132D63;
+	padding:2px;
+	text-align:center;
+}
+
+nav ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+nav ul>li{
+	background-color:#6E8CCC;
+	border:1px outset #6E8CCC;
+	color:white;
+	cursor:pointer;/*manita del ratón*/
+	display:inline-block;
+	padding:2px;
+	width:150px;
+}
+
+
+
+
+aside section{ /* Parte final, cuando pongamos el contenido del aside */
+	background-color:white;
+	border-radius:20px;
+	margin:2px;
+	min-height:170px;/*Mirar resultado*/
+	text-align:center;
+}
+
+
+footer{
+	background-color:#3B5998;/*Mismo cabecera*/
+	border-radius:0px 0px 20px 20px;
+	color:white;
+	padding:5px;
+	text-align:center;
+}
+
+
+article{
+	text-align:justify;
+}
+
+article div{
+	padding:2px;
+}
+
+article #border-radius
+{
+	border:1px solid;
+	border-radius:10px;
+	-moz-bordes-radius:10px;
+}
+
+article #border-radius-multiples-esquinas{
+	border:1px solid;
+	border-radius:20px 10px;
+	-moz-border-radius:10px;
+}
+
+article #border-radius-multiples-esquinas2{
+	border:1px solid;
+	border-radius:20px 10px 0px 5px;
+	-moz-border-radius:10px;
+}
+
+article #border-shadow{
+	border:1px solid;
+	box-shadow:20px 10px 15px #3B5988;
+	*-webkit-box-shadow:20px 10px 15px blue;
+	-moz-border-shadow:20px 10px 15px white;
+}

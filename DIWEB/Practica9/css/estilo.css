@@ -1,0 +1,345 @@
+@font-face{
+	font-family: ubuntuRefular;
+	src:url(fuentes/ubuntu-R.ttf) format("truetype");
+}
+
+@font-face{
+	font-family: ubuntuBlod;
+	src:url(fuentes/ubuntu-B.ttf) format("truetype");
+}
+
+@font-face{
+	font-family: ubuntuItalic;
+	src:url(fuentes/ubuntu-I.ttf) format("truetype");
+}
+
+@font-face{
+	font-family: ubuntuBoldItalic;
+	src:url(fuentes/ubuntu-BI.ttf) format("truetype");
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: ubunutRegular;
+}
+
+p{
+	font-family: ubuntuRegular;
+	font-size: 12px;
+	text-align: justify;
+	text-shadow:1px 1px 3px rgba(0,0,0,0.4);
+	color: black;
+}
+
+body{
+	text-align: center;
+	margin: 0;
+    background-image:url('../img/negro.png'),url('../img/azul.png'),url('../img/fondo.jpg');
+}
+
+#principal{
+	text-align: left;
+	margin: auto;
+	width: 80%;
+	height: 100%;
+	position: relative;
+}
+
+#cajaheader{
+	width: 100%;
+	height: 102px;
+	position: absolute;
+	background: rgba(255,255,255,0.5);
+}
+
+header {
+	display: table;
+	width: 100%;
+	margin:auto;
+	text-align: left;
+	height: 100px;
+	overflow: hidden;
+	border: 2px solid white;
+	border-radius: 5px 53px 0px 0px;
+	box-shadow: 0px 0px 10px white;
+}
+
+footer{
+	margin:0px;
+	text-align: center;
+	padding: 0px;
+	border:2px solid white;
+	background: rgba(0,0,0,0.5);
+	border-radius: 0px 0px 5px 35px;
+	box-shadow: 0 0 10px white;
+}
+
+#contenido{
+	border: 2px solid white;
+	box-shadow: 0 0 10px white;
+	background: rgba(255,255,255,0.5);
+
+}
+
+article{
+	color: rgba(255,225,225,1);
+	width: 55%;
+	background: rgba(255,255,255,0.5);
+	margin: 10px;
+	border: 1px solid white;
+	border-radius: 0px 25px 0px 25px;
+	box-shadow: 3px 3px 10px black;
+	padding: 10px 10px 10px 150px;
+	*opacity: 1;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+
+}
+
+article:hover{
+	color: rgba(0,0,0,1);
+	background: rgba(255,255,255,1);
+	opacity: 1;
+	transform:scale(1.1,1.1);
+}
+
+aside{
+	float: right;
+	width: 20%;
+	background: rgba(255,255,255,0.5);
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid white;
+	box-shadow: 3px 3px 10px white;
+	border-radius: 0px 25px;
+}
+
+aside:hover{
+	box-shadow: 0px 0px 25px white;
+	background: rgba(255,255,255,0.7);
+}
+
+aside ul{
+	padding: 0px;
+	text-decoration: none;
+	color: white;
+	font-family: ubuntuRegular;
+	list-style: none;
+	font-size: 10px;
+}
+
+aside ul li{
+	border: 1px solid white;
+	border-radius: 0px 5px;
+}
+
+aside ul li a{
+	overflow: hidden;
+	text-decoration: none;
+	color: black;
+}
+
+nav{
+	float:right;
+	margin:20px;
+	display: inline;
+
+}
+
+nav  ul{
+	font-size: 12px;
+	padding-left: 0;
+	margin-left: 0;
+	*color: white;
+	width: 50%;
+	font-family: ubuntuRegular;
+	position: relative;
+	display: inline;
+	list-style: none;
+
+}
+
+nav ul li{
+	display: inline;
+	text-align: center;
+	display: inline-block;
+}
+
+nav ul li:hover{
+	background:rgba(255,255,255,0.5);
+}
+
+nav ul li a{
+	background: rgba(255,255,255,0);
+	color:white;
+	text-decoration: none;
+	border: 1px solid white;
+	width: 80px;
+	float: right;
+	display: -inline-block;
+}
+
+canvas{
+	border:0;
+}
+
+#tipo{
+	position: absolute;
+	transform: translate(60px,10px);
+}
+
+h1{
+	color:white;
+	font-size: 48px;
+	margin-top: 10px;
+	letter-spacing: 0px;
+	text-shadow:2px 2px 5px rgba(0,0,0,0.5);
+	margin: 0;
+	padding: 0;
+}
+
+h2{
+	color: white;
+	font-size: 16px;
+	margin-top: 10px;
+	letter-spacing: 0;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+	margin: 0;
+	padding: 0;
+}
+
+h3{
+	margin: 0;
+	padding: 0;
+	font-size: 36px;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+h4{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+	color: black;
+}
+
+	
+h6{
+	color:white;
+	font-size: 12px;
+	display:inline-block;
+	width: 80%;
+	vertical-align: top;
+}
+
+time{
+	font-family: ubuntuRegular;
+	font-size: 10px;
+}
+
+#sobremi a {
+	color:white;
+	text-decoration: none;
+
+}
+
+#mifoto{
+	width: 80px;
+	height: 80px;
+	background: url('../fotos/foto.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	border: 1px solid white;
+	*float: left;
+	margin: 10px;
+	border-radius: 0px 10px;
+	box-shadow: 0px 0px 10px white;
+	display: inline-block;	
+	vertical-align: top;
+}
+
+#logojamendo{
+	width: 100px;
+	height: 100px;
+	background: url('../fotos/jamendo.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	border: 1px solid white;
+	margin: 10px;
+	position:absolute;
+	*float:left;
+	transform: translate(-140px,0px);
+}
+
+#logotrailer{
+	width: 100px;
+	height: 100px;
+	background: url('../fotos/trailer.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	border: 1px solid white;
+	margin: 10px;
+	position:absolute;
+	*float:left;
+	transform: translate(-140px,0px);
+}
+
+#logosesiones{
+	width: 100px;
+	height: 100px;
+	background: url('../fotos/dawblog.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	border: 1px solid white;
+	margin: 10px;
+	position:absolute;
+	*float:left;
+	transform: translate(-140px,0px);
+}
+
+/** formulario **/
+input[required]{
+	border-color:green;
+	box-shadow: 0px 0px 5px green;
+}
+
+input:invalid{
+	border-color:red;
+	box-shadow: 0px 0px 50px red;
+	border-radius: 0px 5px 0px 5px;
+}
+
+form table{
+	width:100%;
+	border: 0px solid white;
+	padding: 0px;
+	margin:auto;
+}
+
+form{
+	font-family:ubuntuRegular;
+	color:black;
+	text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+	border: 1px solid white;
+	border-radius: 0px 15px 0px 15px;
+	box-shadow: 10px 10px 25px rgba(0,0,0,0.5);
+	background: rgba(255,255,255,0.5);
+	margin:auto;
+	width:80%;
+	padding:10px;
+}
+form input, form textarea{
+	font-size:10px;
+	background:rgba(255,255,255,0.5);
+	border: 1px dotted rgba(255,255,255,1);
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+	border-radius: 5px;
+	transition: background 1s, box-shadow: 1s; border 1s;
+}
+
+form input:hover, form textarea:hover{
+	background:rgba(255,255,255,1);
+	box-shadow: 0px 0px 5px rgba(255,255,255,1);
+	-webkit-box-shadow: 0px 0px 5px rgba(255,255,255,1);
+	border: 1px dotted rgba(0,0,0,1);
+}

@@ -6,9 +6,11 @@ window.onload = function(){
 
 //Definición del Objeto y sus métodos con Prototype
 function ArrayMatematicos(filas,columnas){
-    if(validarCampos(filas) || validarCampos(columnas))
-        throw new MyException("Algún valor introducido no es válido");
-    error.innerHTML = MyException.mensaje;
+    if(isNaN(filas) || filas < 2)
+        throw new ValoresNoValidos ("Valor de filas no válido");
+    if(isNaN(columnas) || columnas < 2)
+        throw new ValoresNoValidos ("Valor de columnas no válido");
+    error.innerHTML ="";
     this.filas=filas;
     this.columnas=columnas;
     this.datos;
@@ -25,7 +27,7 @@ ArrayMatematicos.prototype.rellenarArray = function(){
 }
 
 ArrayMatematicos.prototype.coincideDimensiones = function (array2){
-    if(tris.filas == array2.filas && this.columnas == array2.columnas)
+    if(this.filas == array2.filas && this.columnas == array2.columnas)
         return true;
     else
         return false;
@@ -34,7 +36,7 @@ ArrayMatematicos.prototype.coincideDimensiones = function (array2){
 ArrayMatematicos.prototype.sumar=function (array2){
     total = new ArrayMatematicos(this.filas,this.columnas);
     if (!this.coincideDimensiones(array2))
-        throw new MyException("Los arrays tienen dimensiones no compatibles");
+        throw new DimensionesNoCompatibles("Dimensiones no compatibles para ser sumadas");
     for (var i = 0; i < this.filas; i++) {
         for (var j = 0; j < this.columnas; j++) {
             total.datos[i][j]= this.datos[i][j] + array2.datos[i][j];
@@ -46,7 +48,7 @@ ArrayMatematicos.prototype.sumar=function (array2){
 ArrayMatematicos.prototype.restar=function(array2) {
     total = new ArrayMatematicos(this.filas,this.columnas);
     if (!this.coincideDimensiones(array2))
-        throw new MyException("Los arrays tienen dimensiones no compatibles");    
+        throw new DimensionesNoCompatibles("Dimensiones no compatibles para ser restadas");    
     for (var i = 0; i < this.filas; i++) {
         for (var j = 0; j < this.columnas; j++) {
             total.datos[i][j] = this.datos[i][j] - array2.datos[i][j];
@@ -58,7 +60,7 @@ ArrayMatematicos.prototype.restar=function(array2) {
 ArrayMatematicos.prototype.multiplicar=function(array2){
     total = new ArrayMatematicos(this.filas,this.columnas);
     if (!this.coincideDimensiones(array2))
-        throw new MyException("Los arrays tienen dimensiones no compatibles");
+        throw new DimensionesNoCompatibles("Dimensiones no compatibles para ser multiplicadas");
     for (var i = 0; i < this.filas; i++){
         for (var j = 0; j < total.columnas; j++){
             for (var k = 0; k < this.columnas; k++) {
@@ -89,17 +91,15 @@ ArrayMatematicos.prototype.mostrarArray= function() {
     return resultado;
 }
 
-//Excepcion
-function MyException (message){
+//Excepciones
+function ValoresNoValidos (message){
+    this.name = "ValoresNoValidos";
     this.message = message;
 }
 
-function validarCampos(valor){
-    if(isNaN(valor) || valor < 2 || !(valor.typeOf() == Number) {
-        throw new MyException ("Algún valor no es correcto");
-    }
-    else
-        return true;
+function DimensionesNoCompatibles (message){
+    this.name = "DimensionesNoCompatibles";
+    this.message = message;
 }
 
 //Funciones para usabilidad del HTML
@@ -108,15 +108,13 @@ function generar(){
     var filas2 = document.getElementById("filas2").value;
     var columnas1 = document.getElementById("columnas1").value;
     var columnas2 = document.getElementById("columnas2").value;
-    if (validarCampos(filas1) && validarCampos(filas2) && validarCampos(columnas1) && validarCampos(columnas2)){
-        try {
-            array1 = new ArrayMatematicos(filas1,columnas1);
-            array2 = new ArrayMatematicos(filas2,columnas2);
-            resultado = "Primer Array: <br/>" + array1.mostrarArray() + "Segundo Array: <br/>" + array2.mostrarArray();
-            texto.innerHTML = resultado;
-        } catch (e) {
-            error.innerHTML = e.message;
-        }
+    try {
+        array1 = new ArrayMatematicos(filas1,columnas1);
+        array2 = new ArrayMatematicos(filas2,columnas2);
+        resultado = "Primer Array: <br/>" + array1.mostrarArray() + "Segundo Array: <br/>" + array2.mostrarArray();
+        texto.innerHTML = resultado;
+    } catch (e) {
+        error.innerHTML = e.message;
     }
 }
 
@@ -133,9 +131,9 @@ function sumar(){
 
 function restar(){
     try {
-    array = array1.restar(array2);
-    resultado = "Resultado de la Resta: <br/>" + array.mostrarArray();
-    texto.innerHTML = resultado;
+        array = array1.restar(array2);
+        resultado = "Resultado de la Resta: <br/>" + array.mostrarArray();
+        texto.innerHTML = resultado;
     } catch (e){
         error.innerHTML = e.message;
     }
@@ -143,9 +141,9 @@ function restar(){
 
 function multiplicar(){
     try {
-    array = array1.multiplicar(array2);
-    resultado = "Resultado de la Multiplicación: <br/>" + array.mostrarArray();
-    texto.innerHTML = resultado;
+        array = array1.multiplicar(array2);
+        resultado = "Resultado de la Multiplicación: <br/>" + array.mostrarArray();
+        texto.innerHTML = resultado;
     } catch (e){
         error.innerHTML = e.message;
     }   

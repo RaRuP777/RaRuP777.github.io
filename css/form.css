@@ -74,3 +74,8 @@ button:hover, button:focus {
   background: rgba(0,0,0,.5);
   color   : #FFF;
 }
+
+#error{
+  text-align: center;
+  color:red;
+}

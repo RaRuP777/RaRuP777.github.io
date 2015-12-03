@@ -12,11 +12,17 @@ function Gato(nombre,dia,mes,anno,raza,peso){
 }
 
 Gato.prototype.jugar=function (){
-   
+    this.peso=this.peso-1;
+    this.estado="Jugando";   
 }
 
 Gato.prototype.comer=function (){
-   
+   this.peso=this.peso+1;
+   this.estado="Comiendo";
+}
+
+Gato.prototype.dormir=function(){
+    this.estado="Durmiendo";
 }
 
 //Funciones para usabilidad del HTML

@@ -1,0 +1,48 @@
+form { 
+  margin: 3px; 
+}
+
+fieldset { 
+  margin: 0; 
+  padding: 0;
+  border-color:#1b9bff;
+}
+
+label { 
+   font-weight: bold;
+}
+
+button, input, select, textarea { 
+  font-size: 100%; 
+  margin: 3px; 
+}
+
+button, input { 
+  line-height: normal;
+}
+
+button, input[type="cal"], input[type="reset"], input[type="submit"], input[type="text"], select { 
+  cursor: pointer; 
+}
+
+input[type="radio"] { 
+  padding: 0; 
+}
+
+textarea { 
+  overflow: auto; 
+  vertical-align: top; 
+  resize: vertical; 
+}
+
+input, textarea, select{
+  background-color: rgba(0,0,0,0.2);
+}
+
+input:valid, {  
+  border-color: #00ff00; 
+}
+
+input:invalid { 
+  border-color: #ff0000; 
+}

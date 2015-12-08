@@ -8,22 +8,27 @@
 	<link href="css/form.css" rel="stylesheet">
 </head>
 <body>
+	<div id="web">
 		<header>
 			<h1>Práctica 11</h1>	
 		</header>
 		<nav>
 			<ul>
 				<li><a href="index.html">Inicio</a></li>
-				<li><a href="">Nueva Tarea</a></li>
-				<li><a href="">Borrar Tarea</a></li>
-				<li><a href="">Modificar Tarea</a></li>				
+				<li><a href="nuevatarea.html">Nueva Tarea</a></li>
+				<li><a href="borrartarea.html">Borrar Tarea</a></li>
+				<li><a href="modificartarea.html">Modificar Tarea</a></li>				
 			</ul>
 		</nav>
 		<main>
 			<section>
-				<form id="form1" action="curriculum.php" method="post">
+				<form id="form" action="#" method="post">
 					<fieldset>
 						<table>
+							<tr>
+								<td><label>Titulo Tarea</label></td>
+								<td><input type="text" name="fecha" required /></td>
+							</tr>
 							<tr>
 								<td><label>Asignatura</label></td>
 								<td>
@@ -62,5 +67,6 @@
 		<footer>
 			<p>Pedro J. Ramos</p>
 		</footer>
+	</div>
 </body>
 </html>

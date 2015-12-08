@@ -6,9 +6,8 @@ nav {
   float: left;
   width: 200px;
   font-family: 'Oxygen Mono', Tahoma, Arial, sans-serif;
-  zoom: 1;
   font-size: 12px;
-  background-color: rgb(127,127,127);
+  background-color: #7F7F7F;
   padding:2px;
 }
 
@@ -29,16 +28,9 @@ ul li {
   float: none;
 }
 
-ul li.hover, ul li:hover {
-  position: relative;
-  z-index: 599;
-  cursor: default;
-}
-
 a {
   display: block;
   padding: 15px 20px;
-  color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -46,6 +38,10 @@ a {
 ul > li > a {
   border-right: 4px solid #1b9bff;
   color: #000000;
+}
+
+ul li.hover, ul li:hover {
+  cursor: default;
 }
 
 ul > li > a:hover {

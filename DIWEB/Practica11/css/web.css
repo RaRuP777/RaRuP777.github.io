@@ -1,6 +1,24 @@
+article, footer, header, main, nav, section, aside { 
+  display: block; 
+}
+
+html { 
+  font-size: 100%; 
+  -webkit-text-size-adjust: 100%; 
+  -ms-text-size-adjust: 100%; 
+}
+
 body{
 	margin: 0;
     background-image:url('/img/back.jpg');
+}
+
+#web{
+	width:95%;
+	margin:0 auto;
+	border-radius:20px;
+	box-shadow:0px 0px 10px #4d4d2c;
+	background-color: #7F7F7F;
 }
 
 header{
@@ -19,8 +37,8 @@ main{
 	padding:2px;
 }
 
-section{
-	display: block;
+nav{
+	width: 17%;
 }
 
 article{
@@ -41,15 +59,15 @@ article{
 }
 
 #uno{
-	background-color: rgba(63,0,0,0.5);;
+	background-color: rgba(93,0,0,0.5);;
 }
 
 #dos{
-	background-color: rgba(0,63,0,0.5);;
+	background-color: rgba(0,93,0,0.5);;
 }
 
 #tres{
-	background-color: rgba(0,0,63,0.5);;
+	background-color: rgba(0,0,93,0.5);;
 }
 
 footer{
@@ -65,15 +83,15 @@ h1,h2,h3,h4,h5,h6{
 	padding: 3px;
 }
 
-h1 {
+h1, h4 {
 	text-align: center;
 }
 
 table{
-
+	margin: 1px;
 }
 
 th, td{
-	text-align: left;
+	text-align: justify;
 	padding: 10px;
 }

@@ -125,8 +125,7 @@ function sumar(){
         texto.innerHTML = resultado;
     } catch (e){
         error.innerHTML = e.message;
-    }
-    
+    }  
 }
 
 function restar(){
@@ -150,7 +149,12 @@ function multiplicar(){
 }
 
 function trasponer(){
-    array = array1.transponer();
-    resultado = "El array1 traspuesto es: <br/>" + array.mostrarArray();
-    texto.innerHTML = resultado;
+    try {
+        array = array1.transponer();
+        resultado = "El array1 traspuesto es: <br/>" + array.mostrarArray();
+        texto.innerHTML = resultado;
+    } catch (e){
+        error.innerHTML = e.message;
+    }
 }
+

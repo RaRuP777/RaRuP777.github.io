@@ -1,0 +1,66 @@
+﻿<html>
+<head>
+	<meta charset="utf-8">
+	<title>Práctica 11 - Pedro J. Ramos</title>
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/menu.css" rel="stylesheet">
+	<link href="css/web.css" rel="stylesheet">
+	<link href="css/form.css" rel="stylesheet">
+</head>
+<body>
+		<header>
+			<h1>Práctica 11</h1>	
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="">Nueva Tarea</a></li>
+				<li><a href="">Borrar Tarea</a></li>
+				<li><a href="">Modificar Tarea</a></li>				
+			</ul>
+		</nav>
+		<main>
+			<section>
+				<form id="form1" action="curriculum.php" method="post">
+					<fieldset>
+						<table>
+							<tr>
+								<td><label>Asignatura</label></td>
+								<td>
+									<select name="asignatura">
+										<option value="DIWEB">DIWED</option>
+										<option value="DAWEB">DAWEB</option>
+										<option value="DWECL">DWECL</option>
+										<option value="DWESE">DWESE</option>
+										<option value="HLC">HLC</option>
+										<option value="EIE">EIE</option>
+									<select>
+								</td>
+							</tr>
+							<tr>
+								<td><label>Fecha de Entrega</label></td>
+								<td><input type="cal" name="fecha" required /></td>
+							</tr>
+							<tr>
+								<td><label>Entregado</label></td>
+								<td>
+									<input type="radio" name="si" value="si" />SI
+									<input type="radio" name="no" value="no" />NO
+								</td>
+							</tr>
+							<tr>
+								<td><label>Descripcion</label></td>
+								<td><textarea rows="6" cols="30" name="descripcion"></textarea><td>
+							</tr>
+						</table>
+						<input type="submit" name="enviar" value="Enviar"/>
+						<input type="reset" name="reset" value="Limpiar"/>
+					</fieldset>
+				</form>
+			</section>		
+		</main>
+		<footer>
+			<p>Pedro J. Ramos</p>
+		</footer>
+</body>
+</html>

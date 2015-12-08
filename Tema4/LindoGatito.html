@@ -14,29 +14,42 @@
 		<p>Datos del gatito</p>
 		<table><tr>
 			<td><label>Nombre</label></td>
-			<td><input type="text" id="nombre" size="10" autofocus required/></td>
+			<td><input type="text" id="nombre" size="10" placeholder="max 10 letras" autofocus required/></td>
 		</tr>
 		<tr>
 			<td><label>Dia Nacimiento</label></td>
 			<td><input type="text" id="dia" size="2" required/></td>
 		</tr>
 		<tr>
-			<td><label>Mes Nacimiento (0-11)</label></td>
-			<td><input type="text" id="mes" size="2" autofocus required/></td>
+			<td><label>Mes Nacimiento</label></td>
+			<td><select id="mes" name="mes">
+				<option value="0">Enero</option>
+				<option value="1">Febrero</option>
+				<option value="2">Marzo</option>
+				<option value="3">Abril</option>
+				<option value="4">Mayo</option>
+				<option value="5">Junio</option>
+				<option value="6">Julio</option>
+				<option value="7">Agosto</option>
+				<option value="8">Septiembre</option>
+				<option value="9">Octubre</option>
+				<option value="10">Noviembre</option>
+				<option value="11">Diciembre</option>	
+			</select></td>
 		</tr>
 		<tr>
 			<td><label>Año Nacimiento</label></td>
-			<td><input type="text" id="anno" size="4" required/><br/></td>
+			<td><input type="text" id="anno" size="4" placeholder="ej 2015" required/><br/></td>
 		</tr>
 		<tr>
 			<td><label>Raza</label></td>
-			<td><select name="raza" required>
-			<option value="Mestizo" selected >Mestizo</option>
-			<option value="Persa">Persa</option>
-			<option value="Siames">Siames</option>
-			<option value="Romano">Romano</option>
-			<option value="Egipcio">Egipcio</option>
-		</select></td>
+			<td><select id="raza">
+				<option value="Mestizo">Mestizo</option>
+				<option value="Persa">Persa</option>
+				<option value="Siames">Siames</option>
+				<option value="Romano">Romano</option>
+				<option value="Egipcio">Egipcio</option>
+			</select></td>
 		</tr>
 		<tr>
 			<td><label>Peso</label></td>

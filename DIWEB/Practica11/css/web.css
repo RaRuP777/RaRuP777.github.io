@@ -1,7 +1,6 @@
 body{
 	margin: 0;
     background-image:url('/img/back.jpg');
-    text-align:center;
 }
 
 header{
@@ -12,40 +11,45 @@ header{
 	border-radius:20px 20px 0px 0px;
 }
 
-h1,h2,h3,h4,h5,h6{
-	text-shadow:2px 2px 5px rgba(0,0,0,1);
-	margin: 0;
-	padding: 0;
-}
-
-nav{
-	display: flex;
-	background-color: rgb(127,127,127);
-	padding:2px;
-}
-
 main{
-	width:70%;
+	width:80%;
 	display: inline-block;
 	vertical-align: top;
 	margin-left: 10px;
 	padding:2px;
 }
 
+section{
+	display: block;
+}
+
 article{
-	text-align:justify;
 	border-radius: 10px;
-	background-color: rgba(63,0,0,0.5);
 	-webkit-transition: all 1s;
 	-o-transition: all 1s;
 	transition: all 1s;
+    width: 33%;
+    margin: 3px;
+    float: left;
+    height: 300px;
 }
 
-article:hover{
+#uno:hover, #dos:hover, #tres:hover{
 	color: rgba(0,0,0,1);
 	background: rgba(111,255,255,0.5);
 	opacity: 1;
-	transform:scale(1.2,1.2);
+}
+
+#uno{
+	background-color: rgba(63,0,0,0.5);;
+}
+
+#dos{
+	background-color: rgba(0,63,0,0.5);;
+}
+
+#tres{
+	background-color: rgba(0,0,63,0.5);;
 }
 
 footer{
@@ -56,18 +60,20 @@ footer{
 	border-radius:0px 0px 20px 20px;
 }
 
-hr{
-	border-color:black;
-}
-
-h3, p{
-	margin: 10px;
-	padding: 10px;
-	text-align: justify;
-	text-shadow:1px 1px 3px rgba(0,0,0,0.4);
-	color: black;
+h1,h2,h3,h4,h5,h6{
+	margin: 3px;
+	padding: 3px;
 }
 
 h1 {
 	text-align: center;
+}
+
+table{
+
+}
+
+th, td{
+	text-align: left;
+	padding: 10px;
 }

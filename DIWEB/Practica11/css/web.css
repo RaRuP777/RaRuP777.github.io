@@ -1,7 +1,3 @@
-article, footer, header, main, nav, section, aside { 
-  display: block; 
-}
-
 html { 
   font-size: 100%; 
   -webkit-text-size-adjust: 100%; 
@@ -13,12 +9,17 @@ body{
     background-image:url('/img/back.jpg');
 }
 
+footer, header, #web { 
+  display: block;
+  width:100%; 
+}
+
 #web{
 	width:95%;
 	margin:0 auto;
 	border-radius:20px;
 	box-shadow:0px 0px 10px #4d4d2c;
-	background-color: #7F7F7F;
+	background-color: #CDCDC1;
 }
 
 header{
@@ -29,6 +30,19 @@ header{
 	border-radius:20px 20px 0px 0px;
 }
 
+nav {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  line-height: 1;
+  float: left;
+  font-family: 'Oxygen Mono', Tahoma, Arial, sans-serif;
+  font-size: 12px;
+  background-color: #CDCDC1;
+  padding:2px;
+  width: 17%;
+}
+
 main{
 	width:80%;
 	display: inline-block;
@@ -37,8 +51,9 @@ main{
 	padding:2px;
 }
 
-nav{
-	width: 17%;
+section{
+	float: left;
+	width: 49%;
 }
 
 article{
@@ -46,14 +61,11 @@ article{
 	-webkit-transition: all 1s;
 	-o-transition: all 1s;
 	transition: all 1s;
-    width: 33%;
     margin: 3px;
     float: left;
-    height: 300px;
 }
 
-#uno:hover, #dos:hover, #tres:hover{
-	color: rgba(0,0,0,1);
+#uno:hover, #dos:hover, #tres:hover, #cuatro:hover{
 	background: rgba(111,255,255,0.5);
 	opacity: 1;
 }
@@ -70,11 +82,15 @@ article{
 	background-color: rgba(0,0,93,0.5);;
 }
 
+#cuatro{
+	background-color: rgba(33,0,93,0.5);;
+}
+
 footer{
 	padding:1px;
 	text-align:center;
 	background-color:rgb(3,57,119);
-	color:#000000;
+	color:#FFFFFF;
 	border-radius:0px 0px 20px 20px;
 }
 
@@ -88,10 +104,19 @@ h1, h4 {
 }
 
 table{
+	float: left;
 	margin: 1px;
+	width:100%;
 }
 
 th, td{
 	text-align: justify;
 	padding: 10px;
+	float: left;
+	width:100%;
+}
+
+footer a {
+	color:#FFFFFF;
+	padding: 20px;
 }

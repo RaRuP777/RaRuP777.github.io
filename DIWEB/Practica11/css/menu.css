@@ -1,17 +1,4 @@
-nav {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  line-height: 1;
-  float: left;
-  width: 200px;
-  font-family: 'Oxygen Mono', Tahoma, Arial, sans-serif;
-  font-size: 12px;
-  background-color: #7F7F7F;
-  padding:2px;
-}
-
-ul {
+nav > ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -20,7 +7,7 @@ ul {
   width: 200px;
 }
 
-ul li {
+nav > ul li {
   min-height: 1px;
   line-height: 1em;
   vertical-align: middle;
@@ -28,14 +15,11 @@ ul li {
   float: none;
 }
 
-a {
+nav > ul > li > a {
   display: block;
   padding: 15px 20px;
   text-decoration: none;
   text-transform: uppercase;
-}
-
-ul > li > a {
   border-right: 4px solid #1b9bff;
   color: #000000;
 }

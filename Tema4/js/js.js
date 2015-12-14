@@ -1,5 +1,5 @@
 window.onload = function(){
-var texto  = document.getElementById("texto");
+var texto  = document.getElementById("texto").value;
 var resultado ="";
 }
 

@@ -1,6 +1,6 @@
 function enviar() {
 	var numero = parseInt(document.getElementById("numero").value);
-	var texto = document.getElementById("texto");
+	var texto = document.getElementById("texto").value;
 	var resultado ="";
 	if (numero < 1)
 		resultado="El numero introducido es menor de 1"

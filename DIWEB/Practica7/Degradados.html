@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Práctica 7</title>
+<link href="estilos.css" rel="stylesheet">
+</head>
+<body>
+<div id="web">
+	<header>
+		<hgroup>
+			<h1>Práctica 7</h1>
+			<h2>Tutorial CSS3</h2>
+		</hgroup>
+	
+	</header>
+	<nav>
+		<ul>
+			<li><a href="Bordes.html">Bordes</a></li>
+			<li><a href="Fondos.html">Fondos</a></li>
+			<li><a href="Efectos_texto.html">Efectos Texto</a></li>
+			<li><a href="Fuentes.html">Fuentes</a></li>
+			<li><a href="Transformaciones.html">Transformac.</a></li>
+			<li><a href="Transiciones.html">Transiciones</a></li>
+			<li><a href="Animaciones.html">Animaciones</a></li>
+			<li><a href="Columnas_multiples.html">Col Multiples</a></li>
+			<li><a href="Color.html">Color</a></li>
+			<li><a href="Degradados.html">Degradados</a></li>
+		</ul>
+	</nav>
+	
+	<main>
+		<section>
+			<h2>Degradados</h2>
+			<article>
+				<header><h3>Información</h3></header>
+				<div>
+					<p id="border-radius">Los gradientes de CSS3 permiten mostrar transiciones entre dos o más colores<br>
+					Anteriormente, se tenían que utilizar imágenes para estos efectos. Sin embargo, mediante el uso de gradientes CSS3 se reduce el tiempo de descarga y el uso de ancho de banda. Además, los elementos con gradientes se ven mejor cuando se aumenta el zoom de la pantalla, ya que el gradiente es generado por el navegador.<br>
+					</p>
+					<p id="border-radius-multiples-esquinas">CSS3 define dos tipos de gradientes: <br/><br/>
+					- Degradados lineales (hacia arriba / abajo / izquierda / derecha / diagonal).<br/>
+					- Degradado radial (definido por su centro)<br/></p>
+				</div>
+				<footer></footer>
+			</article>
+			<hr/>
+			<article>
+				<header><h3>Soporte del navegador</h3></header>
+				<div>
+					<table id="tabla_soporte_degradados">
+						<tr>
+							<td>Propiedad</td>
+							<td><img src="imagenes/degradados/chrome.png"></td>
+							<td><img src="imagenes/degradados/edge.png"></td>
+							<td><img src="imagenes/degradados/iexplorer.png"></td>
+							<td><img src="imagenes/degradados/firefox.png"></td>
+							<td><img src="imagenes/degradados/safari.png"></td>
+							<td><img src="imagenes/degradados/opera.png"></td>
+						</tr>
+						<tr>
+							<td>linear-gradient</td>
+							<td>26.0<br/>10.0 -webkit-</td>
+							<td>12.0</td>
+							<td>10.0</td>
+							<td>16.0<br/>3.6 -moz-</td>
+							<td>6.1<br/>5.1 -webkit-</td>
+							<td>12.1<br/>11.1 -o-</td>
+						</tr>
+						<tr>
+							<td>radial-gradient</td>
+							<td>26.0<br/>10.0 -webkit-</td>
+							<td>12.0</td>
+							<td>10.0</td>
+							<td>16.0<br/>3.6 -moz-</td>
+							<td>6.1<br/>5.1 -webkit-</td>
+							<td>12.1<br/>11.6 -o-</td>
+						</tr>
+						<tr>
+							<td>repeating-linear-gradient</td>
+							<td>26.0<br/>10.0 -webkit-</td>
+							<td>12.0</td>
+							<td>10.0</td>
+							<td>16.0<br/>3.6 -moz-</td>
+							<td>6.1<br/>5.1 -webkit-</td>
+							<td>12.1<br/>11.1 -o-</td>
+						</tr>
+						<tr>
+							<td>repeating-radial-gradient</td>
+							<td>26.0<br/>10.0 -webkit-</td>
+							<td>12.0</td>
+							<td>10.0</td>
+							<td>16.0<br/>3.6 -moz-</td>
+							<td>6.1<br/>5.1 -webkit-</td>
+							<td>12.1<br/>11.6 -o-</td>
+						</tr>
+					</table>
+				</div>
+				<footer></footer>
+				<hr/>
+			</article>
+		</section>
+		
+		<section>
+			<article>
+				<header><h3>Degradado lineal</h3></header>
+				<div>
+					<p>Para crear un degradado lineal se deben definir al menos dos colores entre los cuales se hará la transición. También se puede establecer un punto de partida y una dirección (o un ángulo), junto con el efecto de degradado. Si no se le establece dirección, por defecto hace el degradado de arriba a abajo.</p>
+					<p>Sintaxis:<br/><br/>background: linear-gradient (dirección, color1 , color2, ... );</p>
+				</div>
+				<footer></footer>
+			</article>
+			<hr/>
+			<article>
+				<header><h3>Ejemplos de degradados lineales</h3></header>
+				<div>
+					<table id="tabla_degradados_lineales">
+						<tr>
+							<td>De arriba hacia abajo</td>
+							<td>background: linear-gradient(#0000FF, #F82610); ó<br/>
+								background: linear-gradient(to top,#0000FF, #F82610);</td>
+							<td id="degradado_lineal_arriba_abajo" class="degradado"></td>
+						</tr>
+						<tr>
+							<td>De arriba hacia abajo</td>
+							<td>background: linear-gradient(to bottom,#0000FF, #F82610);</td>
+							<td id="degradado_lineal_abajo_arriba" class="degradado"></td>
+						</tr>
+						<tr>
+							<td>De izquierda a derecha</td>
+							<td>background: linear-gradient(to right,#0000FF, #F82610);</td>
+							<td id="degradado_lineal_a_derecha" class="degradado"></td>
+						</tr>
+						<tr>
+							<td>De derecha hacia izquierda</td>
+							<td>background: linear-gradient(to left,#0000FF, #F82610);</td>
+							<td id="degradado_lineal_a_izquierda" class="degradado"></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+				<footer></footer>
+			</article>
+			<hr/>
+		</section>
+		<section>
+			<article>
+				<header><h3>Degradado lineal usando ángulos</h3></header>
+				<div>
+					<p>Para crear un degradado lineal con ángulo se debe especificar los grados del ángulo en lugar de la dirección.</p>
+					<p>Sintaxis:<br/><br/>background: linear-gradient (ángulo, color1 , color2, ... );</p>
+					<p>El ángulo se especifica como un ángulo entre una línea horizontal y la línea de gradiente, yendo hacia la izquierda. En otras palabras, 0deg crea un gradiente de abajo hacia arriba, mientras que 90 grados genera un gradiente de izquierda a derecha.</p>
+				</div>
+				<footer></footer>
+				<hr/>
+			</article>
+			<article>
+				<header><h3>Ejemplos de degradados lineales con ángulos</h3></header>
+				<div>
+					<table id="tabla_degradados_lineales">
+						<tr>
+							<td>Con ángulo de 25ºC</td>
+							<td>background: linear-gradient(25deg,#0000FF, #F82610);</td>
+							<td id="degradado_lineal_angulo_25deg" class="degradado"></td>
+						</tr>
+						<tr>
+							<td>Con ángulo de 165ºC</td>
+							<td>background: linear-gradient(165deg,#0000FF, #F82610);</td>
+							<td id="degradado_lineal_angulo_135deg" class="degradado"></td>
+						</tr>
+					</table>
+				</div>
+				<footer></footer>
+				<hr/>
+			</article>
+		</section>
+		<section>
+			<article>
+				<header><h3>Múltiples paradas de color</h3></header>
+				<div>
+					<p>Para crear un degradado lineal con múltiples colores sólo hay que especificar en el css todos los colores que queramos que aparezcan en el degradado.</p>
+					<p>Sintaxis:<br/><br/>background: linear-gradient (color1 , color2, color3,... );</p>
+				</div>
+				<footer></footer>
+				<hr/>
+			</article>
+			<article>
+				<header><h3>Ejemplos de múltiples paradas de color</h3></header>
+				<div>
+					<table id="tabla_degradados_lineales">
+						<tr>
+							<td>Tres colores</td>
+							<td>background: linear-gradient(#0000FF, #F82610, #000000);</td>
+							<td id="degradado_lineal_multiple1" class="degradado"></td>
+						</tr>
+						<tr>
+							<td>Cuatro colores hacia la derecha</td>
+							<td>background: linear-gradient(to right, #0000FF, #F82610, #000000, #FFDE00);</td>
+							<td id="degradado_lineal_multiple2" class="degradado"></td>
+						</tr>
+					</table>
+				</div>
+			</article>
+			<footer></footer>
+			<hr/>
+		</section>
+		<section>
+			<article>
+				<header><h3>Transparencia</h3></header>
+				<div>
+					<p>Para añadir transparencia, usamos la función rgba() para definir los colores. El último parámetro en la función rgba() puede ser un valor entre 0 y 1, y define la transparencia del color: 0 indica una total transparencia, 1 indica todo color (sin transparencia).</p>
+					<p>Sintaxis:<br/><br/>background: linear-gradient (dirección, rgba(color1,color2,color3,transparecia), rgba(color1,color2,color3,transparecia) );</p>
+				</div>
+				<footer></footer>
+				<hr/>
+			</article>
+			<article>
+				<header><h3>Ejemplos de transparencia</h3></header>
+				<div>
+					<table id="tabla_degradados_lineales">
+						<tr>
+							<td>De transparencia total a opaco total</td>
+							<td>background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,150,100,1));</td>
+							<td id="degradado_lineal_transparente1" class="degradado"></td>
+						</tr>
+						<tr>
+							<td>Varios colores con transparencia</td>
+							<td>background: linear-gradient(70deg, rgba(100,50,100,0.5), rgba(0,150,100,0.7), rgba(80,250,100,0.2), rgba(200,0,120,0.7));</td>
+							<td id="degradado_lineal_transparente2" class="degradado"></td>
+						</tr>
+					</table>
+				</div>
+			</article>
+			<footer></footer>
+			<hr/>
+		</section>
+		<section>
+			<article>
+				<header><h3>Repetición de degradados</h3></header>
+				<div>
+					<p>Sintaxis:<br/><br/>background: repeating-linear-gradient(red, yellow 10%, green 20%);</p>
+				</div>
+				<footer></footer>
+				<hr/>
+			</article>
+			<article>
+				<header><h3>Ejemplos de repetición</h3></header>
+				<div>
+					<table id="tabla_degradados_lineales">
+						<tr>
+							<td>Sin repetición</td>
+							<td>background: linear-gradient(red, yellow 10%, green 20%);</td>
+							<td id="degradado_lineal_repeticion1" class="degradado"></td>
+						</tr>
+						<tr>
+							<td>Con repetición</td>
+							<td>background: repeating-linear-gradient(red, yellow 10%, green 20%);</td>
+							<td id="degradado_lineal_repeticion2" class="degradado"></td>
+						</tr>
+					</table>
+				</div>
+			</article>
+			<footer></footer>
+			<hr/>
+		</section>
+		<section>
+			<article><header><h3>Degradados radiales</h3></header>
+				<div>
+					<p>Un degradado radial se define por su centro.<br/>
+						Para crear un degradado radial también debe definir al menos dos paradas de color.<br/>
+						Por defecto la forma es de elipse.</p>
+					<p>Sintaxis:<br/><br/>background: radial-gradient( tamaño/forma/posición, colorInicio, ..., colorFinal);</p>
+					<p>Para los diferentes parámetros que se le pueden añadir al atributo radial-gradient es recomendable poner los prefijos de los diversos motores de renderizado (-o-, -webkit-, -moz-, etc)</p>
+					<p>El parámetro de tamaño define el tamaño del gradiente. Se puede tomar cuatro valores:<br/>
+					- closest-side<br/>
+					- farthest-side<br/>
+					- closest-corner<br/>
+					- farthest-corner</p>
+				</div>
+				<footer></footer>
+				<hr/>
+			</article>
+			<article>
+				<header><h3>Ejemplos de degradados radiales</h3></header>
+				<div>
+					<table id="tabla_degradados_lineales">
+						<tr>
+							<td>Tres colores en elipse</td>
+							<td>background: radial-gradient(red 10%, yellow 40%, blue 70%);</td>
+							<td id="degradado_radial1" class="degradado"></td>
+						</tr>
+						<tr>
+							<td>Cuatro colores en círculo con repetición</td>
+							<td>background: repeating-radial-gradient(circle, red, yellow 8%, green 12%, blue 20%);</td>
+							<td id="degradado_radial2" class="degradado"></td>
+						</tr>
+						<tr>
+							<td>Formas personalizadas</td>
+							<td>background: -moz-radial-gradient(10%, ellipse farthest-corner, #66f 60%, #f80 85%, #ffc);<br/>
+	background: -webkit-radial-gradient(20%, ellipse farthest-corner, #0000F5 40%, #FF8800 95%, #A1A113); </td>
+							<td id="degradado_radial3" class="degradado"></td>
+						</tr>
+						<tr>
+							<td>Formas personalizadas</td>
+							<td>background: -moz-radial-gradient(30%, circle closest-side, #00FCFF 40%, #FF2A00 55%, #282801); <br/>
+								background: -webkit-radial-gradient(30%, circle closest-side, #00FCFF 40%, #FF2A00 55%, #282801); </td>
+							<td id="degradado_radial4" class="degradado"></td>
+						</tr>
+					</table>
+				</div>
+			</article>
+			<footer></footer>
+			<hr/>
+		</section>			
+	</main>
+	
+	<footer><span>Ejercicio Jaime Rabasco</span></footer>
+	
+</div>
+</body>
+
+</html>

@@ -1,0 +1,332 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Práctica 7</title>
+<link href="estilos.css" rel="stylesheet">
+</head>
+<body>
+<div id="web">
+	<header>
+		<hgroup>
+			<h1>Práctica 7</h1>
+			<h2>Tutorial CSS3</h2>
+		</hgroup>
+	
+	</header>
+	<nav>
+		<ul>
+			<li><a href="Bordes.html">Bordes</a></li>
+			<li><a href="Fondos.html">Fondos</a></li>
+			<li><a href="Efectos_texto.html">Efectos Texto</a></li>
+			<li><a href="Fuentes.html">Fuentes</a></li>
+			<li><a href="Transformaciones.html">Transformac.</a></li>
+			<li><a href="Transiciones.html">Transiciones</a></li>
+			<li><a href="Animaciones.html">Animaciones</a></li>
+			<li><a href="Columnas_multiples.html">Col Multiples</a></li>
+			<li><a href="Color.html">Color</a></li>
+			<li><a href="Degradados.html">Degradados</a></li>
+		</ul>
+	</nav>
+	
+	<main>
+		<section>
+			<h3>Bordes redondeados </h3>
+			<article>
+				<header><h3>Border-radius</h3></header>
+				<div>
+					<p>Border-radius es la propiedad que define el radio de las cuatro  esquinas. </p>
+					<blockquote id="border-radius">Este blockquote tiene un border-radius de 10 px</blockquote>
+				</div>
+				<footer></footer>
+			</article>
+			<hr/>
+			<article>
+				<header><h3>Border-top-right-radius</h3></header>
+				<div>
+										<p>Esta propiedad nos permite definir el radio de la esquina superior derecha. </p>
+					<blockquote id="border-trr">Este blockquote tiene un border-top-right-radius de 10 px</blockquote>
+				</div>
+				<footer></footer>
+			</article>
+		<hr/>
+			<article>
+				<header><h3>Border-bottom-right-radius</h3></header>
+				<div>
+					<p>Propiedad que nos permite definir el radio del borde de la esquina inferior derecha. </p>
+					<blockquote id="border-brr">Este blockquote tiene un border-bottom-right-radius de 10 px</blockquote>
+				</div>
+				<footer></footer>
+			</article>
+			<hr/>
+			<article>
+				<header><h3>Border-bottom-left-radius</h3></header>
+				<div>
+					<p>En este caso pasamos al lado de la derecha definiendo con border-bottom-left-radius el radio del borde inferior de la esquina derecha. </p>
+					<blockquote id="border-blr">Este blockquote tiene un border-bottom-left-radius de 10 px</blockquote>
+				</div>
+				<footer></footer>
+			</article>
+				<hr/>
+			<article>
+				<header><h3>border-top-left-radius</h3></header>
+				<div>
+					<p>Esta propiedad nos permite definir el radio del borde superior de la esquina derecha. </p>
+					<blockquote id="border-btlr">Este blockquote tiene un border-top-left-radius de 10 px</blockquote>
+				</div>
+				<footer></footer>
+			</article>
+			<hr/><h3>Bordes Sombreados</h3>
+			<article>
+				<header><h3>border-Shadow</h3></header>
+				<div>
+					<p>La propiedad border-Shadow es la propiedad  css que nos permite describir uo o m´á efectos de sombras.Border-shadow nos permite implementar una sombra difuminada de casi cualquier elemento.<br />
+					<b>Sintaxis:</b><br></p>
+					<blockquote><pre> "box-shadow:  none | [inset? && [ offset-x offset-y blur-radius:? spread-radius:? color:? ] ];"</pre>
+					</blockquote><br>
+					<u>none</u>: Sin efecto. <br><br>
+					<u>inset</u>:La sombra se realiza dentro de la caja.
+					<br><br>
+					<u>offset-x/offset-y</u>:Son atributos en los que podemos dar la distancia de la sombra tanto en el eje horizontal(offset-x)eje como en el  vertical(offset-y).
+					<br><br>
+					<u>blur-radius</u>:Este atributo nos permite añadir el difuminado de la sombra, cuanto mayor sea el valor, mayor será la sombra pero m´s ligera(m´s difuminadaá.Este atributo no aceptan valores negativos y por defecto se atribuye el valor 0.á
+					<br><br>
+					<u>spread-radius</u>:Se trata del cuarto valor, en el que añadiendo valores positivos harán que la sombra se expanda y crezca más, los valores negativos harán que la sombra se reduzca de tamaño.Sino se especifica el valor será 0.
+						<br><br>
+						<u>color</u>:Nos permite asaignarle un color a la sombra. Si no se especifica el color, dicho color dependerá del navegador.
+						<br><br>
+						<b>Ejemplos:</b>
+						<br><br>
+						<div id="sin">
+							<p>
+								Esta caja tiene un box-shadow none.
+							</p>
+						</div>
+						<br><br>
+						<div id="in">
+							<p>
+								Esta caja tiene un box-shadow inset
+							</p>
+						</div>
+						<br><br>
+						<div id="bnormal">
+							<p>
+								Esta caja tiene un box-shadow con blur-radius
+							</p>
+						</div>
+						<br><br>
+						<div id="bspreat">
+							<p>
+									Esta caja tiene un box-shadow con spread-radius
+							</p>
+						</div>
+						<br><br>
+				</div>
+				<footer></footer>
+			</article>
+			<hr/>
+			<h3>Bordes con Imágenes</h3>
+			<article>
+				<header><h3>border-image-source</h3></header>
+				<div>
+					<p>La propiedad border-image permite utilizar una imagen como borde.<p>
+				    <p>Ejemplo: border-image-source: url(imagen) arriba derecha abajo izquierda stretch stretch;</p>
+					<p>En imagen especificamos la ruta donde se encuentra la imagen que vayamos a utilizar como borde. Después indicamos el tamaño que vamos a utilizar para cada esquina de la imagen. Para ello seguiremos el orden de las agujas del reloj, comenzando por arriba, derecha, abajo e izquierda. Se puedn expresar en porcentajes o con píxeles exactos. La última parte (stretch), determina cómo se van a escalar y cortar los bordes de los lados y superior e inferior de nuestro elemento. Hay tres posibles valores:</p>
+					<ul>
+					    <li>stretch (estirar): la imagen se estira o encoge para ocupar todo el espacio necesario</li>
+              <li>repeat (repetir): la imagen se repite para ocupar todo el espacio necesario</li>
+					    <li>round (redondear): es una variación de la opción 'repeat', la cual distribuye las partes de tal manera que los extremos se conecten bien.</li>
+				    </ul>
+                    <p>Si especificamos sólo un valor es como poner dos veces el mismo, por ejemplo, sólo una vez stretch, será stretch tanto para los lados superior e inferior como para izquierda y derecha. El valor por defecto es "stretch".</p>
+
+                    <div id="border-image-source">
+                      <pre>article #border-image-source {
+    border: 1em;
+    border-image: url("border.png") 27 round stretch;
+}
+                      </pre>
+                    </div>
+										<br/>
+										<p>En el caso anterior tenemos dos valores 'round' para arriba y abajo y 'stretch' para los lados izquierdo y derecho.</p>
+										<br/>
+				<footer></footer>
+			</article>
+			<hr/>
+			<article>
+				<header><h3>border-image-slice</header>
+				<div>
+                  <p>border-image-slice permite utilizar una imagen como borde especificando qué cantidad de imagen queremos para cada borde. Para este ejemplo utilizaremos esta imagen:</p>
+				  <img src="http://www.mclibre.org/consultar/amaya/img/fondos/fo_pastilla_60.png"/><br/><br/><br/>
+				  <p>En el siguiente ejemplo vemos como hemos utilizado la imagen anterior como borde, los valores numéricos indican a qué distancia de los bordes se recorta la imagen:</p>
+				  <div id="border-image-slice">
+                        <pre>article #border-image-slice {
+  border: 1em;
+  border-image: url("pastilla_png");
+  border-image-slice: 15 35 10 35;
+}</pre>
+
+                    </div>
+
+										<p>Si sólo se escribe un valor, este se aplica a los cuatro lados.</p>
+										<p>Si se escriben dos valores, el primero se aplica arriba y abajo y el segundo a derecha e izquierda.</p>
+										<p>Si se escriben tres valores, el primero se aplica arriba, el segundo a derecha e izquierda y el tercero abajo.</p>
+										<p>Si se escriben cuatro valores, el primero se aplica arriba, el segundo a la derecha, el tercero abajo y el cuarto a la izquierda.</p>
+
+										<br/><br/>
+
+                    <p>Utilizando además el valor "fill" conseguiremos el relleno para la imagen como vemos en el ejemplo siguiente:</p>
+
+                    <div id="border-image-slice-2">
+                        <pre>article #border-image-slice {
+  border: 1em;
+  border-image: url("pastilla.png");
+  border-image-slice: 27 fill;
+}</pre>
+                    </div>
+
+                    </div>
+				<footer></footer>
+			</article>
+			<hr/>
+			<article>
+				<header><h3>border-image-width</h3></header>
+				<div>
+				  <p>La propiedad border-image-width permite definir el tamaño del espacio ocupado por la imagen de borde.</p>
+                  <p>Con dos valores la propiedad asignará el primer valor para la parte superior e inferior y el segundo valor para la parte derecha e izquierda.</p>
+				  <div id="border-image-width">
+                        <pre>article #border-image-width {
+  border: 1em;
+  border-image: url("pastilla.png");
+  border-image-slice: 27;
+  border-image-width: 20px 40px;
+}</pre><br/>
+									</div>
+								<p>Si sólo se escribe un valor, este se aplica a los cuatro lados.</p>
+								<p>Si se escriben dos valores, el primero se aplica arriba y abajo y el segundo a derecha e izquierda.</p>
+								<p>Si se escriben tres valores, el primero se aplica arriba, el segundo a derecha e izquierda y el tercero abajo.</p>
+								<p>Si se escriben cuatro valores, el primero se aplica arriba, el segundo a la derecha, el tercero abajo y el cuarto a la izquierda.</p>
+                </div>
+				<footer></footer>
+			</article>
+			<hr/>
+			<article>
+				<header><h3>border-image-outset</h3></header>
+				<div>
+				  <p>Con border-image-outset podemos extender la imagen de borde más allá del elemento, por ejemplo, podemos definir que se amplíe más de arriba que de abajo o más de derecha que de izquierda o más de arriba y abajo que de izquierda y derecha, todas las combinaciones son posibles.</p>
+                  <p>En este ejemplo ampliaremos los bordes tanto por la izquierda como por la derecha con el mismo valor, hasta que se salga del elemento que los contiene. El primer valor será para la parte superior e inferior y el segundo valor para los laterales.</p>
+                  <div id="border-image-outset">
+                        <pre>article #border-image-outset {
+  border: 1em;
+  border-image: url("pastilla.png");
+  border-image-slice: 27;
+  border-image-outset: 0px 20px;
+}</pre>
+                    </div><br/>
+									<p>Si sólo se escribe un valor, este se aplica a los cuatro lados.</p>
+									<p>Si se escriben dos valores, el primero se aplica arriba y abajo y el segundo a derecha e izquierda.</p>
+									<p>Si se escriben tres valores, el primero se aplica arriba, el segundo a derecha e izquierda y el tercero abajo.</p>
+									<p>Si se escriben cuatro valores, el primero se aplica arriba, el segundo a la derecha, el tercero abajo y el cuarto a la izquierda.</p>
+
+				</div>
+				<footer></footer>
+            </article>
+			<hr/>
+			<article>
+				<header><h3>border-image-repeat</h3></header>
+				<div>
+					<p>La propiedad border-image-repeat permite aplicar distintos efectos dependiendo de lo que queramos conseguir. Los valores que podemos definir son los siguientes:</p>
+				  <ul>
+                    <li>Stretch: la imagen se estira o encoge para ocupar todo el espacio necesario.</li>
+                    <li>Repeat: la imagen se repite para ocupar todo el espacio necesario.</li>
+                    <li>Round: la imagen se repite el máximo número entero de veces posible y se estira o encoge para ocupar todo el espacio necesario.</li>
+                    <li>Space: la imagen se repite el máximo número entero de veces posible y el espacio sobrante se distribuye entre las imágenes (las imágenes no se estiran o encogen).</li>
+                  </ul>
+                  <p>La imagen que utilizaremos como ejemplo será la siguiente:</p>
+                  <img src="http://www.mclibre.org/consultar/amaya/img/fondos/fo_hormigas_210.png"/><br/><br/><br/>
+                  <p>Ejemplo con Stretch:</p>
+                  <div id="border-image-repeat-stretch">
+                        <pre>article #border-image-repeat-stretch {
+  border: 1em;
+  border-image: url("hormigas.png");
+  border-image-slice: 70;
+  border-image-repeat: stretch;
+}</pre>
+                    </div><br/>
+                  <p>Ejemplo con Repeat:</p>
+                  <div id="border-image-repeat-repeat">
+                        <pre>article #border-image-repeat-repeat {
+  border: 3em;
+  border-image: url("hormigas.png");
+  border-image-slice: 70;
+  border-image-repeat: repeat;
+}</pre>
+                    </div><br/>
+                  <p>Ejemplo con Round:</p>
+                  <div id="border-image-repeat-round">
+                        <pre>article #border-image-repeat-round {
+  border: 3em;
+  border-image: url("hormigas.png");
+  border-image-slice: 70;
+  border-image-repeat: round;
+}</pre>
+                    </div><br/>
+                  <p>Ejemplo con Space:</p>
+                  <div id="border-image-repeat-space">
+                        <pre>article #border-image-repeat-space {
+  border: 3em;
+  border-image: url("hormigas.png");
+  border-image-slice: 70;
+  border-image-repeat: space;
+}</pre>
+                    </div><br/>
+                </div>
+				<footer></footer>
+			</article>
+			<hr/>
+			<article>
+				<header><h3>box-decoration-break</h3></header>
+				<div>
+					<p>Cuando hay que romper una caja debido a que en la vista impresa se pasa de página o por ejemplo para los elementos de línea cuando saltan a otra línea, podemos hacer que la decoración de la caja se rompa o se genere otra vez la decoración en la siguiente porción.</p>
+					<br>
+					<p>Tenemos dos valores posibles:</p>
+					<ul>
+						<li>Slice: Todas las cajas son tratadas como una entidad unica con loque el fondo se prolonga de una a otras.</li>
+						<li>Clone: Cada caja es tratada como una caja independiente.</li>
+					</ul><br/>
+					<p>En los siguientes ejemplos tenemos un párrafo con un texto que supera el tamaño de la caja que lo contiene, produciendo un corte o rotura en las decoraciones de bordes, sombras, etc:</p><br/>
+					<p>En el primer caso utilizaremos el valor slice.</p>
+					<pre>article #box-decoration-break-slice {
+	line-height: 2em;
+	border: solid blue 1px;
+	border-radius: 0.5em;
+	box-shadow: 0.15em 0.15em 0.1em 0.1em rgba(0,0,0,0.4);
+	box-decoration-break: slice;
+}
+					</pre>
+					<p><span id="box-decoration-break-slice">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</span></p><br/><br/>
+
+					<p>En el segundo caso utilizaremos el valor clone:</p>
+					<pre>article #box-decoration-break-slice {
+	line-height: 2em;
+	border: solid blue 1px;
+	border-radius: 0.5em;
+	box-shadow: 0.15em 0.15em 0.1em 0.1em rgba(0,0,0,0.4);
+	box-decoration-break: clone;
+}
+					</pre>
+					<p><span id="box-decoration-break-clone">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</span></p>
+					<br><br>
+				</div>
+				<footer></footer>
+			</article>
+		</section>
+					
+	</main>
+	
+	<footer><span>Ejercicio Jaime Rabasco</span></footer>
+	
+</div>
+</body>
+
+</html>

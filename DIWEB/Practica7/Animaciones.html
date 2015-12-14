@@ -1,0 +1,281 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Práctica 7</title>
+<link href="estilos.css" rel="stylesheet">
+</head>
+<body>
+<div id="web">
+	<header>
+		<hgroup>
+			<h1>Práctica 7</h1>
+			<h2>Tutorial CSS3</h2>
+		</hgroup>
+	
+	</header>
+	<nav>
+		<ul>
+			<li><a href="Bordes.html">Bordes</a></li>
+			<li><a href="Fondos.html">Fondos</a></li>
+			<li><a href="Efectos_texto.html">Efectos Texto</a></li>
+			<li><a href="Fuentes.html">Fuentes</a></li>
+			<li><a href="Transformaciones.html">Transformac.</a></li>
+			<li><a href="Transiciones.html">Transiciones</a></li>
+			<li><a href="Animaciones.html">Animaciones</a></li>
+			<li><a href="Columnas_multiples.html">Col Multiples</a></li>
+			<li><a href="Color.html">Color</a></li>
+			<li><a href="Degradados.html">Degradados</a></li>
+		</ul>
+	</nav>
+	
+	<main>
+		
+		<section>
+			<p id="titulo">Animaciones</p>
+			Una animación permite a un elemento cambiar gradualmente de un estilo a otro.<br><br>
+			Para usar CCS3 <strong>animation</strong>, debes especificar los @keyframes.<br><br>
+			La propiedad <strong>background-image</strong> no se puede usar.<br><br>
+			<article>
+				<header><h3>@keyframes</h3></header>
+				<div>
+					<p>Al asignar <strong>@keyframes</strong> el estilo cambiará gradualmente desde un estilo a otro, esto debe asignarse a un elemento, con <strong>animation-name</strong> (aquí se pone el nombre de la animación) y con <strong>animation-duration</strong> debes poner lo que durará la animación. Si no se pone, por defecto es 0, es decir, que no se ejecutará la animación. <br><br>
+					<em>@keyframes nombreAnimación {...código...}</em><br><br>
+					Para que las animaciones funcionen en algunos navegadores hay que agregar el prefijo correspondiente al selector y al keyframes:
+					<ul>
+						<li><strong>-webkit-</strong> /* Chrome, Safari, Opera */</li>
+						<li><strong>-moz-</strong> /* Mozilla */</li>
+						<li><strong>-ms-</strong> /* Explore */</li>
+					</ul>
+					Para crear cambios gradualmente existen varias maneras:<br>
+					<ul>
+						<li><strong>Con from  to:</strong> Pasa del color rojo al amarillo.</li>
+						</p>
+						<div id="colores"></div>
+						<p><br>
+							<u><p class="margencodigo">Código:</p></u><br>
+							<p class="margencodigo">#colores{</p>
+								<p class="margencodigo" id="alineacioncodigo">width: 100px;</br>
+							    height: 100px;</br>
+							    background-color: red;</br>
+							    <strong>animation-name: colores;</strong></br>
+							    <strong>animation-duration: 5s;</strong></p>
+							<p class="margencodigo">}</p><br>
+							<p class="margencodigo">@keyframes colores {</br>
+							    <p class="margencodigo" id="alineacioncodigo"><strong>from</strong> {background-color: red;}</br>
+							   <strong>to</strong> {background-color: yellow;}</p>
+							<p class="margencodigo">}</p><br>
+							<p><br>
+						</p>
+						<li><strong>Con porcentajes:</strong> Aparece el camaleón.</li><br>
+				
+						<div id="camaleon"></div>
+						<p><br>
+							<u><p class="margencodigo">Código:</p></u><br>
+							<p class="margencodigo">camaleon{</p>
+								<p class="margencodigo" id="alineacioncodigo">width: 195px;</br>
+							    height: 125px;</br>
+							   	background-image: url("camaleon4.png");</br>
+							    background-repeat: no-repeat;</br>
+							    <strong>animation-name: camaleon;</strong></br>
+							    <strong>animation-duration: 15s;</strong></p>
+							<p class="margencodigo">}</p><br>
+
+							<p class="margencodigo">@keyframes camaleon {</p>
+							    <p class="margencodigo" id="alineacioncodigo"><strong>0%</strong> {opacity: 0;}</br>
+							    <strong>100%</strong> {opacity: 1;}</p>    
+							<p class="margencodigo">}</p><br>
+						</p>
+					</ul>
+				</div>
+				<footer></footer>
+			</article>
+			<hr/>
+			<article>
+				<header><h3>Retrasar el Comienzo</h3></header>
+				<div>
+					<p>Con <strong>animation-delay</strong> puedes retrasar una animación.<br><br>
+					En este ejemplo se retrasa 5s antes de empezar.<br></p>
+					<div id="tortuga"></div>
+					<p><br>
+						<u><p class="margencodigo">Código:</p></u><br>
+						<p class="margencodigo">#tortuga{</p>	
+							<p class="margencodigo" id="alineacioncodigo">width: 195px;</br>
+						    height: 125px;</br>
+						    background-image: url("tortuga.png");</br>
+						    background-repeat: no-repeat;</br>
+						    position: relative;</br>
+						    animation-name: tortuga;</br>
+						    animation-duration: 5s;</br>
+						    <strong>animation-delay: 5s;</strong></p>
+						<p class="margencodigo">}</p><br>
+
+						<p class="margencodigo">@keyframes tortuga {</p>
+						    <p class="margencodigo" id="alineacioncodigo">0%   {left:0px; top:0px;}</br>
+						    100%  {left:200px; top:0px;}</p>
+						<p class="margencodigo">}</p><br>
+					</p>
+				</div>
+				<footer></footer>
+
+			</article>
+			<hr/>
+			<article>
+				<header><h3>Repeticiones</h3></header>
+				<div>
+					<p>Con  <strong>animation-iteration-count</strong>, especificas el número de veces que se ejecuta la animación.</p>
+					<div id="pelota"></div>
+					<p>
+						<u><p class="margencodigo">Código:</p></u><br>
+						<p class="margencodigo">#pelota{</p>
+							<p class="margencodigo" id="alineacioncodigo">width: 100px;</br>
+						    height: 100px;</br>
+						    background-image: url("pelota.png");</br>
+						    background-repeat: no-repeat;</br>
+						    position: relative;</br>
+						    animation-name: pelota;</br>
+						    animation-duration: 5s;</br>
+						    <strong>animation-iteration-count: 3;</strong></p>
+						<p class="margencodigo">}</p><br>
+
+						<p class="margencodigo">@keyframes pelota {</p>
+						    <p class="margencodigo" id="alineacioncodigo">0%   {left:0px; top:0px;}</br>
+						    100%  {left:400px; top:0px;}</p>
+						<p class="margencodigo">}</p><br>
+					</p>
+				</div>
+				<footer></footer>
+
+			</article>
+			<hr/>
+			<article>
+				<header><h3>Dirección</h3></header>
+				<div>
+					<p>Con <strong>"animation-direction"</strong> indicas si la animación debe retroceder hasta el fotograma de inicio al terminar la secuencia o si debe comenzar desde el principio; es decir, puedes evitar que una animación salte al inicio cada vez que comience, al repetirse ésta. Su valor inicial es <em>"normal"</em>.</p>
+					<p>Así, si ponemos <em>"animation-direction: alternate"</em> no queda un corte brusco y da la sensación, como en este caso, de que va hacia adelante y vuelve hacia atrás.</p>					
+					<div id="dado" class="general alternarInfinito"></div>
+					<p class="margencodigo"><u>Código:</u></p><br />
+					<p class="margencodigo">#dado{ </p>
+						<p class="margencodigo" id="alineacioncodigo">	
+						background-image: url("dado.png");<br />
+					    background-repeat: no-repeat;<br />
+					    position: relative;<br />					  
+					    animation-name: dado;<br />
+					    animation-duration: 5s;</p>			    
+					<p class="margencodigo">}</p><br />
+
+					<p class="margencodigo">@keyframes dado {</p>
+			    		<p class="margencodigo" id="alineacioncodigo">
+			    		0% {left:0px; top:0px;}<br />
+			    		100% {left:400px; top:0px;}</p>
+					<p class="margencodigo">}</p><br />
+					
+					<p class="margencodigo">.general{</p>
+					    <p class="margencodigo" id="alineacioncodigo">
+					    width: 140px;<br />
+					    height: 130px;<br />
+					    background-size: 80px; </p>
+					<p class="margencodigo">}</p><br />
+
+					<p class="margencodigo">.alternarInfinito{</p>			
+						<p class="margencodigo" id="alineacioncodigo">    
+					    	<strong>animation-direction: alternate;</strong><br />    
+					    	animation-iteration-count: infinite;</p>
+					<p class="margencodigo">}</p><br />					
+				</div>
+				<footer></footer>
+			</article>
+
+			<hr/>
+			<article>
+				<header><h3>Pausar y Reanudar</h3></header>
+				<div>
+					<p>Con <strong>"animation-play-state"</strong> puedes pausar y reanudar la animación. Su valor inicial es <em>"running"</em> (vemos cómo se va desarrollando la animación, como es el caso de todos los ejemplos anteriores).</p>
+					<p>Teniendo esto en cuenta, si pones <em>"animation-play-state: paused"</em> la animación no se ejecutará, quedará inmóvil. Usando exactamente el mismo ejemplo anterior y añadiéndole esta propiedad, vemos como la animación queda pausada. Para que vuelva a funcionar, basta con poner <em>"running"</em> en vez de <em>"paused"</em>.</p><br/>			
+					<div id="dado" class="general alternarInfinito pausa"></div>
+					<p class="margencodigo"><u>Código:</u></p><br/>
+						<p class="margencodigo">.pausa{</p>				
+							<p class="margencodigo" id="alineacioncodigo">
+						    <strong>animation-play-state: paused;</strong></p>
+						<p class="margencodigo">}</p><br />		
+				</div>
+				<footer></footer>
+			</article>
+
+			<hr/>
+			<article>
+				<header><h3>Ritmo - Aceleración</h3></header>
+				<div>
+					<p>Con <strong>"animation-timing-function"</strong> puedes indicar el ritmo de la animación (cómo se muestran los fotogramas, estableciendo curvas de aceleración). Su valor inicial es <em>"ease"</em>. Puede tener los <u>valores:</u> linear, ease, ease-in, ease-out y ease-in-out.</p>
+					<ul>
+						<li><strong>Usando linear:</strong> misma velocidad de principio a fin.</li><br />
+						<p class="margencodigo"><u>Código:</u></p><br/>
+							<p class="margencodigo">.medida{</p>
+							    <p class="margencodigo" id="alineacioncodigo">width: 70px;<br/>
+							    height: 70px;<br/>
+							    background-size: 50px;</p>
+							<p class="margencodigo">}</p><br/>
+							
+							<p class="margencodigo">.timingLinear{</p>						    
+							    <p class="margencodigo" id="alineacioncodigo"><strong>animation-timing-function: linear;</strong></p>
+							<p class="margencodigo">}</p><br />
+						<div id="dado" class="medida alternarInfinito timingLinear"></div>
+						<li><strong>Usando ease:</strong> comienzo lento, después acelera y final lento.</li><br />
+						<div id="dado" class="medida alternarInfinito timingEase"></div>
+						<li><strong>Usando ease-in:</strong> comienzo lento.</li><br />
+						<div id="dado" class="medida alternarInfinito timingEasein"></div>
+						<li><strong>Usando ease-out:</strong> final lento.</li><br />
+						<div id="dado" class="medida alternarInfinito timingEaseout"></div>
+						<li><strong>Usando ease-in-out:</strong> comienzo y final lento.</li><br />
+						<div id="dado" class="medida alternarInfinito timingEaseinout"></div>
+					</ul>
+					<p>En los demás casos es igual, pero cambiando el valor de la propiedad <em>"animation-timing-function"</em> por el valor correspondiente (en estos casos, se ha creado una clase para cada uno, como vemos en la opción de <em>"linear"</em>).</p>
+				</div>
+				<footer></footer>
+			</article>
+
+			<hr/>
+			<article>
+				<header><h3>Estado de Finalización</h3></header>
+				<div>
+					<p>Con <strong>"animation-fill-mode"</strong> indicas qué valores tendrán las propiedades después de finalizar la animación (los de antes de ejecutarla, los del último fotograma...). Su valor inicial es <em>"none"</em>. Vamos a poner dos ejemplos, limitando la repetición a dos veces y quitando la dirección (<em>"alternate"</em>) para que no vaya de un lado hacia otro.</p>
+					<ul>
+						<li><strong>Usando fordwards:</strong> se queda en el estado final.</li><br />
+						<p class="margencodigo"><u>Código:</u></p><br/>
+							<p class="margencodigo">.repeticion{</p>
+								<p class="margencodigo" id="alineacioncodigo">animation-iteration-count: 2;</p>
+							<p class="margencodigo">}</p><br/>
+							
+							<p class="margencodigo">.final{	</p>			
+								<p class="margencodigo" id="alineacioncodigo">				    
+							    	<strong>animation-fill-mode: forwards;</strong></p>
+							<p class="margencodigo">}</p><br />				
+						<div id="dado" class="medida repeticion final"></div>
+						<li><strong>Usando backwards:</strong> se queda en el estado inicial.</li><br/>
+						<div id="dado" class="medida repeticion principio"></div>	
+						<p>En este caso es igual, pero cambiando la propiedad <em>"animation-fill-mode"</em> por el valor indicado (usamos la clase correspondiente para ello).</p>
+					</ul>				
+				</div>
+				<footer></footer>
+			</article>
+
+			<hr/>
+			<article>
+				<header><h3>Comparativa</h3></header>
+				<div>
+					<img id="anim_compatibilidad" src="imagenes/animaciones/comparativa.png"></img>
+				</div>
+				<footer></footer>
+
+			</article>
+		</section>
+					
+	</main>
+	
+	<footer><span>Ejercicio Jaime Rabasco</span></footer>
+	
+</div>
+</body>
+
+</html>

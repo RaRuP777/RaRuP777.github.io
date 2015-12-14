@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Práctica 7</title>
+<link href="estilos.css" rel="stylesheet">
+</head>
+<body>
+<div id="web">
+	<header>
+		<hgroup>
+			<h1>Práctica 7</h1>
+			<h2>Tutorial CSS3</h2>
+		</hgroup>
+	
+	</header>
+	<nav>
+		<ul>
+			<li><a href="Bordes.html">Bordes</a></li>
+			<li><a href="Fondos.html">Fondos</a></li>
+			<li><a href="Efectos_texto.html">Efectos Texto</a></li>
+			<li><a href="Fuentes.html">Fuentes</a></li>
+			<li><a href="Transformaciones.html">Transformac.</a></li>
+			<li><a href="Transiciones.html">Transiciones</a></li>
+			<li><a href="Animaciones.html">Animaciones</a></li>
+			<li><a href="Columnas_multiples.html">Col Multiples</a></li>
+			<li><a href="Color.html">Color</a></li>
+			<li><a href="Degradados.html">Degradados</a></li>
+		</ul>
+	</nav>
+	
+	<main>
+		
+		<section>
+                    Transformaciones
+                    <section>
+                        2D
+                        <article id="translate2d">
+                            <header><h2>Translate - 2D</h2></header>
+                            <p class="izquierda">El método translate() mueve un elemento desde su posición actual hasta la posición dada en función de las coordenadas X e Y pasadas como parámetros</br>Ejemplo: transform: translate(10px,20px);</p>
+                            <div class="rectangulo">Pasa el ratón por encima para ver la transformación</div>
+                            <footer></footer>
+                        </article>
+                        <hr/>
+                        <article id="rotate2d">
+                            <header><h2>Rotate - 2D</h2></header>
+                            <p class="izquierda">El método rotate() gira un elemento hacia la derecha o a la izquierda según un determinado grado que se la pasa como parámetro</br>Ejemplo1: transform: rotate(30deg);</br>Ejemplo2: transform: rotate(-30deg);</br>Si se le da un ángulo negativo se gira en sentido contrario.</p>
+                            <div class="rectangulo">Pasa el ratón por encima para ver la transformación</div>
+                            <div class="rectangulo2">Pasa el ratón por encima para ver la transformación</div>
+                            <footer></footer>
+                        </article>
+                        <hr/>
+                        <article id="scale2d">
+                            <header><h2>Scale - 2D</h2></header>
+                            <p class="izquierda">El método scale() aumenta o disminuye el tamaño de un elemento en función de los parámetros de anchura y altura pasados.</br>Ejemplo1: transform: scale(1.5,2);</br>Ejemplo2: transform: scale(0.7,0.8);</br>Si se le dan valores mayores a uno aumenta el tamaño, siendo al contrario si los valores son menores de 1.</p>
+                            <div class="rectangulo">Pasa el ratón por encima para ver la transformación</div>
+                            <div class="rectangulo2">Pasa el ratón por encima para ver la transformación</div>
+                            <footer></footer>
+                        </article>
+                        <hr/>
+                        <article id="skew2d">
+                            <header><h2>Skew - 2D</h2></header>
+                            <p class="izquierda">El método skew() tuerce un elemento a lo largo de los ejes X o Y en función de los grados pasados como parámetro.</br>Ejemplo1: transform: skewX(20deg);</br>Ejemplo2: transform: skewY(20deg);</p>
+                            <div class="rectangulo">Pasa el ratón por encima para ver la transformación</div>
+                            <div class="rectangulo2">Pasa el ratón por encima para ver la transformación</div>
+                            <footer></footer>
+                        </article>
+                        <hr/>
+                        <article id="matrix2d">
+                            <header><h2>Matrix - 2D</h2></header>
+                            <p class="izquierda">Primer y cuarto parámetro modifican la escala (scale). Segundo y tercer parámetro modifican el sesgado (skew). Los parámetros quinto y sexto modifican la posición (translate)</br>Ejemplo1: transform: matrix(1,-0.3,0,1,0,0);</br>Ejemplo2: transform: matrix(1,0,0.5,1,50,0);</p>
+                            <div class="rectangulo">Pasa el ratón por encima para ver la transformación</div>
+                            <div class="rectangulo2">Pasa el ratón por encima para ver la transformación</div>
+                            <footer></footer>
+                        </article>
+                        <hr/>
+                    </section>
+                    <section>
+                        3D
+                        <article id="translate3d">
+                            <header><h2>Translate - 3D</h2></header>
+                            <p class="izquierda">Movemos un elemento en las tres dimensiones con translate3d(x,y,z). No notamos la diferecia al mover el eje Z pero se translada (profundidad)</br>Ejemplo: transform-style: preserve-3d;</br>transform: translate3d(0px, 0px, -20px);</p>
+                            <div class="rectangulo">Pasa el ratón por encima para ver la transformación.</div>
+                            <footer></footer>
+                        </article>
+                        <hr/>
+                        <article id="rotate3d">
+                            <header><h2>Rotate - 3D</h2></header>
+                            <p class="izquierda">Rotamos todos los ejes 360 grados con rotate3d(x,y,z,grados);
+                            Usaremos en x, y, z, 0 o 1 para saber que eje queremos girar y los grados que se van a girar.</br>Ejemplo:</br>#rotate3d .rectangulo{</br>&nbsp;&nbsp;&nbsp;transition: 4s;</br>}</br>#rotate3d .rectangulo:hover{</br>&nbsp;&nbsp;&nbsp;transform: rotate3d(1,1,1,360deg);</br>}</p>
+                            <div class="rectangulo">Pasa el ratón por encima para ver la transformación.</div>
+                            <footer></footer>
+                        </article>
+                        <hr/>
+                        <article id="scale3d">
+                            <header><h2>Scale - 3D</h2></header>
+                            <p class="izquierda">Aumenta el tamaño por cada eje. En este caso tampoco vemos la diferencia al no ver el eje Z.</br>Ejemplo: transform: scale3d(1,1,40);</p>
+                            <div class="rectangulo">
+                               Pasa el ratón por encima para ver la transformación. 
+                            </div>
+                            <footer></footer>
+                        </article>
+                        <hr/>
+                        <article id="perspective">
+                            <header><h2>Perspective - 3D</h2></header>
+                            <p class="izquierda">Cambia la perspectiva del elemento. Para ello usamos una animación para poder apreciarlo.</br>Ejemplo:</br>@keyframes mymove {</br>&nbsp;&nbsp;&nbsp;50% {perspective: 100px;}</br>}</br>.div2 {</br>&nbsp;&nbsp;&nbsp;transform: rotateX(45deg);</br>}</p>
+                            <div class="rectangulo">
+                                <div class="div2">Cambiamos de perspectiva en este caso usando keyframes.</div>
+                            </div>
+                            <footer></footer>
+                        </article>
+                    </section>
+                </section>
+					
+	</main>
+	
+	<footer><span>Ejercicio Jaime Rabasco</span></footer>
+	
+</div>
+</body>
+
+</html>

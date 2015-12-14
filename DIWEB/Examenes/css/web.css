@@ -1,0 +1,104 @@
+@font-face{
+	font-family: "Open-Sans";
+	src:url(font/OpenSans-Regular.ttf) format("truetype");
+}
+
+#web{
+	margin:0 auto;
+	position: relative;
+}
+
+header, nav, main, figure, h1, header h3 {
+	padding:0px;
+	margin:0px;
+}
+
+header, nav, main{
+	width: 100%;
+}
+
+section {
+	display: inline-block;
+	float:left;
+	padding: 15px;
+}
+
+body{
+	font-family: "Open-Sans";
+	font-size: 16px;
+	color: #EEE;
+	*background-image: url("img/cuerpo.pjg");
+	background-color: #EEE;
+}
+
+main {
+	padding-left: 20px;
+}
+
+header{
+	*background-image: url("img/fondo_cabecera.pjg");
+	background-color: #1B1B1B;
+}
+
+h1{
+	text-shadow:1px 1px 1px rgba(255,255,255,0.5);
+}
+
+header h3{
+	text-shadow:1px 1px 1px rgba(0,0,0,0.7);
+}
+
+nav, h1, header h3, #historia h3{
+	text-align: center;
+}
+
+header img{
+	float: right;
+	transform: translate(0px,-50px);
+}
+
+main section article{
+	border-radius:10px;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+	background-color: rgba(0,0,0,0.2);
+	box-shadow:0px 0px 10px #000;;
+}
+
+#historia{
+	padding: 5px;
+}
+
+#historia:hover{
+	background-color: rgba(255,255,255,0.8);;
+	color:black;
+}
+
+#izquierda{
+	width: 40%;
+}
+
+#historia h3{
+	padding-top: 25px;
+}
+
+#coche:hover{
+	background-color: #222;
+}
+
+#derecha{
+	width: 50%;
+}
+
+#coche img{
+	width: 100%;
+}
+
+#historia p{
+	padding-left: 10px;
+}
+
+#coche h3{
+	padding-left: 10px;
+}

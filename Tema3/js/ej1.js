@@ -2,7 +2,7 @@ var secreto = Math.ceil(Math.random()*100);
 
 function enviar() {
 	var numero = document.getElementById("numero").value;
-	var texto = document.getElementById("texto");
+	var texto = document.getElementById("texto").value;
 	var resultado ="";
 	if (numero<secreto)
 		resultado = "El numero introducio es es menor al secreto";

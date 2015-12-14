@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Práctica 7</title>
+<link href="estilos.css" rel="stylesheet">
+</head>
+<body>
+<div id="web">
+	<header>
+		<hgroup>
+			<h1>Práctica 7</h1>
+			<h2>Tutorial CSS3</h2>
+		</hgroup>
+	
+	</header>
+	<nav>
+		<ul>
+			<li><a href="Bordes.html">Bordes</a></li>
+			<li><a href="Fondos.html">Fondos</a></li>
+			<li><a href="Efectos_texto.html">Efectos Texto</a></li>
+			<li><a href="Fuentes.html">Fuentes</a></li>
+			<li><a href="Transformaciones.html">Transformac.</a></li>
+			<li><a href="Transiciones.html">Transiciones</a></li>
+			<li><a href="Animaciones.html">Animaciones</a></li>
+			<li><a href="Columnas_multiples.html">Col Multiples</a></li>
+			<li><a href="Color.html">Color</a></li>
+			<li><a href="Degradados.html">Degradados</a></li>
+		</ul>
+	</nav>
+	
+	<main>
+		<section>
+			<h2>Colores</h2>
+			<article>
+				<header><h3>Hexadecimal</h3></header>
+				<div>
+					<p>Es una de las formas más usadas al principio para definir colores. Se trata de representarlos mediante su notación hexadecimal</p>
+					<p>
+						Ejemplos:
+							<ul>
+								<li><span class="hexa">color: #FF00FF</span></li>
+								<li><span class="hexa2">color: #11F2F3</span></li>
+							</ul>
+					</p>
+				</div>
+				<footer></footer>
+			</article>
+			<hr/>
+			<article>
+				<header><h3>rgb( )</h3></header>
+				<div>
+					<p>Se han definido diferentes formas y modelos para hacer referencia a los
+						colores. Una de ellas es la función rgb(), que consiste en definir un color mezclando los
+						diferentes colores básicos: rojo, verde, azul (Red, Green, Blue...RGB). De esta forma, escribiendo la notáción hexadecimal de un color podemos hacer referencia a él para usarlo
+						en nuestro sitio. Existen dos formas diferentes de utilizar la función rgb(): mediante enteros (0 a 255) o con porcentajes (0% a 100%).</p>
+					<p>
+						Ejemplos:
+							<ul>
+								<li><span class="rgb">rgb(20,80,10);</span></li>
+								<li><span class="rgbp">rgb(75%,30%,30%);</span></li>
+							</ul>
+					</p>
+				</div>
+				<footer></footer>
+			</article>
+			<hr/>
+			<article>
+				<header><h3>rgba( )</h3></header>
+				<div>
+					<p>Es la ampliación del método rgb() con un nuevo canal alpha, el cual nos va a permitir definir el grado de transparencia del color. El valor de dicho canal oscila entre 0 y 1, siendo 0 totalmente transparente y 1 totalmente opaco.
+					Al igual que con rgb(), también se pueden usar porcentajes para definir el color.</p>
+					<p>
+						Ejemplos:
+							<ul>
+								<li><span class="rgba">rgba(20,80,10, 0.8);</span></li>
+								<li><span class="rgba2">rgba(75%,30%,30%, 0.3);</span></li>
+							</ul>
+					</p>
+				</div>
+				<footer></footer>
+			</article>
+			<hr/>
+			<article>
+				<header><h3>hsl( )</h3></header>
+				<div>
+					<p>Con la llegada de CSS3 se introdujo la función hsl(), la cual nos permite definir un color mediante su matiz, saturación y luminosidad (hue, saturation, lightness... hsl).
+					Pensemos un momento en la rueda de los colores. Cada grado de esta rueda es un color. De aquí que "hue" es un número de 0 a 359. A lo largo de los 360° el color cambia de rojo ( 0° ) a verde (120°) a azul ( 240°) y de nuevo a rojo ( 360° ).</p>
+					<p>
+						Ejemplos:
+							<ul>
+								<li><span class="hsl">hsl(0,100%,50%);</span></li>
+								<li><span class="hsl2">hsl(240,100%,50%);</span></li>
+							</ul>
+					</p>
+				</div>
+				<footer></footer>
+			</article>
+			<hr/>
+			<article>
+				<header><h3>hsla( )</h3></header>
+				<div>
+					<p>Es la ampliación del método hsl() con un nuevo canal alpha, el cual nos va a permitir definir el grado de transparencia del color. El valor de dicho canal oscila entre 0 y 1, siendo 0 totalmente transparente y 1 totalmente opaco.</p>
+					<p>
+						Ejemplos:
+							<ul>
+								<li><span class="hsla">hsla(0,100%,50%, 0.3);</span></li>
+								<li><span class="hsla2">hsla(240,100%,50%, 0.9);</span></li>
+							</ul>
+					</p>
+				</div>
+				<footer></footer>
+			</article>
+			<hr/>
+			<article>
+				<header><h3>Web Safe Color</h3></header>
+				<div>
+					<p>Web safe colors o Colores seguros para web nacen en la realidad de las limitaciones de los primeros monitores a color y debido a la falta de ancho de banda, la paleta completa de colores en pantalla se restringía sólo a 8-bits; esto quiere decir que en este entorno cada píxel sólo podía producir 256 colores diferentes. Este conjunto de colores podría ser visualizado sin tramado en las pantallas de 256 colores y por esto se les llamó colores seguros para Web o web safe colors.</p>
+					<p>
+						Ejemplos:
+							<ul>
+								<li><span class="wsc">color: white;</span></li>
+								<li><span class="wsc2">color: olive;</span></li>
+							</ul>
+					</p>
+				</div>
+				<footer></footer>
+			</article>
+			<hr/>
+		</section>	
+					
+	</main>
+	
+	<footer><span>Ejercicio Jaime Rabasco</span></footer>
+	
+</div>
+</body>
+
+</html>

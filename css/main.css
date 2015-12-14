@@ -7,57 +7,59 @@ body {
     line-height: 20px; 
     background-color: #FFBFEF; 
     background-position: top;
-    background-repeat: repeat-x
+    background-repeat: repeat-x;
 }
 
 h1, h2, h3, h4, h5, h6 {
     color:#ff5044;
     font-weight:400;
-    padding: 0;
-    margin: 0;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
+    padding: 3px;
+    margin: 3px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-h1 { font-size:32px; margin-bottom: 20px; }
-h2 { font-size:26px; margin-bottom: 20px; line-height: 28px }
-h3 { font-size:20px; margin-bottom: 20px; }
-h4 { font-size:18px; margin-bottom: 10px; }
-h5 { font-size:16px }
-h6 { font-size:14px }
-
 a:link, a:visited { 
-    color: #000; text-decoration: none
+    color: #000;
+    text-decoration: none;
 }
 
 a:hover { 
-    color: #f00; 
-    text-decoration:underline 
+    color: #f00;
+    text-decoration:underline;
 }
 
 a:hover,a:active { 
-    outline:none 
+    outline:none;
 }
 
 em { 
-    color: #555 
+    color: #555; 
 }
 
 p { 
-    margin: 0 0 15px 0 
+    margin: 0 0 15px 0; 
 }
 
 #web {
-    width: 960px;
+    width: 80%;
     padding: 0 10px;
-    margin: 0 auto
+    margin: 0 auto;
+    background: white;
+    margin: 40px auto 10px auto;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;    
+    -webkit-box-shadow: 0px 1px 5px 1px #38466F;
+    -moz-box-shadow: 0px 1px 5px 1px #38466F;
+    box-shadow: 0px 1px 5px 1px #38466F;
 }
 
 header {
-    height: 120px;
     width: 100%;
 }
-img, h1{
-    float: left; margin-top: 40px; 
+img {
+    float: left; 
+    margin-top: 40px; 
 }
 
 main {
@@ -65,7 +67,7 @@ main {
 }
 
 .indice {
-    width: 40%;
+    width: 43%;
     display: inline-block;
     border: 1px solid black;
     border-radius: 12px 12px;
@@ -77,22 +79,41 @@ main {
 }
 
 footer {
-    width: 100%;
-    border-top: 5px solid #f7f5f3;
+    border-radius: 5px 5px;
     background: #ebe7e4;
     border-top: 5px solid #000;
     background: #222222;
-    width: 960px;
+    width: 100%;
+    height: 30px;
     vertical-align: bottom;
     margin: 0 auto; 
     padding: 10px 10px 5px;
     color: white;
 }
 
-footer a{
-    color: red;
+ul { 
+    margin: 1em 0; 
+    padding: 0 0 0 40px; 
+    list-style: none; 
+    list-style-image: none; 
+    margin: 0; 
 }
 
-footer a:hover{
-    color: blue;
+li {
+    list-style:none;
+    margin: 3px;
+    padding: 3px;
+}
+
+a {
+    padding: 5px 10px;
+    background: #38466F;
+    border: solid 1px #071337;
+    color: #E1E6F5;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+table{
+    width: 100%;
 }

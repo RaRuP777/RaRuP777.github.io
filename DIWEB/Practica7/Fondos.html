@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Práctica 7</title>
+<link href="estilos.css" rel="stylesheet">
+</head>
+<body>
+<div id="web">
+	<header>
+		<hgroup>
+			<h1>Práctica 7</h1>
+			<h2>Tutorial CSS3</h2>
+		</hgroup>
+	
+	</header>
+	<nav>
+		<ul>
+			<li><a href="Bordes.html">Bordes</a></li>
+			<li><a href="Fondos.html">Fondos</a></li>
+			<li><a href="Efectos_texto.html">Efectos Texto</a></li>
+			<li><a href="Fuentes.html">Fuentes</a></li>
+			<li><a href="Transformaciones.html">Transformac.</a></li>
+			<li><a href="Transiciones.html">Transiciones</a></li>
+			<li><a href="Animaciones.html">Animaciones</a></li>
+			<li><a href="Columnas_multiples.html">Col Multiples</a></li>
+			<li><a href="Color.html">Color</a></li>
+			<li><a href="Degradados.html">Degradados</a></li>
+		</ul>
+	</nav>
+	
+	<main>
+		
+		<section>
+			<h2>Fondos</h2>
+			<article>
+				<header><h3>background-attachment</h3></header>
+				<div>
+					<p>La propiedad CSS <strong>background-attachment</strong> determina si la posición de la imagen se fija en la ventana, o se desplaza junto con su bloque de contenido.</p>
+					<p>Sintaxis:</p>
+					<pre>	background-attachment: scroll | fixed | local</pre>
+					<p>Valor inicial:</p>
+					<pre>	scroll</pre>
+					<p><strong>fixed</strong></p>
+					<p>El fondo se fija con respecto a la ventana. Incluso si un elemento tiene un mecanismo de desplazamiento, un fondo 'fixed' no se mueve con el elemento.</p>
+					<div class="background-attachment" id="fixed"></div>
+					<p><strong>local</strong></p>
+					<p>El fondo se fija en relación con los contenidos del elemento.</p>
+					<div class="background-attachment" id="local"></div>
+					<p><strong>scroll</strong></p>
+					<p>El fondo está fijo con respecto al elemento de sí mismo y no se desplaza con su contenido. (Se adjunta con eficacia a la frontera del elemento).</p>
+					<div class="background-attachment" id="scroll"></div>
+				</div>
+				<footer></footer>
+			</article>
+			<hr/>
+			<article>
+				<header><h3>background-clip</h3></header>
+				<div>
+					<p>La propiedad CSS <strong>background-clip</strong> especifica si el fondo de un elemento, ya sea color o imagen, se extiende por debajo de su frontera.</p>
+					<p>Sintaxis:</p>
+					<pre>	background-clip: border-box | padding-box | content-box</pre>
+					<p>Valor inicial:</p>
+					<pre>	border-box</pre>
+					<p><strong>border-box</strong></p>
+					<p>El fondo se extiende hasta el borde exterior de la frontera.</p>
+					<div class="background-clip" id="background-clip-border-box">
+						<h2>Lorem Ipsum Dolor</h2>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					</div>
+					<p><strong>padding-box</strong></p>
+					<p>El fondo se extiende hasta el borde exterior del relleno.</p>
+					<div class="background-clip" id="background-clip-padding-box">
+						<h2>Lorem Ipsum Dolor</h2>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					</div>
+					<p><strong>content-box</strong></p>
+					<p>El fondo se extiende en el cuadro de contenido.</p>
+					<div class="background-clip" id="background-clip-content-box">
+						<h2>Lorem Ipsum Dolor</h2>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					</div>
+				</div>
+				<footer></footer>
+			</article>
+			<hr/>
+			<article>
+				<header><h3>background-color</h3></header>
+				<div>
+					<p>La propiedad CSS <strong>background-color</strong> establece el color de fondo de un elemento, ya sea a través de un valor de color o la palabra clave transparent.</p>
+					<p>Sintaxis:</p>
+					<pre>	background-color: rgb() | rgba() | hsl() | hsla() | hex-color | named-color | currentcolor | deprecated-system-color</pre>
+					<p>Valor inicial:</p>
+					<pre>	transparent</pre>
+					<p><strong>rgb()</strong></p>
+					<div class="background-color" id="background-color-rgb"></div>
+					<span class="leyenda">background-color: rgb(59, 89, 152)</span>
+					<p><strong>rgba()</strong></p>
+					<div class="background-color" id="background-color-rgba"></div>
+					<span class="leyenda">background-color: rgba(59, 89, 152, 0.5)</span>
+					<p><strong>hsl()</strong></p>
+					<div class="background-color" id="background-color-hls"></div>
+					<span class="leyenda">background-color: hsl(221, 44%, 41%)</span>
+					<p><strong>hsla()</strong></p>
+					<div class="background-color" id="background-color-hlsa"></div>
+					<span class="leyenda">background-color: hsla(221, 44%, 41%, 0.5)</span>
+					<p><strong>hex-color</strong></p>
+					<div class="background-color" id="background-color-hex"></div>
+					<span class="leyenda">background-color: #3B5998</span>
+					<p><strong>named-color</strong></p>
+					<div class="background-color" id="background-color-named"></div>
+					<span class="leyenda">background-color: Gainsboro</span>
+					<p><strong>gradiente radial</strong></p>
+					<div class="background-color" id="background-color-radial"></div>
+					<span class="leyenda">
+						-moz-radial-gradient(50% 50%, #3B5998, #FFFFFF)<br />
+						-webkit-radial-gradient(50% 50%, #3B5998, #FFFFFF)<br />
+						-o-radial-gradient(50% 50%, #3B5998, #FFFFFF)</span>
+					<p><strong>gradiente lineal</strong></p>
+					<div class="background-color" id="background-color-lineal"></div>
+					<span class="leyenda">
+						-moz-linear-gradient(top, #3B5998, #FFFFFF)<br />
+						-webkit-linear-gradient(top, #3B5998, #FFFFFF)<br />
+						-o-linear-gradient(top, #3B5998, #FFFFFF)</span>
+				</div>
+				<footer></footer>
+			</article>
+			<hr/>
+			<article>
+				<header><h3>background-image</h3></header>
+				<div>
+					<p>La propiedad CSS <strong>background-image</strong> establece una o varias imágenes de fondo de un elemento. Las imágenes se dibujan en capas de contexto. La primera capa especificada se dibuja como si estuviera más cerca del usuario.</p>
+					<p>Por defecto, el background-image se coloca en la esquina superior izquierda de un elemento, y repetido tanto vertical como horizontalmente.</p>
+					<p>Sintaxis:</p>
+					<pre>	background-image: url | none</pre>
+					<p>Valor inicial:</p>
+					<pre>	none</pre>
+					<p><strong>url('URL')</strong></p>
+					<p>La URL de la imagen. Para especificar más de una imagen, separe las direcciones URL con una coma.</p>
+					<p><strong>none</strong></p>
+					<p>Es una palabra clave que indica la ausencia de imágenes.</p>
+					<div id="background-image">
+						<h2>Lorem Ipsum Dolor</h2>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+						<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+					</div>
+				</div>
+				<footer></footer>
+			</article>
+			<hr/>
+			<article>
+				<header><h3>background-origin</h3></header>
+				<div>
+					<p>La propiedad CSS <strong>background-origin</strong> determina la posición del área del fondo, que es la posición de el origen de la imagen especificada por background-image.</p>
+					<p>Sintaxis:</p>
+					<pre>	background-origin: border-box | padding-box | content-box</pre>
+					<p>Valor inicial:</p>
+					<pre>	padding-box</pre>
+					<p><strong>border-box</strong></p>
+					<p>El origen del fondo esta en el limite exterior del borde.</p>
+					<div class="fondo origin" id="border-box"></div>
+					<p><strong>padding-box</strong></p>
+					<p>El origen del fondo está en limite exterior del padding, es decir no tiene en cuenta el padding.</p>
+					<div class="fondo origin" id="padding-box"></div>
+					<p><strong>content-box</strong></p>
+					<p>El origen del fondo está en el contenedor.</p>
+					<div class="fondo origin" id="content-box"></div>
+				</div>
+				<footer></footer>
+			</article>
+			<hr/>
+			<article>
+				<header><h3>background-position</h3></header>
+				<div>
+					<p>La propiedad CSS <strong>background-position</strong> establece la posición inicial del fondo, en relación con la capa que lo contiene.</p>
+					<p>Sintaxis:</p>
+					<pre>	background-position: center | bottom | top | left | right | percentage</pre>
+					<p>Valor inicial:</p>
+					<pre>	0% 0%</pre>
+					<p><strong>center</strong></p>
+					<p>Muestra el fondo centrado respecto al contenedor.</p>
+					<div class="fondo" id="background-position-center"></div>
+					<p><strong>bottom</strong></p>
+					<p>Muestra en la parte inferior y centrado respecto al contenedor.</p>
+					<div class="fondo" id="background-position-bottom"></div>
+					<p><strong>top</strong></p>
+					<p>Muestra en la parte superior y centrado respecto al contenedor.</p>
+					<div class="fondo" id="background-position-top"></div>
+					<p><strong>left</strong></p>
+					<p>Muestra en la parte izquierda y centrado respecto al contenedor.</p>
+					<div class="fondo" id="background-position-left"></div>
+					<p><strong>right</strong></p>
+					<p>Muestra en la parte derecha y centrado respecto al contenedor.</p>
+					<div class="fondo" id="background-position-right"></div>
+					<p><strong>top right</strong></p>
+					<p>Muestra en la parte superior derecha.</p>
+					<div class="fondo" id="background-position-top-right"></div>
+					<p><strong>percentage</strong></p>
+					<p>Muestra en el eje x y el eje y en función del porcentaje indicado.</p>
+					<div class="fondo" id="background-position-porcentaje"></div>
+					<span class="leyenda">background-position: 25% 75%</span>
+					<p><strong>medida</strong></p>
+					<p>Muestra en el eje x y el eje y en función de la medida indicada.</p>
+					<div class="fondo" id="background-position-medida"></div>
+					<span class="leyenda">background-position: 3em 100px</span>
+				</div>
+				<footer></footer>
+			</article>
+			<hr/>
+			<article>
+				<header><h3>background-repeat</h3></header>
+				<div>
+					<p>La propiedad CSS <strong>background-repeat</strong> define cómo se repiten las imágenes de fondo. Una imagen de fondo puede repetirse a lo largo del eje horizontal, el eje vertical, ambos ejes, o no repetirse en absoluto.
+					
+					Por defecto, las imágenes repetidas se recortan al tamaño del elemento, pero se pueden escalar para adaptarse (usando round) o uniformemente distribuidos de extremo a extremo (con space).</p>
+					<p>Sintaxis:</p>
+					<pre>	background-repeat: repeat | no-repeat | repeat-x | repeat-y</pre>
+					<p>Valor inicial:</p>
+					<pre>	repeat</pre>
+					<p><strong>no-repeat</strong></p>
+					<p>No repite el fondo.</p>
+					<div class="fondo" id="background-no-repeat"></div>
+					<p><strong>repeat</strong></p>
+					<p>Repite el fondo hasta ocupar el elemento contenedor.</p>
+					<div class="fondo" id="background-repeat"></div>
+					<p><strong>repeat-x</strong></p>
+					<p>Repite el fondo hasta ocupar el elemento que lo contiene solo en el eje x.</p>
+					<div class="fondo" id="background-repeat-x"></div>
+					<p><strong>repeat-y</strong></p>
+					<p>Repite el fondo hasta ocupar el elemento que lo contiene solo en el eje y.</p>
+					<div class="fondo" id="background-repeat-y"></div>
+				</div>
+				<footer></footer>
+			</article>
+			<hr/>
+			<article>
+				<header><h3>background-size</h3></header>
+				<div>
+					<p>La propiedad CSS <strong>background-size</strong> especifica el tamaño de la imagen de fondo.</p>
+					<p>Sintaxis:</p>
+					<pre>	background-size: length | percentage | auto | cover | contain</pre>
+					<p>Valor inicial:</p>
+					<pre>	auto auto</pre>
+					<p><strong>length</strong></p>
+					<p>Establece el tamaño de la imagen en función de la medida.</p>
+					<div class="fondo" id="background-size-medida-em"></div>
+					<span class="leyenda">background-size: 7em</span>
+					<div class="fondo" id="background-size-medida-em-em"></div>
+					<span class="leyenda">background-size: 7em 4em</span>
+					<div class="fondo" id="background-size-medida-px"></div>
+					<span class="leyenda">background-size: 70px</span>
+					<div class="fondo" id="background-size-medida-px-px"></div>
+					<span class="leyenda">background-size: 70px 200px</span>
+					<p><strong>percentage</strong></p>
+					<p>Establece el tamaño de la imagen en función del porcentaje.</p>
+					<div class="fondo" id="background-size-porcentaje-por"></div>
+					<span class="leyenda">background-size: 50%</span>
+					<div class="fondo" id="background-size-porcentaje-por-por"></div>
+					<span class="leyenda">background-size: 50% 10%</span>
+					<p><strong>auto</strong></p>
+					<p>Mantiene la relación de aspecto de la imagen.</p>
+					<div class="fondo" id="background-size-auto"></div>
+					<span class="leyenda">background-size: 30%, auto</span>
+					<p><strong>contain</strong></p>
+					<p>Ocupa todo el espacio posible del contenedor sin recortar la imagen.</p>
+					<div class="fondo" id="background-size-contain"></div>
+					<p><strong>cover</strong></p>
+					<p>Ocupa todo el espacio posible del contenedor recortando la imagen.</p>
+					<div class="fondo" id="background-size-cover"></div>
+				</div>
+				<footer></footer>
+			</article>
+		</section>	
+					
+	</main>
+
+	<footer><span>Ejercicio Jaime Rabasco</span></footer>
+	
+</div>
+</body>
+
+</html>

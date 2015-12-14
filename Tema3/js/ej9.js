@@ -1,5 +1,5 @@
 function enviar() {
-	var texto = document.getElementById("texto");
+	var texto = document.getElementById("texto").value;
 	var dia = parseInt(document.getElementById("dia").value);
 	var mes = document.getElementById("mes").value.toLowerCase();
 	var anno = parseInt(document.getElementById("anno").value);

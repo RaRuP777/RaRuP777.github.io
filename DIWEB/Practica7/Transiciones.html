@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Práctica 7</title>
+<link href="estilos.css" rel="stylesheet">
+</head>
+<body>
+<div id="web">
+	<header>
+		<hgroup>
+			<h1>Práctica 7</h1>
+			<h2>Tutorial CSS3</h2>
+		</hgroup>
+	
+	</header>
+	<nav>
+		<ul>
+			<li><a href="Bordes.html">Bordes</a></li>
+			<li><a href="Fondos.html">Fondos</a></li>
+			<li><a href="Efectos_texto.html">Efectos Texto</a></li>
+			<li><a href="Fuentes.html">Fuentes</a></li>
+			<li><a href="Transformaciones.html">Transformac.</a></li>
+			<li><a href="Transiciones.html">Transiciones</a></li>
+			<li><a href="Animaciones.html">Animaciones</a></li>
+			<li><a href="Columnas_multiples.html">Col Multiples</a></li>
+			<li><a href="Color.html">Color</a></li>
+			<li><a href="Degradados.html">Degradados</a></li>
+		</ul>
+	</nav>
+	
+	<main>
+		<section>
+			Transitions
+			<article>
+				<header><h3>Transition</h3></header>
+				<p>Las transiciones permiten cambiar las propiedades css de los elementos de una pagina web y se realicen esos cambios a diferentes velocidades, según se especifique la propiedad.</p><p> Una transición esta compuesta por un inicio y un final donde se debe especificar en cada etapa una propiedad para que se produzcan cambios secuenciales.</p>
+				<p>Se puede especificar en una única etiqueta de css el funcionamiento del inicio y del final de la transición utilizando la propiedad <strong>transition</strong>.</p>
+				<h3>Sintaxis: </h3>
+				<p>transition: transition-property transition-duration transition-timing-function transition-delay;</p>
+				<div>
+					<p id="transition">transition: all 5s ease 3s</p>
+				</div>
+				<footer></footer>
+
+			</article>
+		</section>
+		<section>
+			Transitions-timing-function
+			<article>
+				<header><h3>Transition-timing-function</h3></header>
+				<p>La propiedad timing-functión especifica la curva de velocidad del efecto de la transición.
+				</p>
+				<p>Esta propiedad permite cambiar a una transición su velocidad durante la transición.</p>
+
+				
+				<h3>Sintaxis: </h3>
+				<p>transition-timing-function: ease|ease-in|esase-out|ease-in-out|linear|step-start|step-end|steps(Numero,end);</p>
+					<ul>
+						<li><strong>ease:</strong> Valor por defecto. La animación empieza lenta, se vuelve rápida y acaba lenta.</li>
+						<li><strong>ease-in:</strong> La animación empieza lenta.</li>
+						<li><strong>ease-out:</strong> La animación acaba lenta.</li>
+						<li><strong>ease-in-out:</strong> La animación empieza y acaba lenta.</li>
+						<li><strong>linear:</strong> La animación tiene la misma velocidad de principio a fin</li>
+						<li><strong>step-start:</strong> Cambia del estado inicial al final sin ningún paso intermedio</li>
+						<li><strong>step-end:</strong> Cambia del estado inicial al final sin ningún paso intermedio, el tiempo que tarda en cambiar depende del tiempo de la transición.</li>
+						<li><strong>steps(Numero,end):</strong> Cambia del estado inicial al final siguiendo un número de pasos indicados</li>
+					</ul>
+				<div>
+				</div>
+				<footer></footer>
+
+			</article>
+			<article>
+				<header><h3>Transition-timing-function: ease</h3></header>
+				<p>Valor por defecto. La animación empieza lenta, se vuelve rápida y acaba lenta.</p>
+
+				<h3>Sintaxis: </h3>
+				<p>transition-timing-function: ease;</p>
+				<div>
+					<p id="timing-function-ease">ease</p>
+				</div>
+				<footer></footer>
+
+			</article>
+			<article>
+				<header><h3>Transition-timing-function: ease-in</h3></header>
+				<p>La animación empieza lenta.</p>
+				<h3>Sintaxis: </h3>
+				<p>transition-timing-function: ease-in;</p>
+				<div>
+					<p id="timing-function-ease-in">ease-in</p>
+				</div>
+				<footer></footer>
+			</article>
+			<article>
+				<header><h3>Transition-timing-function: ease-out</h3></header>
+				<p>La animación acaba lenta.</p>
+				<h3>Sintaxis: </h3>
+				<p>transition-timing-function: ease-out;</p>
+				<div>
+					<p id="timing-function-ease-out">ease-out</p>
+				</div>
+				<footer></footer>
+			</article>
+
+			<article>
+				<header><h3>Transition-timing-function: ease-in-out</h3></header>
+				<p>La animación empieza y acaba lenta.</p>
+				<h3>Sintaxis: </h3>
+				<p>transition-timing-function: ease-in-out;</p>
+				<div>
+					<p id="timing-function-ease-in-out">ease-in-out</p>
+				</div>
+				<footer></footer>
+			</article>
+
+			<article>
+				<header><h3>Transition-timing-function: linear</h3></header>
+				<p>La animación tiene la misma velocidad de principio a fin</p>
+				<h3>Sintaxis: </h3>
+				<p>transition-timing-function: linear;</p>
+				<div>
+					<p id="timing-function-linear">linear</p>
+				</div>
+				<footer></footer>
+			</article>
+
+			<article>
+				<header><h3>Transition-timing-function: step-start</h3></header>
+				<p>Cambia del estado inicial al final sin ningún paso intermedio</p>
+				<h3>Sintaxis: </h3>
+				<p>transition-timing-function: step-start;</p>
+				<div>
+					<p id="timing-function-step-start">step-start</p>
+				</div>
+				<footer></footer>
+			</article>
+
+			<article>
+				<header><h3>Transition-timing-function: step-end</h3></header>
+				<p>Cambia del estado inicial al final sin ningún paso intermedio, el tiempo que tarda en cambiar depende del tiempo de la transición.</p>
+				<h3>Sintaxis: </h3>
+				<p>transition-timing-function: step-end;</p>
+				<div>
+					<p id="timing-function-step-end">step-end</p>
+				</div>
+				<footer></footer>
+			</article>
+
+			<article>
+				<header><h3>Transition-timing-function: steps()</h3></header>
+				<p>Cambia del estado inicial al final siguiendo un número de pasos indicados</p>
+				<h3>Sintaxis: </h3>
+				<p>transition-timing-function: steps(número de pasos,end);</p>
+				<div>
+					<p id="timing-function-steps">steps(6,end)</p>
+				</div>
+				<footer></footer>
+			</article>
+		</section>
+		<section>
+			Transition-delay
+			<article>
+				<header><h3>transition-delay</h3></header>
+					<p>La propiedad <strong>delay</strong>  especifica el tiempo que espera antes de ejecutarse la transición, pueden especificarse tanto segundos como milisegundos.</p>
+					<h3>Sintaxis:</h3>
+					<p>transition-delay: time|initial|inherit;</p>
+					<ul>
+						<li>time: Tiempo escrito por el usuario en segundos</li>
+						<li>initial: toma el valor por defecto</li>
+						<li>inherit: hereda el tiempo especificado en el elemento padre</li>
+					</ul>
+				<div>
+					<p class="ejemplo-delay">delay = 2s , 5ms</p>
+				</div>
+				<footer></footer>
+			</article>
+		</section>
+		<section>
+				Transition-duration
+			<article>
+				<header><h3>transition-duration</h3></header>
+					<p>La propiedad <strong>duration</strong> especifica el tiempo que dura la transición, pueden especificarse tanto segundos como milisegundos. Si no se especifica una duración de la transición, el efecto se realizará instantaneamente.</p>
+					<h3>Sintaxis:</h3>
+					<p>transition-duration: time|initial|inherit;</p>
+					<ul>
+						<li>time: Tiempo escrito por el usuario en segundos</li>
+						<li>initial: toma el valor por defecto</li>
+						<li>inherit: hereda el tiempo especificado en el elemento padre</li>
+					</ul>
+				<div>
+					<p class="ejemplo-durationhover">duration = 5s (solo en hover)</p>
+					<p class="ejemplo-duration">duration = 5s(sin hover) duration = 1s (al hover)</p>
+				</div>
+				<footer></footer>
+			</article>
+		</section>
+		<section>
+				Transition-property
+			<article>
+				<header><h3>transition-property</h3></header>
+					<p>La propiedad <strong>property</strong> especifica la o las propiedades de un elemento html a las que se le aplicará una transición,</br>
+					La sintaxis para especificar qué propiedades se les aplicará una transición se realiza de la siguiente forma:</p>
+					<h3>Sintaxis:</h3>
+					<p>transition-property: none | all | property | initial | inherit;</p>
+					<ul>
+						<li>none: No se aplica efectos de transición</li>
+						<li>all: Se aplica los efectos de transición a todas las propiedades del elemento</li>
+						<li>property: Nombre de la propiedad </li>
+						<li>initial: Toma el valor por defecto</li>
+						<li>inherit: Hereda el tiempo especificado en el elemento padre</li>
+					</ul>
+				<div>
+					<p class="ejemplo-property">property = width;</p>
+				</div>
+				<footer></footer>
+			</article>
+		</section>
+					
+	</main>
+	
+	<footer><span>Ejercicio Jaime Rabasco</span></footer>
+	
+</div>
+</body>
+
+</html>

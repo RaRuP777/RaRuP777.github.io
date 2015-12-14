@@ -1,0 +1,339 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Práctica 7</title>
+<link href="estilos.css" rel="stylesheet">
+</head>
+<body>
+<div id="web">
+	<header>
+		<hgroup>
+			<h1>Práctica 7</h1>
+			<h2>Tutorial CSS3</h2>
+		</hgroup>
+	
+	</header>
+	<nav>
+		<ul>
+			<li><a href="Bordes.html">Bordes</a></li>
+			<li><a href="Fondos.html">Fondos</a></li>
+			<li><a href="Efectos_texto.html">Efectos Texto</a></li>
+			<li><a href="Fuentes.html">Fuentes</a></li>
+			<li><a href="Transformaciones.html">Transformac.</a></li>
+			<li><a href="Transiciones.html">Transiciones</a></li>
+			<li><a href="Animaciones.html">Animaciones</a></li>
+			<li><a href="Columnas_multiples.html">Col Multiples</a></li>
+			<li><a href="Color.html">Color</a></li>
+			<li><a href="Degradados.html">Degradados</a></li>
+		</ul>
+	</nav>
+	
+	<main>
+		
+		<section>
+			<div id="descripcion">
+			<b>Columnas Múltiples:</b> <br> CSS3 nos permite con facilidad manejar texto dividiendolo en columnas. Debemos tener especial cuidado en la compatibilidad de los navegadores por lo que a la hora de aplicar el estilo indicaremos para qué navegador vamos a trabajar o mejor aún aplicaremos el estilo para cada uno de ellos.
+			<ul>
+				<li>Chrome/Safari/Opera: -webkit-column-<i>propiedad</i></li>
+				<li>Mozilla Firefox: -moz-column-<i>propiedad</i></li>
+				<li>Resto navegadores: -webkit-column-<i>propiedad</i></li>
+			</ul>
+			</div>
+			<article>
+				<header id="anchorCount"><h3>column-count</h3>
+				</header>
+				<div >
+					<p> Esta propiedad especifica el número de columnas en la cual estará dividido el texto.</p>
+					<p>En el siguiente ejemplo dividimos el texto en 3 columnas:</p>
+					<ul>
+						<li>-webkit-column-count: 3; <i>/* Chrome, Safari, Opera */</i></li>
+						<li>-moz-column-count: 3; <i>/* Firefox */</i></li>
+						<li>column-count: 3</li>
+					</ul>
+    
+    
+					<p id="columnCount">Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass. </p>
+				</div>
+				<footer></footer>
+			</article>
+			<hr/>
+			<article>
+				<header id="anchorGap"><h3>column-gap</h3>
+				</header>
+				<div >
+					<p> Esta propiedad especifica la anchura del espacio entre columnas.</p>
+					<p>Valores de la propiedad: column-gap: <i>length|normal|initial|inherit</i></p>
+					<p>En el siguiente ejemplo aplicamos una anchura del espacio entre columnas de 70px al anterior ejemplo.</p>
+					<ul>
+						<li>-webkit-column-gap: 70px; <i>/* Chrome, Safari, Opera */</i></li>
+						<li>-moz-column-gap: 70px; <i>/* Firefox */</i></li>
+						<li>column-gap: 70px</li>
+					</ul>
+    
+    
+					<p id="columnGap" class="tresColumnas">Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass. </p>
+				</div>
+				<footer></footer>
+
+			</article>
+			<hr/>
+			<article>
+				<header id="anchorRule"><h3>column-rule</h3>
+				</header>
+				<div >
+					<p> Con esta propiedad aplicaremos estilos a la línea de separación de las columnas</p>
+					<p>Valores de la propiedad: column-rule:
+						<ul><i> 
+							<li><a href="#anchorWidth">column-rule-width</a></li>
+							<li> <a href="#anchorStyle">column-rule-style</a></li> 
+							<li><a href="#anchorColor">column-rule-color</a></li>
+						</i>
+						</ul>
+							
+					<p>Podemos aplicar el estilo por separado o en una misma línea.
+					</br>En el siguiente ejemplo aplicamos en una misma línea una anchura de la línea separadora de 5px de ancho. estilo de línea sólida y de color azul.</p>
+					<ul>
+
+    
+  
+						<li>-webkit-column-rule: 5px solid blue;<i>/* Chrome, Safari, Opera */</i></li>
+						<li>-moz-column-rule: 5px solid blue; <i>/* Firefox */</i></li>
+						<li>  column-rule: 5px solid blue;</li>
+					</ul>
+    
+    
+					<p id="columnRule" class="tresColumnas">Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass. </p>
+				</div>
+				<footer></footer>
+
+			</article>
+			<hr/>
+			<article>
+				<header id="anchorWidth"><h3>column-rule-width</h3>
+				</header>
+				<div >
+					<p>Especifica el ancho de la línea entre columnas  </p>
+					<p>Valores de la propiedad: column-rule-width:
+						<ul><i> 
+							<li>thin: Anchura fina.</li>
+							<li>thick: Anchura gruesa.</li> 
+							<li>length: Nosotros definimos el tamaño.</li>
+						</i>
+						</ul>
+							
+					<p>En el siguiente ejemplo aplicamos un ancho de valor <b><i>thin</i></b>.</p>
+					 <ul>
+
+    
+  
+						<li>-webkit-column-rule-width: thin;/* Chrome, Safari, Opera */</i></li>
+						<li> -moz-column-rule-width: thin; /* Firefox */</i></li>
+						<li> column-rule-width: thin;</li>
+					</ul>
+
+   
+    
+    
+    
+					<p id="widthThin" class="tresColumnas">Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.
+
+My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?</p>
+
+					<p>En el siguiente ejemplo aplicamos un ancho de valor<b> <i>thick</i></b>.</p>
+					<ul>
+
+    
+  
+						<li>-webkit-column-rule-width: thick;/* Chrome, Safari, Opera */</i></li>
+						<li> -moz-column-rule-width: thick; /* Firefox */</i></li>
+						<li> column-rule-width: thick;</li>
+					</ul>
+    
+    
+					<p id="widthThick" class="tresColumnas">Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.
+
+My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?</p>
+
+					<p>En el siguiente ejemplo aplicamos un ancho de valor<b> <i>length</i></b>, es decir nosotros indicamos el tamaño del ancho de la línea de separación de 8px.</p>
+					<p>Los valores pueden ser dados en "pixeles" o "em", aunque se recomienda usar pixeles como medida.</p>
+					<ul>
+
+    
+  
+						<li>-webkit-column-rule-width: 8px;/* Chrome, Safari, Opera */</i></li>
+						<li> -moz-column-rule-width: 8px; /* Firefox */</i></li>
+						<li> column-rule-width: 8px;</li>
+					</ul>
+    
+    
+					<p id="widthLength" class="tresColumnas">Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.
+
+My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?</p>
+
+
+				</div>
+				<footer></footer>
+
+			</article>
+			<hr/>
+			<article>
+				<header id="anchorStyle"><h3>column-rule-style</h3>
+				</header>
+				<div >
+					<p>Especifica el estilo de la línea entre columnas  </p>
+					<p>Valores de la propiedad: column-rule-style:
+						<ul> 
+							<li><b>none</b>: no hay línea separación.</li>
+							<li><b>hidden</b>: define una línea de separación oculta.</li> 
+							<li><b>dotted</b>: línea de separación de tipo puntos.</li>
+							<li><b>dashed</b>: línea de separación discontinua.</li>
+							<li><b>solid</b>: línea de separación continua.</li> 
+							<li><b>double</b>: doble línea.</li>
+						
+						</ul>
+							
+					<p>En el siguiente ejemplo aplicamos un estilo <b><i>dotted</i></b> a la línea.</p>
+					<ul>
+
+    
+    
+						<li>-webkit-column-rule-style: dotted ;/* Chrome, Safari, Opera */</i></li>
+						<li>-moz-column-rule-style: dotted ; /* Firefox */</i></li>
+						<li>column-rule-style: dotted ;</li>
+					</ul>
+    
+    
+					<p id="styleDotted" class="cuatroColumnas">Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?
+
+Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
+</p>
+
+					<p>En el siguiente ejemplo aplicamos un estilo <b><i>solid</i></b> a la línea.</p>
+					<ul>
+						
+    
+    
+						<li>-webkit-column-rule-style: solid ;/* Chrome, Safari, Opera */</i></li>
+						<li>-moz-column-rule-style: solid ; /* Firefox */</i></li>
+						<li>column-rule-style: solid ;</li>
+					</ul>
+    
+    
+					<p id="styleSolid" class="cuatroColumnas">Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass. Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?
+
+Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
+</p>
+
+					<p>En el siguiente ejemplo aplicamos un estilo <b><i>dashed</i></b> a la línea.</p>
+					<ul>
+						
+    
+    
+						<li>-webkit-column-rule-style: dashed ;/* Chrome, Safari, Opera */</i></li>
+						<li>-moz-column-rule-style: dashed ; /* Firefox */</i></li>
+						<li>column-rule-style: dashed ;</li>
+					</ul>
+    
+    
+					<p id="styleDashed" class="cuatroColumnas">Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?
+
+Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
+</p>
+
+					<p>En el siguiente ejemplo aplicamos un estilo <b><i>double</i></b> a la línea.</p>
+					<ul>
+						
+    
+    
+						<li>-webkit-column-rule-style: double ;/* Chrome, Safari, Opera */</i></li>
+						<li>-moz-column-rule-style: double ; /* Firefox */</i></li>
+						<li>column-rule-style: double ;</li>
+					</ul>
+    
+    
+					<p id="styleDouble" class="cuatroColumnas">Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?
+
+Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
+</p>
+
+
+					<p>En el siguiente ejemplo aplicamos un estilo <b><i>hidden</i></b> a la línea.</p>
+					<ul>
+						
+    
+    
+						<li>-webkit-column-rule-style: hidden ;/* Chrome, Safari, Opera */</i></li>
+						<li>-moz-column-rule-style: hidden ; /* Firefox */</i></li>
+						<li>column-rule-style: hidden ;</li>
+					</ul>
+    
+    
+					<p id="styleHidden" class="cuatroColumnas">Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?
+
+Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
+</p>
+
+				</div>
+				<footer></footer>
+
+			</article>
+
+			<hr/>
+			<article>
+				<header id="anchorColor"><h3>column-rule-color</h3>
+				</header>
+				<div >
+					<p>Especifica el color de la línea entre columnas. El valor por defecto es el color del elemento. </p>
+					<p>Podemos aplicar el color de distintas maneras:
+						<ul><i> 
+							<li>El nombre del color: red, blue, black, etc.</li>
+							<li>Su valor hexadecimal: #000000, #ff9900, etc.</li> 
+							<li>Su valor rgb: rgb(255,130,255), rgba(255,130,255,0.5), etc.</li>
+							<li>Valor <i>initial</i>: valor por defecto.</li>
+							
+						</i>
+						</ul>
+					<p>En el siguiente ejemplo aplicamos un color ya definido <b><i>red</i></b> a la línea.</p> 
+					<ul>
+						 
+   
+						<li>-webkit-column-rule-color: red; /* Chrome, Safari, Opera */</i></li>
+						<li> -moz-column-rule-color: red; /* Firefox */</i></li>
+						<li>column-rule-color: red</li>
+					</ul>
+					<p id="colorRed" class="cuatroColumnas">Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass. </p>
+
+					<p>En el siguiente ejemplo aplicamos un color hexadecimal <b><i>#ff9900</i></b> a la línea.</p> 
+					<ul>
+						 
+   
+						<li>-webkit-column-rule-color: #ff9900; /* Chrome, Safari, Opera */</i></li>
+						<li> -moz-column-rule-color: #ff9900; /* Firefox */</i></li>
+						<li>column-rule-color: #ff9900</li>
+					</ul>
+					<p id="colorHexa" class="cuatroColumnas">Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass. </p>
+					<p>En el siguiente ejemplo aplicamos un color RGB <b><i>rgb(120,170,150)</i></b> a la línea.</p> 
+					<ul>
+						 
+   
+						<li>-webkit-column-rule-color: rgb(120,170,150); /* Chrome, Safari, Opera */</i></li>
+						<li> -moz-column-rule-color: rgb(120,170,150); /* Firefox */</i></li>
+						<li>column-rule-color: rgb(120,170,150)</li>
+					</ul>
+					<p id="colorRGB" class="cuatroColumnas">Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass. </p>
+				</div>
+				<footer></footer>
+
+			</article>
+		</section>
+
+	</main>
+	
+	<footer><span>Ejercicio Jaime Rabasco</span></footer>
+	
+</div>
+</body>
+
+</html>

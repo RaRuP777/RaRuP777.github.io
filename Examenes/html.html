@@ -1,0 +1,36 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Examen - Pedro J. Ramos</title>
+	<script type="text/javascript" 
+		src="alumno.js">
+	</script>
+</head>
+<body>
+		<center><h1>Pedro J. Ramos</h1></center>
+		Alta del alumno
+		<form><fieldset><table>
+			<tr>
+				<td><label>Nombre</label></td>
+				<td><input type="text" id="nombre" size="15" placeholder="Nombre" autofocus/></td>
+			</tr>
+			<tr>
+				<td><label>Primer apellido</label></td>
+				<td><input type="text" id="apellido1" size="15" placeholder="Apellido primero"/></td>
+			</tr>
+			<tr>
+				<td><label>Segundo apellido</label></td>
+				<td><input type="text" id="apellido2" size="15" placeholder="Apellido segundo"/></td>
+			</tr>
+			<tr>
+				<td><label>Fecha de nacimiento</label></td>
+				<td><input type="text" id="fechanacimiento" size="15" placeholder="dd-mm-aaaa"/></td>
+			</tr>
+		</table></fieldset>
+		<input type="button" value="Crear" onclick="crear()"/>
+		<input type="reset" name="reset" value="Limpiar"/>
+		<br>
+	<p id="texto"><p>
+	</form>
+</body>
+</html>

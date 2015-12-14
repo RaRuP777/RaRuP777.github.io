@@ -1,6 +1,6 @@
 function enviar() {
-    var numero = parseInt(document.getElementById("numero"));
-    var texto  = document.getElementById("texto");
+    var numero = parseInt(document.getElementById("numero").value);
+    var texto  = document.getElementById("texto").value;
     var resultado ="";
     var a=0;
     for (var i = 1; i < numero+1; i++) {

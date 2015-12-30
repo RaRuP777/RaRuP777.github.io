@@ -1,0 +1,5 @@
+1.
+Errores de compilación: No esta definido el tipo de return del metodo Apagar y del Encender en este caso VOID
+
+3.
+No aparece el constructor en sí mismo, aparece new que invoca al constructor

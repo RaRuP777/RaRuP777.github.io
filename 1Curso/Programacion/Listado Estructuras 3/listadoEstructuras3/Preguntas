@@ -1,0 +1,10 @@
+1. Explica con tus propias palabras qué es una clase parametrizada (definida con Generics)
+
+Es una forma de limitar el tipo de elementos de la lista de objetos y hacerla homogénea.
+
+10. Busca en la API de Java la collection Stack. 
+Indica su nombre completo, explica su utilidad y entrega un código donde demuestres su uso.
+
+
+11. Busca en la API de Java la collection Queue. 
+Indica su nombre completo, explica su utilidad y entrega un código donde demuestres su uso.

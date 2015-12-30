@@ -13,8 +13,8 @@ function generarDocumentoEjercicio1(){
 							"<body>"+
 								"<center>"+
 									"<h1>Pedro Ramos Ruiz</h1>"+
-									"<p>Hoy es "+ diaSemana(fecha.getDay()) + ", " + fecha.getDate() + " de " + mes(fecha.getMonth()) + " de " + fecha.getYear() + "</p>"+
-									"<p>El fin de curso será el " + diaSemana(fincurso.getDay()) + ", " + fincurso.getDate() + " de " + mes(fincurso.getMonth()) + " de " + fincurso.getYear() + "</p>"+
+									"<p>Hoy es "+ diaSemana(fecha.getDay()) + ", " + fecha.getDate() + " de " + mes(fecha.getMonth()) + " de " + fecha.getFullYear() + "</p>"+
+									"<p>El fin de curso será el " + diaSemana(fincurso.getDay()) + ", " + fincurso.getDate() + " de " + mes(fincurso.getMonth()) + " de " + fincurso.getFullYear() + "</p>"+
 									"<p>Y sólo quedan " + Math.round(calcularDias(fecha.getDate(),fecha.getMonth(),fincurso.getDate(),fincurso.getMonth())) +" días</p>"+
 									"<input type='button' value='Cerrar' onclick='cerrar()'/>"+
 								"</center>"+
@@ -36,7 +36,7 @@ function diaSemana(dia){
 			return "Viernes";
 		case 6:
 			return "Sábado";
-		case 7:
+		case 0:
 			return "Domingo";
 	}
 }

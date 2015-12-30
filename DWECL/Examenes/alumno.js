@@ -4,10 +4,14 @@ function Alumno (nombre,apellido1,apellido2,fechanacimiento){
 	this.nombre=nombre;
 	this.apellido1=apellido1;
 	this.apellido2=apellido2;
-	var dia = parseInt(fechanacimiento.substring(0,2));
-	var mes = parseInt(fechanacimiento.substring(3,5));
-	var anno = parseInt(fechanacimiento.substring(6,10));
-	this.fechanacimiento= new Date(anno,mes,dia);
+	this.crearFecha();
+}
+
+Alumno.prototype.crearFecha=function(){
+	var dia = parseInt(this.fechanacimiento.substring(0,2));
+	var mes = parseInt(this.fechanacimiento.substring(3,5));
+	var anno = parseInt(this.fechanacimiento.substring(6,10));
+	this.fechanacimiento= new Date(anno,mes-1,dia);
 	if (comprobarFecha(dia,mes,this.fechanacimiento))
 		throw new MyException("La fecha introducida no es correcta, mes o dia inválido");
 }
@@ -36,9 +40,9 @@ Alumno.prototype.mostrar=function(){
 
 Alumno.prototype.calcularEdad=function(){
 	var fecha = new Date();
-	if (fecha.getYear() - this.fechanacimiento.getYear() < 0)
+	if (fecha.getFullYear() - this.fechanacimiento.getFullYear() < 0)
 		throw new MyException("La fecha introducida es futura");
-	return fecha.getYear() - this.fechanacimiento.getYear();
+	return fecha.getFullYear() - this.fechanacimiento.getFullYear();
 }
 
 function comprobarFecha (dia,mes,fechanacimiento){

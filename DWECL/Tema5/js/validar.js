@@ -29,7 +29,7 @@ function validarTelefono(texto){
 }
 
 function validarEmail(texto){
-	if(/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(texto))//a-a@.a-a
+	if(/^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$/.test(texto))//a-a@.a-a
   		return false;
   	return true;
 }

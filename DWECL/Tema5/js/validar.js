@@ -1,8 +1,13 @@
 function validarCampoTextoVacio(texto){
-	var patron = "/^\s+$"; //No solo espacios en blanco
-	if (texto.length != 0 || patron.test(texto))
-		return true;
+	if( texto == null || texto.length == 0 || /^\s+$/.test(texto)) //no solo espacios en blanco
+  		return true;
 	return false;
+}
+
+function validarFormatoFecha(fecha){
+	if( /^[0-9]{2}-[0-9]{2}-[0-9]{4}$/.test(fecha)) //00-00-0000
+  		return false;
+	return true;
 }
 
 function validarCampoNumero(texto) {
@@ -12,24 +17,21 @@ function validarCampoNumero(texto) {
 }
 
 function validarMatricula(texto){
-	var patron = "/^\d{4}\s?[A-Z]{3}$/"; // 0000AAA
-	if (patron.test(texto))
+	if (/^\d{4}\s?[A-Z]{3}$/.test(texto))// 0000AAA
 		return true;
 	return false;
 }
 
 function validarTelefono(texto){
-	var patronTelefono = "/^\d{9}$/"; // 000000000
-	if (patronTelefono.test(texto))
-		return true;
-	return false;
+	if (/^\d{9}$/.test(texto))// 000000000
+		return false;
+	return true;
 }
 
 function validarEmail(texto){
-	var patronEmail = "/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/"; //a-a@.a-a
-	if( !(patronEmail.test(texto)))
-  		return true;
-  	return false;
+	if(/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(texto))//a-a@.a-a
+  		return false;
+  	return true;
 }
 
 function validarFecha(anno, mes, dia){
@@ -41,36 +43,36 @@ function validarFecha(anno, mes, dia){
 
 function validarDNI(texto){
 	var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
- 	var patronDNI = "/^\d{8}[A-Z]$/"; //00000000A
-	if(!(patron.test(texto)))
-  		return false;
+ 	if(!(/^\d{8}[A-Z]$/.test(texto))) //00000000A
+  		return true;
   	if(texto.charAt(8) != letras[(texto.substring(0, 8))%23])
-  		return false;
-  	return true;
+  		return true;
+  	return false;
 }
 
 function validarPassword(texto){
-	var patron = "^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,15}$"; //mayusculas, minusculas, números, minimo 6, maximo 15 caracteres
-	if(!(patron.test(texto)))
+	if(!(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,15}$/.test(texto)))//mayusculas, minusculas, números, minimo 6, maximo 15 caracteres
   		return false;
   	return true;
 }
 
 function validarSelectOption (indice){
-	//indice = document.getElementById("opciones").selectedIndex
 	if (indice == null || indice == 0)
 		return false;
 	return true;
 }
 
-function validarCheckbox (elemento){
-	if(elemento.checked)
-		return true;
-	return false;
+function validarCheckbox (opciones){
+	var checked = false;
+	for (var i=0; i < opciones.length; i++){
+		if (opciones[i].checked){
+			checked = true;
+			return true;
+		}
+	}
 }
 
 function validarRadiobutton (opciones){
-	//opciones = document.getElementsByName("opciones")
 	var checked = false;
 	for (var i=0; i < opciones.length; i++){
 		if (opciones[i].checked){
@@ -79,4 +81,10 @@ function validarRadiobutton (opciones){
 		}
 	}
 	return false;
+}
+
+function validarUrl(){
+    if(!(/^(http|https|ftp)\:\/\/[a-z0-9\.-]+\.[a-z]{2,4}/.test(texto)))
+  		return false;
+  	return true;
 }

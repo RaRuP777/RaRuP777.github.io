@@ -12,6 +12,9 @@
 	</script>
 </head>
 <body>
+	<noscript> 
+			Esta página hace uso de scripts. <a href = "http://support.google.com/adsense/bin/answer.py?hl=es&answer=12654"> Puedes leer cómo habilitar JavaScript en el navegador.</a>
+	</noscript>
 	<div id="contenedor">
 		<header>
 			<h1>Validar Formulario - Pedro J. Ramos</h1>	
@@ -23,20 +26,20 @@
 		<main>
 			<section>
 				<article>
-					<form id="form1" action="#" method="post">
-						<fieldset>
+					<form>
+						<fieldset><p id="texto"><p>
 							<table>
 								<tr>
 									<td><label>Nombre</label></td>
-									<td><input type="text" name="nombre" /></td>
+									<td><input type="text" id="nombre" autofocus/></td>
 								</tr>
 								<tr>
 									<td><label>Apellidos</label></td>
-									<td><input type="text" name="apellidos" /></td>
+									<td><input type="text" id="apellidos" /></td>
 								</tr>
 								<tr>
 									<td><label>Fecha de Nacimiento</label></td>
-									<td><input type="cal" name="fecha" /></td>
+									<td><input type="text" id="fecha" placeholder="dd-mm-aaaa" /></td>
 								</tr>
 								<tr>
 									<td><label>Sexo</label></td>
@@ -47,28 +50,28 @@
 								</tr>
 								<tr>
 									<td><label>Correo electrónico</label</td>
-									<td><input type="email" name="email" /></td>
+									<td><input type="text" id="email" placeholder="example@algo.com" /></td>
 								</tr>
 								<tr>
-									<td><label>Número de contacto</label></td>
-									<td><input type="text" name="telefono" /></td>
+									<td><label>Teléfono</label></td>
+									<td><input type="text" id="telefono" placeholder="00000000"/></td>
 								</tr>
 								<tr>
 									<td><label>Número DNI</label></td>
-									<td><input type="text" name="dni" /></td>
+									<td><input type="text" id="dni" placeholder="0000000A"/></td>
 								</tr>
 								<tr>
 									<td><label>Experiencia laboral</label></td>
-									<td><textarea rows="6" cols="30" name="experiencia" ></textarea></td>
+									<td><textarea rows="6" cols="30" id="experiencia" ></textarea></td>
 								</tr>
 								<tr>
 									<td><label>Estudios</label></td>
-									<td><textarea rows="6" cols="30" name="estudios"></textarea></td>
+									<td><textarea rows="6" cols="30" id="estudios"></textarea></td>
 								</tr>
 								<tr>
 									<td><label>Jornada laboral</label></td>
 									<td>
-										<select name="jornada">
+										<select id="jornada">
 											<option value="Indiferente" selected >Indiferente</option>
 											<option value="Mañana">Por la mañana</option>
 											<option value="Por la tarde">Por la tarde</option>
@@ -78,18 +81,17 @@
 								<tr>
 									<td><label>Idiomas</label></td>
 									<td>
-										<input type="checkbox" name="idiomas[]" value="Inglés" />Inglés
-										<input type="checkbox" name="idiomas[]" value="Francés" />Francés
-										<input type="checkbox" name="idiomas[]" value="Alemán" />Alemán
-										<input type="checkbox" name="idiomas[]" value="Otros" />Otros
+										<input type="checkbox" id="idiomas[]" value="Inglés" />Inglés
+										<input type="checkbox" id="idiomas[]" value="Francés" />Francés
+										<input type="checkbox" id="idiomas[]" value="Alemán" />Alemán
+										<input type="checkbox" id="idiomas[]" value="Otros" />Otros
 									</td>
 								</tr>
 							</table><hr/>
-							<input type="submit" value="Enviar" onclick="enviar()" />
-							<input type="reset" name="reset" value="Limpiar"/>
+							<input type="button" value="Enviar" id="enviar" />
+							<input type="reset" value="Limpiar" id="reset" />
 						</fieldset>
 					</form>
-					<p id="texto"><p>
 				</article>
 		</main>
 	</div>

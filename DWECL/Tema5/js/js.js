@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	fecha.addEventListener('blur', function(){
 		if(validarFormatoFecha(fecha.value)){
 			fecha.focus();
-			texto.innerHTML = "El formato de fecha no es correcto";
+			texto.innerHTML = "El formato de fecha no es correcto (00-00-0000)";
 		} else
 			texto.innerHTML = "";
 	});
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	email.addEventListener('blur', function(){
 		if(validarEmail(email.value)){
 			email.focus();
-			texto.innerHTML = "El formato de email no es correcto";
+			texto.innerHTML = "El formato de email no es correcto (example@algo.com)";
 		} else
 			texto.innerHTML = "";
 	});
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	telefono.addEventListener('blur', function(){
 		if(validarTelefono(telefono.value)){
 			telefono.focus();
-			texto.innerHTML = "El formato de teléfono no es correcto";
+			texto.innerHTML = "El formato de teléfono no es correcto (000000000)";
 		} else
 			texto.innerHTML = "";
 	});
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	dni.addEventListener('blur', function(){
 		if(validarDNI(dni.value)){
 			dni.focus();
-			texto.innerHTML = "El formato de DNI no es correcto";
+			texto.innerHTML = "El formato de DNI no es correcto (00000000A)";
 		} else
 			texto.innerHTML = "";
 	});
@@ -109,6 +109,5 @@ document.addEventListener("DOMContentLoaded", function () {
 			texto.innerHTML = "Debes seleccionar al menos un idioma";
 		} else
 			texto.innerHTML = "";
-
 	}
 });

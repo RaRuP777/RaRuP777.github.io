@@ -45,7 +45,7 @@ function validarDNI(texto){
 	var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
  	if(!(/^\d{8}[A-Z]$/.test(texto))) //00000000A
   		return true;
-  	if(texto.charAt(8) != letras[(texto.substring(0, 8))%23])
+  	if(texto.charAt(8).toUpperCase() != letras[(texto.substring(0, 8))%23])
   		return true;
   	return false;
 }

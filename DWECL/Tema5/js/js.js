@@ -1,6 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
 	
-	var texto = document.getElementById("texto");
+	var error1 = document.getElementById("error1");
+	var error2 = document.getElementById("error2");
+	var error3 = document.getElementById("error3");
+	var error4 = document.getElementById("error4");
+	var error5 = document.getElementById("error5");
+	var error6 = document.getElementById("error6");
+	var error7 = document.getElementById("error7");
+	var error8 = document.getElementById("error8");
+	var error9 = document.getElementById("error9");
+	var error10 = document.getElementById("error10");
+	var error11 = document.getElementById("error11");
+
 	var btnEnviar = document.getElementById('enviar');			
 	btnEnviar.addEventListener('click', enviar);
 	var btnReset = document.getElementById('reset');
@@ -21,65 +32,65 @@ document.addEventListener("DOMContentLoaded", function () {
 	nombre.addEventListener('blur', function(){
 		if(validarCampoTextoVacio(nombre.value)){
 			nombre.focus();
-			texto.innerHTML = "El nombre no ha sido rellenado";
+			error1.innerHTML = "El nombre no ha sido rellenado";
 		} else
-			texto.innerHTML = "";
+			error1.innerHTML = "";
 	});
 
 	apellidos.addEventListener('blur', function(){
 		if(validarCampoTextoVacio(apellidos.value)){
 			apellidos.focus();
-			texto.innerHTML = "Los apellidos no han sido rellenados";
+			error2.innerHTML = "Los apellidos no han sido rellenados";
 		} else
-			texto.innerHTML = "";
+			error2.innerHTML = "";
 	});
 
 	fecha.addEventListener('blur', function(){
 		if(validarFormatoFecha(fecha.value)){
 			fecha.focus();
-			texto.innerHTML = "El formato de fecha no es correcto (00-00-0000)";
+			error3.innerHTML = "El formato de fecha no es correcto (00-00-0000)";
 		} else
-			texto.innerHTML = "";
+			error3.innerHTML = "";
 	});
 
 	email.addEventListener('blur', function(){
 		if(validarEmail(email.value)){
 			email.focus();
-			texto.innerHTML = "El formato de email no es correcto (example@algo.com)";
+			error5.innerHTML = "El formato de email no es correcto (example@algo.com)";
 		} else
-			texto.innerHTML = "";
+			error5.innerHTML = "";
 	});
 
 	telefono.addEventListener('blur', function(){
 		if(validarTelefono(telefono.value)){
 			telefono.focus();
-			texto.innerHTML = "El formato de teléfono no es correcto (000000000)";
+			error6.innerHTML = "El formato de teléfono no es correcto (000000000)";
 		} else
-			texto.innerHTML = "";
+			error6.innerHTML = "";
 	});
 
 	dni.addEventListener('blur', function(){
 		if(validarDNI(dni.value)){
 			dni.focus();
-			texto.innerHTML = "El formato de DNI no es correcto (00000000A)";
+			error7.innerHTML = "El formato de DNI no es correcto (00000000A)";
 		} else
-			texto.innerHTML = "";
+			error7.innerHTML = "";
 	});
 
 	experiencia.addEventListener('blur', function(){
 		if(validarCampoTextoVacio(experiencia.value)){
 			experiencia.focus();
-			texto.innerHTML = "La experiencia no ha sido rellenada";
+			error8.innerHTML = "La experiencia no ha sido rellenada";
 		} else
-			texto.innerHTML = "";
+			error8.innerHTML = "";
 	});
 
 	estudios.addEventListener('blur', function(){
 		if(validarCampoTextoVacio(estudios.value)){
 			estudios.focus();
-			texto.innerHTML = "Los estudios no han sido rellenados";
+			error9.innerHTML = "Los estudios no han sido rellenados";
 		} else
-			texto.innerHTML = "";
+			error9.innerHTML = "";
 	});
 
 	function reset (){
@@ -91,23 +102,34 @@ document.addEventListener("DOMContentLoaded", function () {
 			dni.innerHTML='';
 			experiencia.innerHTML='';
 			estudios.innerHTML='';
+			error1.innerHTML='';
+			error2.innerHTML='';
+			error3.innerHTML='';
+			error4.innerHTML='';
+			error5.innerHTML='';
+			error6.innerHTML='';
+			error7.innerHTML='';
+			error8.innerHTML='';
+			error9.innerHTML='';
+			error10.innerHTML='';
+			error11.innerHTML='';
 	}
 
 	function enviar (){
 		if(validarRadiobutton(sexo)){
 			sexo.focus();
-			texto.innerHTML = "Debes seleccionar un sexo";
+			error4.innerHTML = "Debes seleccionar un sexo";
 		} else
-			texto.innerHTML = "";
+			error4.innerHTML = "";
 		if(validarSelectOption(jornada.selectedIndex)){
 			jornada.focus();
-			texto.innerHTML = "Debes seleccionar una jornada";
+			error10.innerHTML = "Debes seleccionar una jornada";
 		} else
-			texto.innerHTML = "";
+			error10.innerHTML = "";
 		if(validarCheckbox(idiomas)){
 			idiomas.focus();
-			texto.innerHTML = "Debes seleccionar al menos un idioma";
+			error11.innerHTML = "Debes seleccionar al menos un idioma";
 		} else
-			texto.innerHTML = "";
+			error11.innerHTML = "";
 	}
 });

@@ -11,7 +11,8 @@ th {
     border-bottom-color: #558FA6;
     font-family: “Trebuchet MS”, Arial;
     text-transform: uppercase;
-    }
+}
+
 td {
     padding: 5px;
     border-right-width: 1px;
@@ -21,10 +22,12 @@ td {
     border-right-color: #A4C4D0;
     border-bottom-color: #A4C4D0;
     text-align:center;
-    }
+}
+
 li {
     list-style:none;
-    }
-p{
-    font-size: 24px;
+}
+
+span{
+    color:red;
 }

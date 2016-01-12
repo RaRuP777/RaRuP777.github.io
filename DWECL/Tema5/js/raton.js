@@ -13,8 +13,13 @@ document.addEventListener("DOMContentLoaded", function () {
 	];
 
 	for (var i=0; i<tabla.length; i++){
-		tabla[i].onmouseover = cambiaColor;
-		tabla[i].onmouseout = cambiaBlanco;
+		tabla[i].onmouseover = cambiaColor; //Situarse encima del elemento
+		tabla[i].onmouseout = cambiaBlanco; //Salir el puntero del elemento
+		tabla[i].click = cambiaColor; //Dar click izquierdo en el elemento
+		tabla[i].dblclick = cambiaBlanco; //Dar doble click izquierdo en el elemento
+		tabla[i].mousedown = cambiaColor; //Al pulsar cualquier boton sobre el elemento
+		tabla[i].mouseup = cambiaBlanco; //AL sortar el un botón que ha sido pulsado
+		tabla[i].mousemove = cambiaColor; //Al situarse sobre el elemento
 	}
 	
 	function cambiaColor(){

@@ -208,31 +208,31 @@ public class MainActivity extends AppCompatActivity {
         operando = visor.getText().toString();
         switch (moneda) {
             case "usd":
-                total = Integer.parseInt(operando) * USD;
+                total = Double.parseDouble(operando) * USD;
                 break;
             case "jpy":
-                total = Integer.parseInt(operando) * JPY;
+                total = Double.parseDouble(operando) * JPY;
                 break;
             case "bgn":
-                total = Integer.parseInt(operando) * BGN;
+                total = Double.parseDouble(operando) * BGN;
                 break;
             case "czk":
-                total = Integer.parseInt(operando) * CZK;
+                total = Double.parseDouble(operando) * CZK;
                 break;
             case "dkk":
-                total = Integer.parseInt(operando) * DKK;
+                total = Double.parseDouble(operando) * DKK;
                 break;
             case "gbp":
-                total = Integer.parseInt(operando) * GBP;
+                total = Double.parseDouble(operando) * GBP;
                 break;
             case "huf":
-                total = Integer.parseInt(operando) * HUF;
+                total = Double.parseDouble(operando) * HUF;
                 break;
             case "pln":
-                total = Integer.parseInt(operando) * PLN;
+                total = Double.parseDouble(operando) * PLN;
                 break;
             case "ron":
-                total = Integer.parseInt(operando) * RON;
+                total = Double.parseDouble(operando) * RON;
         }
         visor.setText(Double.toString(total));
     }

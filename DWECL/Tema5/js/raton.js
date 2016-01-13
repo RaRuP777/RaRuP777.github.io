@@ -15,9 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
 	for (var i=0; i<tabla.length; i++){
 		tabla[i].onmouseover = cambiaColor; //Situarse encima del elemento
 		tabla[i].onmouseout = cambiaBlanco; //Salir el puntero del elemento
-		tabla[i].click = cambiaColor; //Dar click izquierdo en el elemento
-		tabla[i].dblclick = cambiaBlanco; //Dar doble click izquierdo en el elemento
-		tabla[i].mousedown = cambiaColor; //Al pulsar cualquier boton sobre el elemento
+		tabla[i].onclick = cambiaBlanco; //Dar click izquierdo en el elemento
+		tabla[i].ondblclick = cambiaNegro; //Dar doble click izquierdo en el elemento
+		tabla[i].onmousedown = cambiaColor; //Al pulsar cualquier boton sobre el elemento
 		tabla[i].mouseup = cambiaBlanco; //AL sortar el un botón que ha sido pulsado
 		tabla[i].mousemove = cambiaColor; //Al situarse sobre el elemento
 	}
@@ -30,8 +30,12 @@ document.addEventListener("DOMContentLoaded", function () {
 		this.style.background = 'white';
    	}
 
+   	function cambiaNegro(){
+		this.style.background = 'black';
+   	}
+
 	function colorAleatorio(){
-		color = Math.ceil(Math.random()*9);
+		color = Math.ceil(Math.random()*8);
 		switch (color){
 			case 1:
 				return 'red';
@@ -46,8 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
 			case 6:
 				return 'brown';
 			case 7:
-				return 'black';
-			case 8:
 				return 'purple';
 			default:
 				return 'blue';

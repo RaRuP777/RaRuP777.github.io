@@ -6,7 +6,7 @@ form {
   margin : 0 auto;
 }
 fieldset, select{
-  background-color: #FFBFEF;
+  background-color: pink;
   border-color: green; 
 }
 

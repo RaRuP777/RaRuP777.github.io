@@ -1,3 +1,8 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
 article{
 	text-align: center;
 }
@@ -5,4 +10,16 @@ article{
 img {
 	width: 100%;
 	height: 100%;
+}
+
+@media screen and (min-width: 767px){
+	#web {
+		background-color: pink;
+	}
+}
+
+@media screen and (min-width: 1024px){
+	#web {
+		background-color: orange;
+	}
 }

@@ -1,0 +1,23 @@
+.rojo{
+	color: #cc0000;
+}
+
+.verde{
+	color: #00cc00;
+}
+
+.azul{
+	color: #0000cc;
+}
+
+.fondogris{
+	background-color: #cccccc;
+}
+
+body{
+	font-family: verdana, arial, helvetica;
+}
+
+div{
+	margin-bottom: 4px;
+}

@@ -1,0 +1,11 @@
+#micapa{
+	padding: 10px; 
+	background-color: #ffcc99; 
+	width: 150px; 
+	float:left;
+}
+
+#mensaje{
+	padding: 10px; 
+	margin-left: 180px;
+}

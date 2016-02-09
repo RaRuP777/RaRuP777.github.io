@@ -1,0 +1,20 @@
+#capa1 {
+	padding: 24px; 
+	background-color: #ffccdd; 
+	float: left; 
+	border: 2px dotted#666;
+}
+
+br {
+	clear: both;
+}
+
+div {
+	margin: 10px;
+}
+
+#capa2 {
+	background-color:#ccc; 
+	border-bottom: 5px solid #999; 
+	margin-left: 10px;
+}

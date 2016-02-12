@@ -1,0 +1,21 @@
+body{
+	font-size: 0.75em;
+	font-family: tahoma, verdana, sans-serif;
+}
+
+.notar{
+	color: #339;
+}
+
+#mensaje{
+	margin: 20px 5px;
+}
+
+#micapa{
+	left: 200px;
+	top: 150px;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-color: #3d3;
+}

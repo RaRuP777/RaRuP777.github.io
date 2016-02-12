@@ -1,0 +1,17 @@
+body{
+	font-size: 0.75em;
+	font-family: tahoma, verdana, sans-serif;
+}
+
+#mensaje{
+	margin: 20px 5px;
+}
+
+#micapa{
+	left: 100px;
+	top: 150px;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-color: #3d3;
+}

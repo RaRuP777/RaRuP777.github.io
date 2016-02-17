@@ -1,0 +1,84 @@
+﻿<html>
+<head>
+	<meta charset="utf-8">
+	<title>JqueryUI - Pedro J. Ramos</title>
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/menu.css" rel="stylesheet">
+	<link href="css/form.css" rel="stylesheet">
+	<link href="css/web.css" rel="stylesheet">
+	<script type="text/javascript"
+		src="canvas/canvas.js">
+	</script>
+	<script 
+		src="js/jquery.js">
+	</script>
+  	<script 
+  		src="js/jquery-ui.js">
+  	</script>
+<script>
+  $(function() {
+    var state = true;
+    $( "#button" ).click(function() {
+      if ( state ) {
+        $( "#effect" ).animate({
+          width: 500
+        }, 1000 );
+      } else {
+        $( "#effect" ).animate({
+          width: 240
+        }, 1000 );
+      }
+      state = !state;
+    });
+  });
+  </script>
+</head>
+<body onLoad="dibujarCanvas();">
+	<div id="contenedor">
+		<header>
+			<canvas id="miCanvas" width="130" height="130">Su navegador no soporta Canvas.</canvas>
+			<h1>JqueryUI</h1>	
+		</header>
+		<nav>
+			<ul>
+				<li><a href="../index.html">VOLVER</a></li>
+				<li><a href="resizeable.html">Textarea Resizeable</a></li>
+			<ul>
+		</nav>
+		<br/>
+		<main>
+			<article>
+				
+			</article>
+		</main>
+		<div>
+			<div class="toggler">
+			  <div id="effect" class="ui-widget-content ui-corner-all">
+			    <center>
+			    <strong>Animate</strong><br/>
+			      $(function() { <br/>
+			    var state = true;<br/>
+			    $( "#button" ).click(function() {<br/>
+			      if ( state ) {<br/>
+			        $( "#effect" ).animate({<br/>
+			          width: 500<br/>
+			        }, 1000 );<br/>
+			      } else {<br/>
+			        $( "#effect" ).animate({<br/>
+			          width: 240<br/>
+			        }, 1000 );<br/>
+			      }<br/>
+			      state = !state;<br/>
+			    });<br/>
+			  });<br/>
+			  </div>
+			</div>
+ 			<button id="button" >Animate Disclamer</button>
+			<hr/>
+		</div>
+		<footer>
+			<p>Pedro J. Ramos</p>
+		</footer>
+	</div>
+</body>
+</html>

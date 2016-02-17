@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a:link, a:visited { 
-    color: #000;
+    color: #FFF;
     text-decoration: none;
 }
 
@@ -57,9 +57,9 @@ p {
 header {
     width: 100%;
 }
+
 img {
     float: left; 
-    margin-top: 40px; 
 }
 
 main {
@@ -116,4 +116,12 @@ a {
 
 table{
     width: 100%;
+}
+
+.right{
+    float: right;
+}
+
+.left{
+    float: left;
 }

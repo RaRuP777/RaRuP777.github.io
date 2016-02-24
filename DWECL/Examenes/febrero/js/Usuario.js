@@ -7,7 +7,6 @@ function Usuario (nombre, apellidos, dni){
 
 //mostrar añadido con prototype
 Usuario.prototype.mostrar = function(){
-	var texto = document.getElementById("texto");
 	texto.innerHTML = 	"El nombre es: " + this.nombre + "<br/>" + 
 						"el apellido: " + this.apellidos + "<br/>" + 
 						"el DNI es: " + this.dni;

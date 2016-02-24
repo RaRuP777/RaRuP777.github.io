@@ -23,3 +23,36 @@ img {
 		background-color: orange;
 	}
 }
+
+footer {
+  clear: both;
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+  background: rgba(57, 50, 40, 0.8);
+  border-top: 3px solid #7ba492;
+}
+
+#icons {
+  width:184px;
+  float:right
+}
+#icons li {
+  float:left;
+  padding-right:10px
+}
+
+#icons .first {
+  float:none;
+  font-size:23px;
+  color:#fff;
+  font-weight:400;
+  line-height:1.2em;
+  margin-top:-15px;
+  letter-spacing:-1px;
+  padding-bottom:9px
+}
+
+footer ul li {
+  list-style: none;
+}

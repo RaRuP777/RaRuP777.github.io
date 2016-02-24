@@ -8,15 +8,16 @@ function Usuario (nombre, apellidos, dni){
 //mostrar añadido con prototype
 Usuario.prototype.mostrar = function(){
 	var texto = document.getElementById("texto");
-	texto.innerHtml = 	"El nombre es: " + this.nombre + "<br/>" + 
+	texto.innerHTML = 	"El nombre es: " + this.nombre + "<br/>" + 
 						"el apellido: " + this.apellidos + "<br/>" + 
 						"el DNI es: " + this.dni;
 }
 
 //crearListItem añadido con prototype
 Usuario.prototype.crearListItem = function(){
-	elemento = document.createElement("li");
-	usuario = document.createTextNode(this.nombre + this.apellidos + this.dni);
-	elemento.appendChild(usuario);
-	document.body.insertBefore(texto, document.body.lastElementChild);
+	var ul = document.getElementById("lista");
+	var li = document.createElement("li");
+	var nodo = document.createTextNode(this.nombre + this.apellidos + this.dni);
+	li.appendChild(nodo);
+	ul.appendChild(li);
 }

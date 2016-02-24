@@ -2,11 +2,12 @@
 	<head>
 		<title>Examen - Pedro Ramos Ruiz</title>
 		<meta charset="utf-8">
-		<script src = "Usuario.js" type = "text/javascript"> </script>
-		<script src = "js.js" type = "text/javascript"> </script>
+		<script src = "js/Usuario.js" type = "text/javascript"> </script>
+		<script src = "js/validar.js" type = "text/javascript"> </script>
+		<script src = "js/js.js" type = "text/javascript"> </script>
 	</head>
 	<body>
-		<form >
+		<form>
 			<h1>Examen Febrero - Pedro J. Ramos</h1>
 			<legend>Alta de Usuario</legend>
 			<fieldset><table>
@@ -16,7 +17,7 @@
 					</td>
 					<td>
 						<input type = "text" id="nombre" placeholder="(obligatorio)"/>
-						<span id = "errorNombre"></span>
+						<span id = "errorNombre" style="color: red;"></span>
 					</td>
 				</tr>
 				<tr>
@@ -25,7 +26,7 @@
 					</td>
 					<td>
 						<input type = "text" id="apellidos" placeholder="(obligatorio)"/>
-						<span id = "errorApellidos"></span>
+						<span id = "errorApellidos" style="color: red;"></span>
 					</td>
 				</tr>	
 				<tr>
@@ -34,7 +35,7 @@
 					</td>
 					<td>
 						<input type = "text" id="DNI" placeholder="(obligatorio)"/>
-						<span id = "errorDNI"></span>
+						<span id = "errorDNI" style="color: red;"></span>
 					</td>
 				</tr>	
 				<tr>
@@ -42,18 +43,19 @@
 						<label for ="sexo" >Sexo</label>
 					</td>
 					<td>
-						<input type="radio" name="sexo" value="hombre"/>Hombre
-						<input type="radio" name="sexo" value="mujer">Mujer
-						<span id = "errorSexo"></span>
+						<input type="radio" name="sexo" value="hombre" id="hombre"/>Hombre
+						<input type="radio" name="sexo" value="mujer" id="mujer">Mujer
+						<span id = "errorSexo" style="color: red;"></span>
 					</td>
 				</tr>	
 			</table>
-			<input type="checkbox" name="condiciones">Acepto las condiciones
-			<span id = "errorCheckbox"></span>
+			<input type="checkbox" id="condiciones">Acepto las condiciones
+			<span id = "errorCondiciones" style="color: red;"></span>
 			</fieldset>
-			<input type = "button" value = "Nuevo Usuario"  id = "crear">
-			<input type = "reset" value = "Limpiar" id = "limpiar">
+			<input type="button" id="enviar" value="Nuevo usuario">
+            <input type="reset" id="limpiar" value="Limpiar">
 		</form>
 		<div id="texto"></div>
+		<ul id="lista"></ul>
 	</body>
 </html>

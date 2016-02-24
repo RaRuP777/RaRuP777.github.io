@@ -19,6 +19,9 @@
 	var btnEnviar = document.getElementById('enviar');
 	var btnLimpiar = document.getElementById('limpiar');
 
+	//div donde se muestra la información del alta creada
+	var texto = document.getElementById("texto");
+
 	//evento perdida foco del input nombre
 	nombre.addEventListener('blur', function(){
 		validarNombre(nombre.value);
@@ -64,6 +67,8 @@
 		errorDNI.innerHTML="";
 		errorSexo.innerHTML="";
 		errorCondiciones.innerHTML="";
+
+		texto.innerHTML="";
 
 		eliminarCookie();
 	}

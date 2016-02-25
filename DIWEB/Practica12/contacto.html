@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style2.css">
     <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="css/form.css">
     <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
     <title>Casas Rurales</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -17,24 +18,130 @@
         <nav>
           <ul>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="principal.html">Catálogo</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
             <li><a href="contacto.html" class="seleccionado" >Contacto</a></li>
           </ul>
         </nav>
        </header>
       <section>
-        <form>
- 
+        <form >
+          <legend>Formulario de Contacto</legend>
+          <fieldset><table>
+            <tr>
+              <td>
+                <label for ="nombre" >Nombre</label>
+              </td>
+              <td>
+                <input type = "text" id="nombre" placeholder="Nombre"/>
+                <span id = 'msj_nombre'></span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for ="apellidos"  >Apellidos </label>
+              </td>
+              <td>
+                <input type = "text" id="apellidos" placeholder="Apellidos"/>
+                <span id = 'msj_apellido1'></span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for ="email" >Correo electrónico </label>
+              </td>
+              <td>
+                <input type = "text" id="email" placeholder="algo@ejemplo.com"/>
+                <span id = 'msj_email'></span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for ="fecha" >Fecha de nacimiento</label>
+              </td>
+              <td>
+                <input type = "text" id="fechaNac" placeholder="dd-mm-aaaa"/>
+                <span id = 'msj_fecha'></span>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <br><label for ="conocer" >¿Cómo nos conocistes?</label>
+              </td>
+            <tr/>
+            <tr>
+              <td>
+                <tr>
+                  <td><label>A través de un amigo</label></td>
+                  <td><input type="checkbox" name="conocer"></td>
+                </tr>
+                <tr>
+                  <td><label>A través de un buscador</label></td>
+                  <td><input type="checkbox" name="conocer"></td>
+                </tr>
+                <tr>
+                  <td><label>Navegando por la red</label></td>
+                  <td><input type="checkbox" name="conocer"></td>
+                </tr>
+                <tr>
+                  <td><label>Otros</label></td>
+                  <td><input type="checkbox" name="conocer"></td>
+                </tr>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for ="opinion" >¿Cómo nos conocistes?</label>
+              </td>
+              <td>
+                <textarea cols="40" rows="3" name="opinion">Escriba aquí su opinión...</textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for ="sugerencias" >Sugerencias...</label>
+              </td>
+              <td>
+                <textarea cols="40" rows="3" name="sugerencias">Escriba aquí sus sugerencias...</textarea>
+              </td>
+            </tr>
+          </table></fieldset>
+          <input type = "checkbox" id="condiciones"/>
+          <label for ="condiciones" >Acepto las condiciones</label>
+          <span id = 'msj_condiciones'></span>
+          <div>
+            <input type = "button" class="button" value = "Crear"  id = 'crear'>
+            <input type = "reset" class="button" value = "Limpiar" id = 'limpiar'>
+          </div>
         </form>
-
       </section>
+      <aside>
+            <article>
+              <p>PUBLICIDAD</p>
+            </article>
+            <article>
+              <p>PUBLICIDAD</p>
+            </article>
+            <article>
+              <p>PUBLICIDAD</p>
+            </article>
+            <article>
+              <p>PUBLICIDAD</p>
+            </article>
+            <article>
+              <p>PUBLICIDAD</p>
+            </article>
+            <article>
+              <p>PUBLICIDAD</p>
+            </article>
+        </aside>
       <footer>
         <ul id="icons">
           <li class="first">Contacto:</li>
-          <li><a href="https://www.facebook.com/pedro.jonathan.ramos" class="normaltip" title="Facebook"><img src="images/icon1.jpg" alt=""></a></li>
-          <li><a href="https://twitter.com/RaRuP777" class="normaltip" title="Twitter"><img src="images/icon2.jpg" alt=""></a></li>
-          <li><a href="https://github.com/rarup777" class="normaltip" title="Github"><img src="images/icon3.png" alt=""></a></li>
-          <li><a href="http://pjdaw.tk/" class="normaltip" title="Blogger"><img src="images/icon4.png" alt=""></a></li>
+          <li><a href="https://www.facebook.com/pedro.jonathan.ramos" class="normaltip" title="Facebook"><img src="img/icon1.jpg" alt=""></a></li>
+          <li><a href="https://twitter.com/RaRuP777" class="normaltip" title="Twitter"><img src="img/icon2.jpg" alt=""></a></li>
+          <li><a href="https://github.com/rarup777" class="normaltip" title="Github"><img src="img/icon3.png" alt=""></a></li>
+          <li><a href="http://pjdaw.tk/" class="normaltip" title="Blogger"><img src="img/icon4.png" alt=""></a></li>
         </ul>
         Pedro J. Ramos &copy;<br>2º DAW 2015/2016<br>
       </footer>

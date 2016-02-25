@@ -1,0 +1,51 @@
+fieldset {
+  background: rgba(41, 57, 40, 0.3);
+  border-color: green; 
+}
+
+legend {
+  font : 2em "typewriter", sans-serif;
+  color:white;
+}
+
+label {
+  font : 1em "typewriter", sans-serif;
+  color:white;
+  margin-right: 1em;
+}
+
+input, textarea {
+  font    : .9em/1.5em "handwriting", sans-serif;
+  padding : 0 10px;
+  margin  : 0;
+  width   : 240px;
+  background: rgba(255,255,255,0.1);
+}
+
+input:focus, textarea:focus{
+  background: rgba(255,255,255,1);
+  border-radius: 5px;
+}
+
+input {
+    height: 2.5em;
+    vertical-align: middle;
+}
+
+textarea {
+  display : block;
+  padding : 10px;
+  margin  : 10px 0 0 -10px;
+  width   : 340px;
+  height  : 160px;
+  resize  : none;
+  overflow: auto;
+}
+
+.button {
+
+  font: bold 1em sans-serif;
+  border: 2px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+}

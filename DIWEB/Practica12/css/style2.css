@@ -1,190 +1,51 @@
 @media screen and (min-width: 768px){ 
 
   body {
-    font-family: 'Open Sans', sans-serif;
-    background: #323a46;
+    background: #323232;
   }
-
-  .logo {
-    text-align: center;
-  }
-
-  .contenido {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  h1 {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-
-  section article img {
-    width: 100%;
-    height: auto;
-  }
-
-  /* - - - - - CABECERA - - - - - */
 
   header {
     display: block;
-    padding-top: 5px;
-    background: rgba(57, 50, 40, 0.8);
+    padding-top: 2px;
+    background: rgba(57, 57, 57, 0.8);
   }
 
   nav {
-    text-align: center;
     background: rgba(57, 50, 40, 0.8);
-    border-bottom: 3px solid #7ba492;
   }
 
   nav ul li {
-   display: inline-block;
+   width: 24%;
   }
 
   nav ul li a {
-    display: block;
     padding: 15px 30px;
-    text-decoration: none;
-    color: #fff;
   }
-
-  nav ul li a:hover {
-    background: rgba(123, 164, 146, 0.8);
-  }
-
-  .seleccionado {
-    font-weight: bold;
-    background: rgba(123, 164, 146, 0.8);
-
-  }
-
-
-  /* - - - - - CONTENIDO - - - - - */
 
   section {
-    float: left;
-    margin: 0 auto;
-    padding: 30px 20px;
     width: 100%;
-    box-sizing: border-box;
-    background: rgba(41, 57, 40, 0.7);
   }
 
   article {
-    float: left;
     width: 30%;
-    margin: 5px 5px;
-    padding: 5px;
-    box-sizing: border-box;
-    background: rgba(241, 241, 234, 0.8);
-    border: 3px solid #7BA592;
+    margin: 3px 3px;
+    padding: 3px;
   }
 
-  .foto {
-    float: left;
-    width: 70%;
-    margin-left: 5px;
+  img {
+    margin-left: 3px;
   }
 
-
-  .fotos {
-    float: right;
-    width: 20%;
-    margin-top: 3%;
-    margin-right: 5px;
-  }
-
-  .titulo {
-    clear: both;
-    text-align: center;
-    margin-bottom: 5px;
-  }
-
-  .titulo h3 {
-    font-size: 1em;
-  }
-
-
-  .hab {
-    float: left;
-    width: 20%;
-    text-align: center;
-    font-size: 0.90em;
-    font-weight: bold;
+  h3 {
+    font-size: 20px;
   }
 
   .reservar {
-    float: left;
-    width: 60%;
-    text-align: center;
-  }
-
-
-  .button {
-    box-shadow:inset 0px 1px 0px 0px #cf866c;
-    background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d0451b', endColorstr='#bc3315',GradientType=0);
-    background-color:#d0451b;
-    border-radius:3px;
-    border:1px solid #942911;
-    display:inline-block;
-    cursor:pointer;
-    color:#fff;
-    font-size:12px;
-    padding:4px 18px;
-    text-decoration:none;
-    text-shadow:0px 1px 0px #854629;
-  }
-  .button:hover {
-    background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc3315', endColorstr='#d0451b',GradientType=0);
-    background-color:#bc3315;
-  }
-  .button:active {
-    position:relative;
-    top:1px;
+    width: 50%;
   }
 
   .precio {
-    float: right;
-    width: 20%;
-    text-align: center;
-    font-size: 1em;
-    font-weight: bold;
-  }
-
-  aside {
-    display: block;
-    float: left;
-    width: 100%;
-    margin: 10px 0;
-    box-sizing: border-box;
-    background: rgba(41, 57, 40, 0.7);
-    text-align: center;
-  }
-
-  aside h2 {
-    display: none;
-  }
-
-  aside ul li {
-    display: inline-block;
-    margin-top: 10px;
-    width: 32%;
-  }
-
-
-  /* - - - - - PIE - - - - - */
-
-  footer {
-    clear: both;
-    padding: 20px 0;
-    text-align: center;
-    color: #fff;
-    background: rgba(57, 50, 40, 0.8);
-    border-top: 3px solid #7ba492;
+    font-size: 0.8em;
   }
 
 }

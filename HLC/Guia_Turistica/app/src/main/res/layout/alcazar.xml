@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_weight="0.45"
+        android:layout_margin="5dp"
+        android:src="@drawable/alcazar1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_weight="0.55"
+        android:text="
+        El Alcázar de los Reyes Cristianos, es un edificio de carácter militar ordenado construir por el rey Alfonso XI de Castilla en el año 1328, sobre construcciones anteriores (el Alcázar andalusí, antes residencia del Gobernador Romano y la Aduana, ubicada en uno de los márgenes del río Guadalquivir), en Córdoba, España.
+
+        El conjunto arquitectónico tiene un carácter sobrio en su exterior y espléndido en su interior, con los magníficos jardines y patios que mantienen una inspiración mudéjar.
+
+        "
+        android:id="@+id/textView" />
+</LinearLayout>

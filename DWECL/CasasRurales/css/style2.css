@@ -1,0 +1,51 @@
+@media screen and (min-width: 768px){ 
+
+  body {
+    background: #323232;
+  }
+
+  header {
+    display: block;
+    padding-top: 2px;
+    background: rgba(57, 57, 57, 0.8);
+  }
+
+  nav {
+    background: rgba(57, 50, 40, 0.8);
+  }
+
+  nav ul li {
+   width: 24%;
+  }
+
+  nav ul li a {
+    padding: 15px 30px;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  article {
+    width: 30%;
+    margin: 3px 3px;
+    padding: 3px;
+  }
+
+  img {
+    margin-left: 3px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .reservar {
+    width: 50%;
+  }
+
+  .precio {
+    font-size: 0.8em;
+  }
+
+}

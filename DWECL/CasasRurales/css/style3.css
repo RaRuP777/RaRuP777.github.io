@@ -1,0 +1,82 @@
+@media screen and (min-width: 1024px){ 
+
+  body {
+    background: url(../img/background.jpg) no-repeat center fixed;
+    background-size: cover;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  header {
+    display: block;
+    padding-top: 5px;
+    background: rgba(57, 50, 40, 0.8);
+  }
+
+  nav {
+    background: rgba(40, 40, 40, 0.8);
+  }
+
+  nav ul li {
+   width: 12%;
+  }
+
+  nav ul li a {
+    padding: 15px 30px;
+  }
+
+  section {
+    float: left;
+    width: 80%;
+  }
+
+  article {
+    width: 40%;
+    margin: 5px 5px;
+    padding: 5px;
+  }
+
+  img {
+    margin-left: 5px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  .reservar {
+    width: 60%;
+  }
+
+  .precio {
+    font-size: 0.95em;
+  }
+
+  aside {
+    display: inline;
+    float: right;
+    width: 16%;
+    margin-top: 80px;
+    margin-right: 25px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border-radius: 5px 5px 5px 5px;
+    background: rgba(41, 57, 40, 0.7);
+    text-align: center;
+  }
+
+  aside article p{
+    display: inline;
+    color: #fff;
+
+  }
+
+  aside article{
+    display: inline-block;
+    margin: 10px;
+    float: left;
+    width: 100%;
+  }
+}

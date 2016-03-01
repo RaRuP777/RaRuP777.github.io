@@ -27,13 +27,4 @@
         $("#casa4").fadeTo("slow", 0.5);
     });
 
-    lightbox.option({
-        'resizeDuration': 200,
-        'wrapAround': true,
-        'showImageNumberLabel': false,
-        'positionFromTop': 120,
-        'disableScrolling': true
-    })
-
-
 });

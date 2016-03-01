@@ -17,7 +17,7 @@ article{
 
 @font-face {
     font-family: myFont;
-    src: url(sansation_light.woff);
+    src: url(css/font/SansationLight.ttf);
 }
 
 h1{

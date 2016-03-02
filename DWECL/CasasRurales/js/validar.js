@@ -7,62 +7,64 @@ function validarObligatorio(valor){
 
 //función validación del nombre
 function validarNombre(valor){
-	if(validarObligatorio(valor)){
+	if(validarObligatorio(valor.trim())){
 		errorNombre.innerHTML = "El nombre debe ser rellenado";
-	}else if(valor.length < 4)
-		errorNombre.innerHTML = "Formato incorrecto (al menos debe tener 4 caracteres)";
-	else{
-		errorNombre.innerHTML = "";
-		return true;
+		return false;
 	}
-	return false;
+	if(valor.trim().length < 4){
+		errorNombre.innerHTML = "Formato incorrecto (al menos debe tener 4 caracteres)";
+		return false;
+	}
+	errorNombre.innerHTML = "";
+	return true;
 }
 
 //función validación de los apellidos
 function validarApellidos(valor){
-	if(validarObligatorio(valor))
+	if(validarObligatorio(valor.trim())){
 		errorApellidos.innerHTML = "Los apellidos deben ser rellenados";
-	else{
-		errorApellidos.innerHTML = "";
-		return true;
-	}
-	return false;
-}
-
-//función validación del DNI
-function validarDNI(valor){
-	if(validarObligatorio(valor)){
-		errorDNI.innerHTML = "El DNI debe ser rellenado";
-	}else if(!(/^\d{8}[a-zA-Z]{1}$/.test(valor)))
-		errorDNI.innerHTML = "El formato del DNI no es correcto (12345678Z)";
-	else{
-		errorDNI.innerHTML = "";
-		return true;
-	}
-	return false;
-}
-
-//función validación del sexo
-function validarSexo (opciones){
-		for (var i=0; i < opciones.length; i++){
-			if (opciones[i].checked){
-				errorSexo.innerHTML = "";
-				return true;
-			}			
-		}
-		errorSexo.innerHTML = "El Sexo debe ser elegido";
 		return false;
+	}
+	if(valor.trim().length < 4){
+		errorApellidos.innerHTML = "Formato incorrecto (al menos debe tener 4 caracteres)";
+		return false;
+	}
+	errorApellidos.innerHTML = "";
+	return true;
+}
+
+//funcion validación del email
+function validarEmail(valor){
+	if(validarObligatorio(valor.trim())){
+		errorEmail.innerHTML = "El email debe ser rellenados";
+		return false;
+	}
+	if(!/^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$/.test(valor.trim())){
+		errorEmail.innerHTML = "Formato incorrecto (algo@ejemplo.com)";
+		return false;
+	}
+	errorEmail.innerHTML="";
+	return true;
+}
+
+//funcion validacion de la fecha
+function validarFecha(valor){
+	if(validarObligatorio(valor.trim())){
+		errorFecha.innerHTML = "La fecha debe ser elegida";
+		return false;
+	}
+	errorFecha.innerHTML = "";
+	return true;
 }
 
 //función validación condiciones
 function validarCondiciones(valor){
-	if(!(valor.checked))
+	if(!(valor.checked)){
 		errorCondiciones.innerHTML = "Debe aceptar las las condiciones";
-	else{
-		errorCondiciones.innerHTML = "";
-		return true;
+		return false;
 	}
-	return false;
+	errorCondiciones.innerHTML = "";
+	return true;
 }
 	
 //valida los datos cuando es presionado el botón enviar
@@ -73,11 +75,11 @@ function validarFormulario(){
 		OK = false;
 	if(!validarApellidos(apellidos.value))
 		OK = false;
-	if(!validarDNI(DNI.value))
+	if(!validarEmail(email.value))
+		OK = false;
+	if(!validarFecha(fecha.value))
 		OK = false;
 	if(!validarCondiciones(condiciones))
-		OK = false;
-	if(!validarSexo(sexo))
 		OK = false;
 	return OK;
 }

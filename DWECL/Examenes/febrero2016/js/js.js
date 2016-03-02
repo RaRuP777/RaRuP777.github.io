@@ -1,4 +1,4 @@
-﻿document.addEventListener("DOMContentLoaded",function(){
+document.addEventListener("DOMContentLoaded",function(){
 
 	//datos del formulario
 	var nombre = document.getElementById("nombre");
@@ -59,8 +59,6 @@
 		apellidos.innerHTML="";
 		DNI.innerHTML="";
 		condiciones.checked=false;
-		hombre.checked=false;
-		mujer.checked=false;
 
 		errorNombre.innerHTML = "";
 		errorApellidos.innerHTML="";

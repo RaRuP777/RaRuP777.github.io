@@ -1,12 +1,14 @@
 ﻿$(document).ready(function(){
 
+    //comprobar Cookies activadas
 	comprobarCookies();
-	
+
 	function comprobarCookies(){
 		if(!navigator.cookieEnabled)
 			alert("Debe tener las cookies activadas para utilizar correctamente esta página");
 	};
 
+    //descripcion desplegable en titulos del catálago
     $("#titulo1").click(function(){
         $("#descripcion1").slideDown("slow");
         $("#casa1").fadeTo("slow", 0.5);

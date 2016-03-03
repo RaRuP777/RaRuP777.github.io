@@ -70,7 +70,6 @@ function validarCondiciones(valor){
 //valida los datos cuando es presionado el botón enviar
 function validarFormulario(){
 	var OK = true;
-	var sexo = document.getElementsByName("sexo");
 	if(!validarNombre(nombre.value))
 		OK = false;
 	if(!validarApellidos(apellidos.value))

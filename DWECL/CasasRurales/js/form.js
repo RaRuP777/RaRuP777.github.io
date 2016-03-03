@@ -33,9 +33,14 @@
         validarEmail(email.value);
     });
 
-    //evento perdida foco del input fechaNacimiento
+    //evento perdida foco del input fecha
+    fecha.addEventListener('blur', function(){
+        validarFecha(fecha);
+    });
+
+    //evento perdida foco del input fecha
     condiciones.addEventListener('blur', function(){
-        validarCondiciones(fechaNacimiento);
+        validarCondiciones(condiciones);
     });
 
     //evento presionar botón crear

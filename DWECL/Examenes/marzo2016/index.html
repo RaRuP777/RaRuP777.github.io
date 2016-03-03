@@ -1,0 +1,67 @@
+<html> 
+	<head>
+		<title>Examen - Pedro Ramos Ruiz</title>
+		<meta charset="utf-8">
+		<script src="js/js.js" type="text/javascript"> </script>
+		<script src="js/matricula.js" type="text/javascript"> </script>
+		<script src="js/validar.js" type="text/javascript"> </script>
+	</head>
+	<body>
+		<form>
+			<h1>Examen Marzo - Pedro J. Ramos</h1>
+			<legend>Nueva Matricula</legend>
+			<fieldset>
+				<table>
+					<tr>
+						<td>
+							<label for="nombre" >Nombre</label>
+						</td>
+						<td>
+							<input type="text" id="nombre" placeholder="(obligatorio)"/>
+							<span id="errorNombre" style="color: red;"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="apellido1" >Apellido1</label>
+						</td>
+						<td>
+							<input type="text" id="apellido1" placeholder="(obligatorio)"/>
+							<span id="errorApellido1" style="color: red;"></span>
+						</td>						
+					</tr>
+					<tr>
+						<td>
+							<label for="apellido2" >Apellido2</label>
+						</td>
+						<td>
+							<input type="text" id="apellido2" placeholder="(obligatorio)"/>
+							<span id="errorApellido2" style="color: red;"></span>
+						</td>						
+					</tr>
+					<tr>
+						<td>
+							<label for="dni" >DNI</label>
+						</td>
+						<td>
+							<input type="text" id="dni" placeholder="12345678A"/>
+							<span id="errorDNI" style="color: red;"></span>
+						</td>						
+					</tr>
+					<tr>
+						<td>
+							<label for="fecha" >Fecha Reserva</label>
+						</td>
+						<td>
+							<input type="text" id="fecha" placeholder="01-01-1980"/>
+							<span id="errorFecha" style="color: red;"></span>
+						</td>						
+					</tr>
+				</table>
+			</fieldset>
+			<input type="button" id="crear" value="Nueva Matrícula">
+            <input type="reset" id="limpiar" value="Limpiar">
+		</form>
+		<div id="texto"></div>
+	</body>
+</html>

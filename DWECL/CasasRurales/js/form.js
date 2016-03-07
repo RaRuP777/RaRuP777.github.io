@@ -1,64 +1,54 @@
 ﻿$(document).ready(function(){
 
     //datos del formulario
-    var nombre = document.getElementById("nombre");
-    var apellidos = document.getElementById("apellidos");
-    var email = document.getElementById("email")
-    var fecha = document.getElementById("fecha");
-    var condiciones = document.getElementById("condiciones");
+    var nombre = $("#nombre");
+    var apellidos = $("#apellidos");
+    var email = $("#email")
+    var fecha = $("#fecha");
+    var condiciones = $("#condiciones");
 
     //mensajes de error
-    var errorNombre = document.getElementById("errorNombre");
-    var errorApellidos = document.getElementById("errorApellidos");
-    var errorEmail = document.getElementById("errorEmail");
-    var errorFecha = document.getElementById("errorFecha");
-    var errorCondiciones = document.getElementById("errorCondiciones");
-
-    //botones del formulario
-    var btnEnviar = document.getElementById('enviar');
-    var btnLimpiar = document.getElementById('limpiar');
+    var errorNombre = $("#errorNombre");
+    var errorApellidos = $("#errorApellidos");
+    var errorEmail = $("#errorEmail");
+    var errorFecha = $("#errorFecha");
+    var errorCondiciones = $("#errorCondiciones");
 
     //evento perdida foco del input nombre
-    nombre.addEventListener('blur', function(){
+    nombre.blur(function(){
         validarNombre(nombre.value);
     });
 
     //evento perdida foco del input apellidos
-    apellidos.addEventListener('blur', function(){
+    apellidos.blur(function(){
         validarApellidos(apellidos.value);
     });
 
     //evento perdida foco del input email
-    email.addEventListener('blur', function(){
+    email.blur(function(){
         validarEmail(email.value);
     });
 
     //evento perdida foco del input fecha
-    fecha.addEventListener('blur', function(){
+    fecha.blur(function(){
         validarFecha(fecha);
     });
 
     //evento perdida foco del input fecha
-    condiciones.addEventListener('blur', function(){
+    condiciones.blur(function(){
         validarCondiciones(condiciones);
     });
 
     //evento presionar botón crear
-    btnEnviar.addEventListener('click',enviar);
-
-    //función crear asociada al botón Nuevo Usuario
-    function enviar(){
+    $("#enviar").click(function(){
         if(validarFormulario()){
             crearCookie();
             alert("Mensaje enviado");
         }
-    }
+    });
 
     //evento presionar botón limpiar
-    btnLimpiar.addEventListener('click',limpiar);
-
-    //función crear asociada al botón Limpiar
-    function limpiar(){
+    $("#limpiar").click(function (){
         nombre.innerHTML="";
         apellidos.innerHTML="";
         email.innerHTML="";
@@ -70,10 +60,10 @@
         errorEmail.innerHTML="";
         errorFecha.innerHTML="";
         errorCondiciones.innerHTML="";
-    }
+    });
 
     //datepicker
-    $( "#fecha" ).datepicker({
+    $("#fecha").datepicker({
         dateFormat: "dd/mm/yy",
         minDate: 0,
         firstDay: 1,

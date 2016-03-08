@@ -32,6 +32,14 @@ input {
     vertical-align: middle;
 }
 
+input[required]{
+  border-color:green;
+}
+
+input:invalid{
+  border-color:red;
+}
+
 textarea {
   display : block;
   padding : 10px;

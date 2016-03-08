@@ -1,0 +1,168 @@
+$azulOscuro: navy$azulOscuro: navy
+
+$azulMedio: steelblue
+
+$azuClaro: lightcyan
+
+$blanco: white
+
+$negro: black
+
+=fuenteCentrada
+	color: $azulOscuro
+	text-align: center
+	text-decoration: none
+	text-transform: uppercase
+
+=transition($segundos)
+	transition: $segundos
+	-webkit-transition: $segundos
+	-moz-transition: $segundos
+	-ms-transition: $segundos
+	-o-transition: $segundos
+
+=transform($tipo, $escala)
+	transform: $tipo+"("+$escala+")"
+	-webkit-transform: $tipo+"("+$escala+")"
+	-moz-transform: $tipo+"("+$escala+")"
+	-ms-transform: $tipo+"("+$escala+")"
+	-o-transform: $tipo+"("+$escala+")"
+
+body
+	color: $blanco
+	font-family: 'Open Sans', sans-serif
+	font-size: 16px
+	max-width: 1200px
+	text-shadow: 2px 2px 0 rgba(0,0,0,.3)
+	aside
+		border: 5px solid $azulOscuro
+		border-radius: 5px
+		display: block
+		margin: 2%
+		padding: 10px
+		text-align: center
+		width: 18%
+		a
+			text-decoration: none
+		header
+			border-radius: 5px
+		footer
+			background: rgba(70,130,180,.5)
+			max-width: 1200px
+			ul
+				font-size: 0
+				padding: 0
+				text-align: center
+				width: 100%
+				li
+					display: inline-block
+					font-size: 9px
+					height: 25px
+					line-height: 25px
+					margin: 0 5%
+					padding: 10px 0
+					vertical-align: top
+					width: 10%
+					img
+						height: 25px
+					a
+						+fuenteCentrada
+						font-weight: bold
+						&:hover
+							color: $blanco
+		nav
+			border-radius: 5px
+			ul
+				font-size: 0
+				padding: 0
+				li
+					background: rgba(70,130,180,.5)
+					display: inline-block
+					font-size: 16px
+					height: 50px
+					line-height: 50px
+					padding: 10px 0
+					vertical-align: top
+					width: 25%
+					&:hover
+						background: rgba(70,130,180,.7)
+						box-shadow: inset $blanco 0px 8px 8px
+					img
+						height: 50px
+					a
+						+fuenteCentrada
+						display: block
+						font-weight: bold
+						&:hover
+							color: $blanco
+section
+	text-align: center
+	width: 70%
+	article
+		border: 2px solid $azulOscuro
+		border-radius: 5px
+		box-shadow: 5px 5px 5px $azulMedio
+		color: $negro
+		font-size: 0.8em
+		margin: 1%
+		padding: 10px
+		width: 150px
+		img
+			+transition(0.3s)
+			box-shadow: 8px 8px 10px $azulMedio
+			height: 150px
+			width: 150px
+		&:hover img
+			+transform(scale, 1.1)
+
+section,
+aside
+	display: inline-block
+	vertical-align: top
+
+#contenedor
+	background: $azuClaro
+	display: inline-block
+	max-width: 1200px
+	text-align: center
+
+#personales
+	padding-bottom: 0.5em
+	h2
+		text-shadow: 2px 2px 10px $blanco
+
+.publicidad img
+	height: 120px
+	padding-bottom: 2em
+	width: 120px
+
+.publicidad_titulo
+	padding: 1em 1em
+
+.Redes_sociales img
+	height: 64px
+	width: 64px
+
+@media screen and (max-width:800px)
+	nav ul li 
+		width: 50%
+		img 
+			height: 80%
+	.publicidad img
+		height: 90px
+		padding: 1em 1em
+		width: 90px
+	.publicidad_titulo h2
+		font-size: 1em
+
+@media screen and (max-width:550px)
+	aside
+		width: 60%
+	section
+		width: 100%
+	.publicidad_titulo h2
+		font-size: 1.5em
+	
+@media screen and (max-width: 440px)
+	footer
+		display: none

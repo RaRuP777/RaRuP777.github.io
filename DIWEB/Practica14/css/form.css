@@ -1,0 +1,101 @@
+legend, fieldset, label, input, textarea, #button {
+  padding: 20px;
+}
+
+fieldset {
+  background: rgb(0,199,255);
+  border-color: rgb(0,85,255); 
+}
+
+legend {
+  font : 2em "typewriter", sans-serif;
+  color: black;
+}
+
+label {
+  font : 1em "typewriter", sans-serif;
+  color: black;
+  margin-right: 1em;
+}
+
+input, textarea {
+  font    : .9em/1.5em "handwriting", sans-serif;
+  padding : 0 10px;
+  margin  : 0;
+  width   : 240px;
+  background: rgba(255,255,255,0.1);
+}
+
+input:focus, textarea:focus{
+  background: rgba(255,255,255,1);
+  border-radius: 5px;
+}
+
+input {
+    height: 2.5em;
+    vertical-align: middle;
+}
+
+textarea {
+  display : block;
+  padding : 10px;
+  margin  : 10px 0 0 -10px;
+  width   : 340px;
+  height  : 160px;
+  resize  : none;
+  overflow: auto;
+}
+
+.button {
+  font: bold 1em sans-serif;
+  border: 2px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(0,199,255);
+}
+
+.button:hover{
+  background-color: white;
+}
+
+.error{
+  color: red;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 80%;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 3px solid rgb(0,85,255)
+}
+
+#footer{
+  color: black;
+}
+
+#icons {
+  width:184px;
+  float:right
+}
+
+#icons li {
+  float:left;
+  padding-right:10px
+}
+
+#icons .first {
+  float:none;
+  font-size:23px;
+  color:#fff;
+  font-weight:400;
+  line-height:1.2em;
+  margin-top:-15px;
+  letter-spacing:-1px;
+  padding-bottom:9px
+}
+
+footer ul li {
+  list-style: none;
+}

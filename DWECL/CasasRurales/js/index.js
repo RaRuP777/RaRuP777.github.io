@@ -29,4 +29,6 @@
         $("#casa4").fadeTo("slow", 0.5);
     });
 
+    $('#animacion').animate({'opacity':0, 'z-index': -1}, 5000);
+
 });

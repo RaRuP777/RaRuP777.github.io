@@ -22,13 +22,17 @@ function cargarContenido(url, metodo, funcion) {
 
 function inicializarPeticion() {
 	// Obtener la instancia del objeto XMLHttpRequest
+    // Para navegadores que siguen los estándares
 	if (window.XMLHttpRequest) {
-		return new XMLHttpRequest();	
-	}
+		return new XMLHttpRequest();
+	//Para navegadores obsoletos(IE6 y anteriores)	
+	} else if (window.ActiveXObject) {
+		return new ActiveXObject('Microsoft.XMLHTTP');
+	};
 }
 
 function mostrarContenido() {
-	campoEstados.innerHTML += '<p><strong>- Enviando petición...</strong></p>';
+	campoEstados.innerHTML += 'Enviando petición...';
 	// Muestra el estado de la petición:
 	peticion.onreadystatechange = function() {
 		campoEstados.innerHTML += '<p><strong>readyState:</strong> ' + peticion.readyState + ' <strong>Status:</strong> ' + peticion.status  + 
@@ -37,7 +41,9 @@ function mostrarContenido() {
 		// Manda abajo del todo la barra de scroll del campo estados
 		campoEstados.scrollTop = campoEstados.scrollHeight;
 
-		//Si la petición es correcta y se completa, muestra el fichero en el div, si no, informa del error
+		/* Si la petición es correcta y se completa, muestra el fichero
+	 	en el div, si no, informa del error
+	 	*/
 	 	if (peticion.readyState == READY_STATE_COMPLETE) {
 	 		if (peticion.status == 200) {
 	 			campoFichero.value = peticion.responseText;
@@ -53,7 +59,6 @@ function descargarArchivo() {
 	cargarContenido(campoUrl.value, 'GET', mostrarContenido);
 }
 
-//limpia el contenido de las variables
 function limpiar() {
 	campoFichero.value = "";
 	campoEstados.innerHTML = "";

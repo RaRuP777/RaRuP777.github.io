@@ -1,20 +1,20 @@
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Primeros pasos con AJAX. Cargando ficheros del servidor. JavaScript.</title>
-		<script type="text/javascript" src="js/js.js"></script>
-	</head>
-	<body>
-		<h1>Cargando ficheros con AJAX</h1>
-		<form>
-			<label for="campoUrl">Introduce la URL:</label>
-			<input type="text" id="campoUrl" placeholder="Introduce una URL">
-			<input type="reset" id="limpiar" value="Limpiar">
-			<button class="btn btn-default"id="enviar">Mostrar</button>
-		</form>
-		<h3>Documento:</h3>
-		<textarea id="fichero" cols="60" rows="15" disabled></textarea>
-		<h3>Estado de la petición:</h3>
-		<div id="estados"></div>
-	</body>
+<head>
+	<meta charset="UTF-8">
+	<title>Cargar Ficheros: Javascript</title>
+	<script type="text/javascript" src="js/js.js"></script>
+</head>
+<body>
+	<h1>Cargando ficheros con AJAX</h1>
+	<form class="form-inline" role="form" name="formUrl" onsubmit="return false;">
+		<label class="sr-only" for="campoUrl">Introduce la URL:</label>
+		<input class="form-control" type="text" id="campoUrl" placeholder="Introduce una URL">
+		<input class="btn btn-default" type="reset" id="limpiar" value="Limpiar">
+		<button class="btn btn-default"id="enviar">Mostrar</button>
+	</form>
+	<h3>Documento:</h3>
+	<textarea id="fichero" cols="60" rows="15" disabled></textarea>
+	<h3>Estado de la petición:</h3>
+	<div id="estados"></div>
+</body>
 </html>

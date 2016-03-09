@@ -37,6 +37,19 @@ document.addEventListener("DOMContentLoaded",function(){
 		validarDNI(DNI.value);
 	});
 
+	//evento perdida foco del input sexo
+	hombre.addEventListener('blur', function(){
+		errorSexo.innerHTML="";
+	});
+	mujer.addEventListener('blur', function(){
+		errorSexo.innerHTML="";
+	});
+
+	//evento perdida foco del input condiciones
+	condiciones.addEventListener('blur', function(){
+		validarCondiciones(condiciones);
+	});
+
 	//evento presionar botón crear
 	btnEnviar.addEventListener('click',crear);
 

@@ -44,14 +44,14 @@ function validarDNI(valor){
 
 //función validación del sexo
 function validarSexo (opciones){
-		for (var i=0; i < opciones.length; i++){
-			if (opciones[i].checked){
-				errorSexo.innerHTML = "";
-				return true;
-			}			
-		}
-		errorSexo.innerHTML = "El Sexo debe ser elegido";
-		return false;
+	for (var i=0; i < opciones.length; i++){
+		if (opciones[i].checked){
+			errorSexo.innerHTML = "";
+			return true;
+		}			
+	}
+	errorSexo.innerHTML = "El Sexo debe ser elegido";
+	return false;
 }
 
 //función validación condiciones

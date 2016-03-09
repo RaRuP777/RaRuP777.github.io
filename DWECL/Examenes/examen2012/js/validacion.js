@@ -10,86 +10,20 @@
 	var btnLimpiar = document.getElementById('limpiar');
 	btnLimpiar.addEventListener('click', limpiar);
 
-	function validar(){
-		var nombre = document.getElementById("nombre").value;
-		var apellido1 = document.getElementById("apellido1").value;
-		var apellido2 = document.getElementById("apellido2").value;
-		var fechaNac = document.getElementById("fechaNac").value;
-		var aceptar = document.getElementById("msj_condiciones");
+	var nombre = document.getElementById("nombre");
+	var apellido1 = document.getElementById("apellido1");
+	var apellido2 = document.getElementById("apellido2");
+	var fecha = document.getElementById("fechaNac");
+	var condiciones = document.getElementById("condiciones");
 
-		if(!validarObligatorio("nombre")){
-			msjNombre.innerHTML="El nombre es un campo obligatorio";
-			return false;
-		}
-			
-		if (!validarObligatorio("apellido1")){
-			msjApellido1.innerHTML="El primer apellido es un campo obligatorio";
-			return false;
-		}
-
-		if (!validarObligatorio("apellido2")){
-			msjApellido2.innerHTML="El segundo apellido es un campo obligatorio";
-			return false;
-		}
-
-		if (!validarObligatorio("fechaNac")){
-			msjFecha.innerHTML="La fecha de nacimiento es un campo obligatorio";
-			return false;
-		}
-
-		if (!validarFecha("fechaNac")){
-			msjFecha.innerHTML="Formato de fecha incorrecta";
-			return false;
-		}
-
-		if (!validarCheckbox("condiciones")){
-			msjCondiciones.innerHTML="Debe de aceptar las condiciones";
-			return false;
-		}
-
-	}
-
-	function validarObligatorio(valor){	
-		if( valor == null || valor.length == 0 || /^\s+$/.test(valor) ) 
-			return false;
-		return true;
-	}
-
-	function validarFecha(fecha){
-		if (!(/^[0-9]{2}-[0-9]{2}-[0-9]{4}$/.test(fecha))) 
-			return false;
-	}
-
-	function validarCheckbox (checkbox){
-		if (checkbox.checked)
-			return false;
-	}
-
-	function crearCookies(){
-		setCookie("nombre",nombre,2);
-		setCookie("apellido1",nombre,2);
-		setCookie("apellido2",apellido2,2);
-		setCookie("fechaNac",fechaNac,2);
-	}
-
-	function getCookie(cname) {
-		var name = cname + "=";
-		var ca = document.cookie.split(';');
-		for (var i = 0; i < ca.length; i++) {
-			var c = ca[i];
-			while (c.charAt(0) == ' ') c = c.substring(1);
-			if (c.indexOf(name) == 0) 
-				return c.substring(name.length, c.length);
-		}
-		return "";
-	}
+	var fecha;
 
 	function crear(){
-		if (validar()) {
-			universitario = new Universitario(nombre, apellido1, apellido2, fecha);
-			crearCookies();
+		if(validarFormulario()){
+			var universitario = new Universitario(nombre.value, apellido1.value, apellido2.value, fecha);
 			universitario.mostrar();
-		}
+			crearCookie();
+		}		
 	}
 
 	function limpiar() {
@@ -97,15 +31,98 @@
 		msjApellido1.innerHTML='';
 		msjApellido2.innerHTML='';
 		msjFecha.innerHTML='';
-		msj_condiciones.innerHTML='';
-		setCookie("nombre", "", -1);
-		setCookie("apellido1", "", -1);
-		setCookie("apellido2", "", -1);
-		setCookie("fechaNacimiento", "", -1);
+		msjCondiciones.innerHTML='';
+		eliminarCookie();
 	}
 
-	document.getElementById("nombre").value = getCookie("nombre");
-	document.getElementById("apellido1").value = getCookie("apellido1");
-	document.getElementById("apellido2").value = getCookie("apellido2");
-	document.getElementById("fechaNac").value = getCookie("fechaNac");
+	function crearCookie(){
+		document.cookie = "nombre=" + nombre.value + ";";
+		document.cookie = "apellido1=" + apellido1.value + ";";
+		document.cookie = "apellido2=" + apellido2.value + ";";
+		document.cookie = "fecha=" + fecha.value + ";";
+	}
+
+	function eliminarCookie() {
+		document.cookie = "nombre=''; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+		document.cookie = "apellido1=''; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+		document.cookie = "apellido2=''; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+		document.cookie = "fecha=''; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+	}
+
+	function validarFormulario(){
+		var correcto = true;
+		if(!validarNombre(nombre.value))
+			correcto = false;
+		if(!validarApellido1(apellido1.value))
+			correcto = false;
+		if(!validarApellido2(apellido2.value))
+			correcto = false;
+		if(!validarFecha(fechaNac.value))
+			correcto = false;
+		if(!validarCondiciones(condiciones))
+			correcto = false;
+		return correcto;
+	}
+
+	function validarNombre(valor){
+		if(validarObligatorio(valor)){
+			msjNombre.innerHTML="El nombre debe ser introducido";
+			return false;
+		}
+		msjNombre.innerHTML="";	
+		return true;
+	}
+
+	function validarApellido1(valor){
+		if(validarObligatorio(valor)){
+			msjApellido1.innerHTML="El apellido1 debe ser introducido";
+			return false;
+		}
+		msjApellido1.innerHTML="";	
+		return true;
+	}
+
+	function validarApellido2(valor){
+		if(validarObligatorio(valor)){
+			msjApellido2.innerHTML="El apellido2 debe ser introducido";
+			return false;
+		}
+		msjApellido2.innerHTML="";	
+		return true;
+	}
+
+	function validarFecha(valor){
+		if(validarObligatorio(valor)){
+			msjFecha.innerHTML="La fecha debe ser introducida";
+			return false;
+		}
+		if(!(/^\d{2}-\d{2}-\d{4}$/.test(valor))){
+			msjFecha.innerHTML="Formato incorrecto (01-01-80)";
+			return false;
+		}
+		var arrayFecha = valor.split("-");
+		fecha = new Date(arrayFecha[2], arrayFecha[1]-1, arrayFecha[0]);
+		if (fecha.getDate() != arrayFecha[0] || fecha.getMonth() != arrayFecha[1]-1 || fecha.getFullYear() != arrayFecha[2]){
+			msjFecha.innerHTML="Fecha incorrecta";
+			return false;
+		}
+		msjFecha.innerHTML="";	
+		return true;
+	}
+
+	function validarCondiciones(valor){
+		if(!(valor.checked)){
+			msjCondiciones.innerHTML = "Debe aceptar las las condiciones";
+			return false;
+		}
+		msjCondiciones.innerHTML = "";
+		return true;
+	}
+
+	function validarObligatorio(valor){
+		if (valor == null || valor.length == 0 || valor.trim() == "")
+			return true;
+		return false;
+	}
+
 });

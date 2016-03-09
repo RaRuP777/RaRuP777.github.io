@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	document.body.appendChild(nuevoNodo);
 	var ol = document.createElement("ol");
 	var li = document.createElement("li");
-	var pareja = document.createTextNode("Jesús");
+	var pareja = document.createTextNode("Mi compañero de prácticas era Jesús");
 	li.appendChild(pareja);
 	ol.appendChild(li);
 	body.insertBefore(ol , body.firstChild);

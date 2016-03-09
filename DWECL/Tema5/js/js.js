@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	var error6 = document.getElementById("error6");
 	var error7 = document.getElementById("error7");
 	var error8 = document.getElementById("error8");
-	var error9 = document.getElementById("error9");
 	var error10 = document.getElementById("error10");
 	var error11 = document.getElementById("error11");
 
@@ -25,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	var telefono = document.getElementById("telefono");
 	var dni = document.getElementById("dni");
 	var experiencia = document.getElementById("experiencia");
-	var estudios = document.getElementById("experiencia");
 	var jornada = document.getElementById("jornada");
 	var idiomas = document.getElementsByName("idiomas[]");
 
@@ -85,12 +83,12 @@ document.addEventListener("DOMContentLoaded", function () {
 			error8.innerHTML = "";
 	});
 
-	estudios.addEventListener('blur', function(){
-		if(validarCampoTextoVacio(estudios.value)){
-			estudios.focus();
-			error9.innerHTML = "Los estudios no han sido rellenados";
+	jornada.addEventListener('blur', function(){
+		if(validarSelectOption(jornada.selectedIndex)){
+			jornada.focus();
+			error10.innerHTML = "Debes seleccionar una jornada";
 		} else
-			error9.innerHTML = "";
+			error10.innerHTML = "";
 	});
 
 	function reset (){
@@ -101,7 +99,6 @@ document.addEventListener("DOMContentLoaded", function () {
 			telefono.innerHTML='';
 			dni.innerHTML='';
 			experiencia.innerHTML='';
-			estudios.innerHTML='';
 			error1.innerHTML='';
 			error2.innerHTML='';
 			error3.innerHTML='';
@@ -110,7 +107,6 @@ document.addEventListener("DOMContentLoaded", function () {
 			error6.innerHTML='';
 			error7.innerHTML='';
 			error8.innerHTML='';
-			error9.innerHTML='';
 			error10.innerHTML='';
 			error11.innerHTML='';
 	}
@@ -119,17 +115,43 @@ document.addEventListener("DOMContentLoaded", function () {
 		if(validarRadiobutton(sexo)){
 			sexo.focus();
 			error4.innerHTML = "Debes seleccionar un sexo";
-		} else
-			error4.innerHTML = "";
-		if(validarSelectOption(jornada.selectedIndex)){
-			jornada.focus();
-			error10.innerHTML = "Debes seleccionar una jornada";
-		} else
-			error10.innerHTML = "";
+		}
 		if(validarCheckbox(idiomas)){
 			idiomas.focus();
 			error11.innerHTML = "Debes seleccionar al menos un idioma";
-		} else
-			error11.innerHTML = "";
+		}
+		if(validarCampoTextoVacio(nombre.value)){
+			nombre.focus();
+			error1.innerHTML = "El nombre no ha sido rellenado";
+		}
+		if(validarCampoTextoVacio(apellidos.value)){
+			apellidos.focus();
+			error2.innerHTML = "Los apellidos no han sido rellenados";
+		} 
+		if(validarFormatoFecha(fecha.value)){
+			fecha.focus();
+			error3.innerHTML = "El formato de fecha no es correcto (00-00-0000)";
+		} 
+		if(validarEmail(email.value)){
+			email.focus();
+			error5.innerHTML = "El formato de email no es correcto (example@algo.com)";
+		} 
+		if(validarTelefono(telefono.value)){
+			telefono.focus();
+			error6.innerHTML = "El formato de teléfono no es correcto (000000000)";
+		} 
+		if(validarDNI(dni.value)){
+			dni.focus();
+			error7.innerHTML = "El formato de DNI no es correcto (00000000A)";
+		} 
+		if(validarCampoTextoVacio(experiencia.value)){
+			experiencia.focus();
+			error8.innerHTML = "La experiencia no ha sido rellenada";
+		} 
+		if(validarSelectOption(jornada.selectedIndex)){
+			jornada.focus();
+			error10.innerHTML = "Debes seleccionar una jornada";
+		} 
 	}
+	
 });

@@ -17,14 +17,14 @@ Array.prototype.contiene = function(elemento) {
  
 function anadirAlFinal (){
   var texto = document.getElementById("texto");
-  var elemento = document.getElementById('elemento');
+  var elemento = document.getElementById('elemento').value;
   array1.anadir(elemento);
   texto.innerHTML=array1;
 }
 
 function anadirSinDuplicados (){
   var texto = document.getElementById("texto");
-  var elemento2 = document.getElementById('elemento2');
+  var elemento2 = document.getElementById('elemento2').value;
   if (!array1.contiene(elemento2))
     array1.anadir(elemento2);
   texto.innerHTML=array1;

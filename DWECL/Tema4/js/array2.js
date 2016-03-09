@@ -12,7 +12,7 @@ Array.prototype.sin = function(elemento) {
 }
  
 function filtrar (){
-  var texto = document.getElementById("texto").value;
+  var texto = document.getElementById("texto");
   var elemento = parseInt(document.getElementById('elemento').value);
   var resultado = array1.sin(elemento);
   texto.innerHTML=resultado;

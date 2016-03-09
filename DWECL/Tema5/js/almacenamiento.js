@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	document.getElementById('crear').addEventListener('click', crearCookie);
 	document.getElementById('mostrar').addEventListener('click', mostrarCookie);
 	document.getElementById('borrar').addEventListener('click', eliminarCookie);
+	document.getElementById('reset').addEventListener('click', reset);
 
 	document.getElementById('rojo').addEventListener('click', fondoRojo);
 	document.getElementById('verde').addEventListener('click', fondoVerde);
@@ -25,6 +26,10 @@ document.addEventListener("DOMContentLoaded", function () {
 	function eliminarCookie() {
 		document.cookie = "nombre=null; expires=Thu, 01 Jan 1970 00:00:00 UTC";
 		texto.innerHTML = "La cookie ha sido eliminada";
+	}
+
+	function reset(){
+		texto.innerHTML="";
 	}
 
 	function fondoRojo(){

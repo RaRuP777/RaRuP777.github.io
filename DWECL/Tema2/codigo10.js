@@ -1,6 +1,6 @@
 function palindromo (cadena){
 	var cadenaDerecho = cadena.toUpperCase().replace(/ /g,"").split("");
-	var cadenaReves = cadena.toUpperCase().replace(/ /g,"").split("");.reverse();
+	var cadenaReves = cadena.toUpperCase().replace(/ /g,"").split("").reverse();
 	for (i in cadenaDerecho){
 		if (cadenaDerecho[i] != cadenaReves[i]){
 			return false;
@@ -9,9 +9,9 @@ function palindromo (cadena){
 	return true;
 }
 
-if (palindromo(prompt("Introduce una cadena")){
-	alert ("La cadena introducida es palíndroma");
+if (palindromo(prompt("Introduce una cadena"))){
+	alert("La cadena introducida es palindroma");
 }
 else {
-	alet("La cadena introducida no es palíndroma");
+	alert("La cadena introducida no es palindroma");
 }

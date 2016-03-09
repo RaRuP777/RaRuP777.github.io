@@ -1,12 +1,12 @@
 function informacion(cadena) {
 	if (cadena == cadena.toUpperCase()) {
-		alert ("La cadena son sólo mayúsculas";
+		alert ("La cadena son solo mayusculas");
 	}
 	else if(cadena == cadena.toLowerCase()) {
-		alert ("La cadena son sólo minúsculas";
+		alert ("La cadena son solo minusculas");
 	}
 	else {
-		alert ("La cadena son mayúsculas y minúsculas");
+		alert ("La cadena son mayusculas y minusculas");
     }
 }
 

@@ -10,3 +10,7 @@ function muestraOculta(id) {
 		enlace.innerHTML = 'Ocultar contenidos';
 	}
 }
+
+document.getElementById(enlace_1).click(muestraOculta(1));
+document.getElementById(enlace_2).click(muestraOculta(2));
+document.getElementById(enlace_3).click(muestraOculta(3));

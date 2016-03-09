@@ -7,8 +7,8 @@ function enviar() {
     array[5] = document.getElementById("numero5").value;
     array[6] = document.getElementById("numero6").value;
     array[7] = document.getElementById("numero7").value;
-    var texto  = document.getElementById("texto").value;
-    var resultado ="Numeros introducidos múltiplos de 5: ";
+    var texto  = document.getElementById("texto");
+    var resultado ="Numeros introducidos múltiplos de 5 casillas número: ";
     for (var i = 0; i < 8; i++) {
         if (array[i]%5==0)
         	resultado+=i + " ";

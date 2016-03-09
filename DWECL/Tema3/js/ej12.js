@@ -1,7 +1,7 @@
 function enviar() {
 	var numero = parseInt(document.getElementById("numero").value);
-	var texto = document.getElementById("texto").value;
-	var cuerpo = document.getElementById("cuerpo").value;
+	var texto = document.getElementById("texto");
+	var cuerpo = document.getElementById("cuerpo");
 	var total = 0;
 	if (numero==1){
 		total++;

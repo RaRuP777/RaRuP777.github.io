@@ -1,8 +1,8 @@
 window.onload = function(){
-    var texto  = document.getElementById("texto").value;
+    var texto  = document.getElementById("texto");
     var resultado ="";
     for (var i = 0; i < 11; i++) {
-        resultado+=Math.pow(i,2)+"<br/>";
+        resultado+="2 elevado a "+ i + " = "+Math.pow(2,i)+"<br/>";
     }
     texto.innerHTML=resultado;
 }

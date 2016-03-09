@@ -1,9 +1,10 @@
 function enviar() {
 	var numero = document.getElementById("numero").value;
-	var texto = document.getElementById("texto").value;
+	var texto = document.getElementById("texto");
 	var total = 0;
 	var array = [numero.split(",")];
-	for (var i=0;  i>array.length; i++)
+	for (var i=0;  i<array.length; i++)
 		total=total+parseInt(array[i]);
-	texto.innerHTML=total/array.length;
+	var media = total/array.length;
+	texto.innerHTML=media;
 }

@@ -1,6 +1,6 @@
 function enviar() {
 	var numero = document.getElementById("numero").value;
-	var texto = document.getElementById("texto").value;
+	var texto = document.getElementById("texto");
 	var resultado ="";
 	if (numero<16)
 		resultado = delCeroalQuince(numero);

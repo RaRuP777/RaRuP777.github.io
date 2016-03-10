@@ -1,3 +1,21 @@
+window.onload = function() {
+
+	//captura de elementos del documento
+	varcampoUrl = document.getElementById('campoUrl');
+	campoFichero = document.getElementById('fichero');
+	campoEstados = document.getElementById('estados');
+
+	// Valores iniciales del input y del campo fichero
+	campoUrl.value = window.location.href;
+	campoFichero.value = 'Introduzca una dirección en el formulario';
+	campoEstados.innerHTML = '<p>Realice una petición...</p>';
+
+	//asociacion de eventos click a los button
+	document.getElementById('enviar').addEventListener('click', descargarArchivo, false);
+	document.getElementById('limpiar').addEventListener('click', limpiar, false);
+};
+
+
 // Constantes de estado:
 var READY_STATE_UNITIALIZED = 0;
 var READY_STATE_LOADING = 1;
@@ -22,13 +40,9 @@ function cargarContenido(url, metodo, funcion) {
 
 function inicializarPeticion() {
 	// Obtener la instancia del objeto XMLHttpRequest
-    // Para navegadores que siguen los estándares
 	if (window.XMLHttpRequest) {
-		return new XMLHttpRequest();
-	//Para navegadores obsoletos(IE6 y anteriores)	
-	} else if (window.ActiveXObject) {
-		return new ActiveXObject('Microsoft.XMLHTTP');
-	};
+		return new XMLHttpRequest();	
+	}
 }
 
 function mostrarContenido() {
@@ -63,17 +77,3 @@ function limpiar() {
 	campoFichero.value = "";
 	campoEstados.innerHTML = "";
 }
-
-window.onload = function() {
-	campoUrl = document.getElementById('campoUrl');
-	campoFichero = document.getElementById('fichero');
-	campoEstados = document.getElementById('estados');
-
-	// Valores iniciales del input y del campo fichero
-	campoUrl.value = window.location.href;
-	campoFichero.value = 'Introduzca una dirección en el formulario';
-	campoEstados.innerHTML = '<p>Realice una petición...</p>';
-
-	document.getElementById('enviar').addEventListener('click', descargarArchivo, false);
-	document.getElementById('limpiar').addEventListener('click', limpiar, false);
-};

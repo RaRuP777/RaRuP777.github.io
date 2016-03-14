@@ -1,7 +1,0 @@
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item   android:state_pressed="true"
-        android:drawable="@drawable/mezquita3" />
-    <item   android:state_focused="true"
-        android:drawable="@drawable/mezquita2" />
-    <item   android:drawable="@drawable/mezquita1"/>
-</selector>

@@ -6,12 +6,12 @@ function validarObligatorio(valor){
 }
 
 //función validación del nombre
-function validarNombre(valor){
-	if(validarObligatorio(valor.trim())){
+function validarNombre(){
+	if(validarObligatorio(nombre.value)){
 		errorNombre.innerHTML = "El nombre debe ser rellenado";
 		return false;
 	}
-	if(valor.trim().length < 4){
+	if((nombre.value).length < 4){
 		errorNombre.innerHTML = "Formato incorrecto (al menos debe tener 4 caracteres)";
 		return false;
 	}
@@ -20,12 +20,12 @@ function validarNombre(valor){
 }
 
 //función validación de los apellidos
-function validarApellidos(valor){
-	if(validarObligatorio(valor.trim())){
+function validarApellidos(){
+	if(validarObligatorio(apellidos.value)){
 		errorApellidos.innerHTML = "Los apellidos deben ser rellenados";
 		return false;
 	}
-	if(valor.trim().length < 4){
+	if((apellidos.value).length < 4){
 		errorApellidos.innerHTML = "Formato incorrecto (al menos debe tener 4 caracteres)";
 		return false;
 	}
@@ -34,12 +34,12 @@ function validarApellidos(valor){
 }
 
 //funcion validación del email
-function validarEmail(valor){
-	if(validarObligatorio(valor.trim())){
+function validarEmail(){
+	if(validarObligatorio(email.value)){
 		errorEmail.innerHTML = "El email debe ser rellenados";
 		return false;
 	}
-	if(!/^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$/.test(valor.trim())){
+	if(!/^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$/.test(email.value)){
 		errorEmail.innerHTML = "Formato incorrecto (algo@ejemplo.com)";
 		return false;
 	}
@@ -48,8 +48,8 @@ function validarEmail(valor){
 }
 
 //funcion validacion de la fecha
-function validarFecha(valor){
-	if(validarObligatorio(valor.trim())){
+function validarFecha(){
+	if(validarObligatorio(fecha.value)){
 		errorFecha.innerHTML = "La fecha debe ser elegida";
 		return false;
 	}
@@ -58,8 +58,8 @@ function validarFecha(valor){
 }
 
 //función validación condiciones
-function validarCondiciones(valor){
-	if(!(valor.checked)){
+function validarCondiciones(){
+	if(!(condiciones.checked)){
 		errorCondiciones.innerHTML = "Debe aceptar las las condiciones";
 		return false;
 	}

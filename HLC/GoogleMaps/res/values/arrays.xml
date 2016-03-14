@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="autorefreshtime">
+        <item>1 mins</item>
+        <item>5 mins</item>
+        <item>10 mins</item>
+        <item>30 mins</item>
+        <item>1 hora</item>
+        <item>3 horas</item>
+    </string-array>
+    <string-array name="autorefreshtime_values">
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+    </string-array>
+    <string-array name="arr_markercolorFREE">
+        <item>Azure</item>
+        <item>Blue</item>
+        <item>Cyan</item>
+        <item>Green</item>
+        <item>Magenta</item>
+        <item>Orange</item>
+        <item>Red</item>
+        <item>Rose</item>
+        <item>Violet</item>
+        <item>Yellow</item>
+    </string-array>
+    <string-array name="arr_markercolorFREE_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="arr_markercolorOCCUPIED">
+        <item>Azure</item>
+        <item>Blue</item>
+        <item>Cyan</item>
+        <item>Green</item>
+        <item>Magenta</item>
+        <item>Orange</item>
+        <item>Red</item>
+        <item>Rose</item>
+        <item>Violet</item>
+        <item>Yellow</item>
+    </string-array>
+    <string-array name="arr_markercolorOCCUPIED_values">
+       <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+</resources>

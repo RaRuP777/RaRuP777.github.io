@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_weight="0.45"
+        android:layout_margin="5dp"
+        android:src="@drawable/mezquita1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_weight="0.55"
+        android:text="
+    La Mezquita-catedral de Córdoba, actualmente conocida como la Catedral de la Asunción de Nuestra Señora de forma eclesiástica, o simplemente Mezquita de Córdoba de forma general, es un edificio de la ciudad de Córdoba, España.
+
+    Se trata de uno de los monumentos más importantes de la arquitectura islámica en España, así como del más emblemático ejemplo de arte omeya hispanomusulmán."
+        android:id="@+id/textView" />
+</LinearLayout>

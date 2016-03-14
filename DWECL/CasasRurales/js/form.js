@@ -16,27 +16,27 @@
 
     //evento perdida foco del input nombre
     nombre.blur(function(){
-        validarNombre(nombre.value);
+        validarNombre();
     });
 
     //evento perdida foco del input apellidos
     apellidos.blur(function(){
-        validarApellidos(apellidos.value);
+        validarApellidos();
     });
 
     //evento perdida foco del input email
     email.blur(function(){
-        validarEmail(email.value);
+        validarEmail();
     });
 
     //evento perdida foco del input fecha
     fecha.blur(function(){
-        validarFecha(fecha);
+        validarFecha();
     });
 
     //evento perdida foco del input fecha
     condiciones.blur(function(){
-        validarCondiciones(condiciones);
+        validarCondiciones();
     });
 
     //evento presionar botón crear
@@ -48,18 +48,18 @@
     });
 
     //evento presionar botón limpiar
-    $("#limpiar").click(function (){
-        nombre.innerHTML="";
-        apellidos.innerHTML="";
-        email.innerHTML="";
-        fecha.innerHTML="";
+    $("#limpiar").click(function(){
+        nombre.html("");
+        apellidos.html("");
+        email.html("");
+        fecha.html("");
         condiciones.checked=false;
 
-        errorNombre.innerHTML = "";
-        errorApellidos.innerHTML="";
-        errorEmail.innerHTML="";
-        errorFecha.innerHTML="";
-        errorCondiciones.innerHTML="";
+        errorNombre.html("");
+        errorApellidos.html("");
+        errorEmail.html("");
+        errorFecha.html("");
+        errorCondiciones.html("");
     });
 
     //datepicker

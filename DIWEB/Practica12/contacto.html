@@ -6,11 +6,17 @@
     <link rel="stylesheet" href="css/style2.css">
     <link rel="stylesheet" href="css/style3.css">
     <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="jquery-ui-1.11.4.custom/jquery-ui.min.css" type="text/css">
     <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
     <title>Casas Rurales</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="description" content="Alojamiento casas rurales">
     <meta name="keywords" content="casa rural, alojamiento, alquilar">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/validar.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
   </head>
   <body>
     <div class="contenido">
@@ -20,6 +26,7 @@
             <li><a href="index.html">Inicio</a></li>
             <li><a href="catalogo.html">Catálogo</a></li>
             <li><a href="contacto.html" class="seleccionado" >Contacto</a></li>
+            <li><a href="documentacion.html">Documentación</a></li>
           </ul>
         </nav>
        </header>
@@ -33,7 +40,7 @@
               </td>
               <td>
                 <input type = "text" id="nombre" placeholder="Nombre"/>
-                <span id = 'msj_nombre'></span>
+                <span id = 'errorNombre'></span>
               </td>
             </tr>
             <tr>
@@ -42,7 +49,7 @@
               </td>
               <td>
                 <input type = "text" id="apellidos" placeholder="Apellidos"/>
-                <span id = 'msj_apellido1'></span>
+                <span id = 'errorApellidos'></span>
               </td>
             </tr>
             <tr>
@@ -51,16 +58,16 @@
               </td>
               <td>
                 <input type = "text" id="email" placeholder="algo@ejemplo.com"/>
-                <span id = 'msj_email'></span>
+                <span id = 'errorEmail'></span>
               </td>
             </tr>
             <tr>
               <td>
-                <label for ="fecha" >Fecha de nacimiento</label>
+                <label for ="fecha" >Fecha de reserva</label>
               </td>
               <td>
-                <input type = "text" id="fechaNac" placeholder="dd-mm-aaaa"/>
-                <span id = 'msj_fecha'></span>
+                <input type = "text" id="fecha" readonly/>
+                <span id = 'errorFecha'></span>
               </td>
             </tr>
             <tr>
@@ -102,16 +109,16 @@
                 <label for ="sugerencias" >Sugerencias...</label>
               </td>
               <td>
-                <textarea cols="40" rows="10" name="sugerencias">Escriba aquí sus sugerencias...</textarea>
+                <textarea cols="40" rows="3" name="sugerencias">Escriba aquí sus sugerencias...</textarea>
               </td>
             </tr>
           </table></fieldset>
           <input type = "checkbox" id="condiciones"/>
           <label for ="condiciones" >Acepto las condiciones</label>
-          <span id = 'msj_condiciones'></span>
+          <span id = 'errorCondiciones'></span>
           <div>
-            <input type = "button" class="button" value = "Enviar"  id = 'crear'>
-            <input type = "reset" class="button" value = "Limpiar" id = 'limpiar'>
+            <input type="button" class="button" value="Enviar" id ="enviar">
+            <input type="reset" class="button" id="limpiar" value="Limpiar">
           </div>
         </form>
       </section>

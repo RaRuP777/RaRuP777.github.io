@@ -1,6 +1,9 @@
 *{
 	margin: 0;
-	padding: 0;}
+	padding: 0;
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
 
 body{
   background: url(../img/background.jpg) no-repeat center fixed;
@@ -27,6 +30,7 @@ h1{
   font-size: 300%;
   font-family: myFont;
 }
+
 
 a{
   border-radius:3px;
@@ -69,4 +73,16 @@ footer a {
   margin-right: 15px;
   font-size:15px;
   padding:5px 5px;
+}
+
+#animacion {
+  position: absolute;
+  top: 0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  background-color: black;
+  opacity: 0.8;
+  z-index: 1;
 }

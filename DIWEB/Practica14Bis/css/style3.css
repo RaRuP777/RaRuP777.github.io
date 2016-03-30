@@ -1,0 +1,49 @@
+@media screen and (min-width: 1280px) {
+	
+	header{
+		min-height: 1280px;
+	}
+
+	header h1 {
+		padding-top: 1.5em;
+	}
+
+	nav ul li {
+		border: none;
+	}
+
+	nav ul li:hover {
+		border: none;
+	}
+
+	#yo h2 {
+		font-size: 36px;
+	}
+
+	#yo p {
+		font-size: 18px;
+	}
+
+	#yo #biografia {
+		width: 50%;
+	}
+
+	#yo img {
+		height: 300px;
+		width: 300px;
+	}
+
+
+
+
+	
+	#contacto input[type=text] {
+		font-size: 18px;
+		margin-left: 6em;
+	}
+
+	#contacto p {
+		font-size: 18px;
+		text-align: center;
+	}
+}

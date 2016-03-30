@@ -5,11 +5,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style2.css">
     <link rel="stylesheet" href="css/style3.css">
+    <link type="text/css" href="css/lightbox.css" rel="stylesheet">
     <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
     <title>Casas Rurales</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="description" content="Alojamiento casas rurales">
     <meta name="keywords" content="casa rural, alojamiento, alquilar">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>    
   </head>
   <body>
     <div id="web">
@@ -19,16 +22,20 @@
             <li><a href="index.html">Inicio</a></li>
             <li><a href="catalogo.html" class="seleccionado" >Catálogo</a></li>
             <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="documentacion.html">Documentación</a></li>
           </ul>
         </nav>
        </header>
        <main>
           <section>
             <article>
-              <img src="img/casa1.jpg" alt="Foto casa1" width="120" height="80"/>
-              <h3>Casa 1</h3>
+              <a href="img/casa1b.jpg" data-lightbox="c1" class="examples-image-link"><img src="img/casa1.jpg" alt="Foto casa1" width="120" height="80" id="casa1" /></a>
+              <a href="img/1b.jpg" data-lightbox="c1" class="examples-image-link"><img src="img/1.jpg" class="oculta" /></a>
+              <a href="img/2b.jpg" data-lightbox="c1" class="examples-image-link"><img src="img/2.jpg" class="oculta" /></a>
+              <a href="img/3b.jpg" data-lightbox="c1" class="examples-image-link"><img src="img/3.jpg" class="oculta" /></a>
+              <h3 id="titulo1">Casa 1</h3>
               <hr>
-              <p class="descripcion">descripcion mega corta y con gran contenido que debe ser rellenada individualmente por cada elemento llamado casa1, aunque quizas era preferible que fuera mas grande para que ocupara todo el contenido de la caja de texto</p>
+              <p class="descripcion" id="descripcion1">descripcion mega corta y con gran contenido que debe ser rellenada individualmente por cada elemento llamado casa1, aunque quizas era preferible que fuera mas grande para que ocupara todo el contenido de la caja de texto</p>
               <p class="precio">65€</p>
               <a href="reserva.html">
                 <div>
@@ -39,10 +46,13 @@
               </a>
             </article>
             <article>
-              <img src="img/casa2.jpg" alt="Foto casa2" width="120" height="80"/>
-              <h3>Casa 2</h3>
+              <img src="img/casa2.jpg" alt="Foto casa2" width="120" height="80" id="casa2"/>
+              <img src="img/4.jpg" class="oculta" />
+              <img src="img/5.jpg" class="oculta" />
+              <img src="img/6.jpg" class="oculta" />
+              <h3 id="titulo2">Casa 2</h3>
               <hr>
-              <p class="descripcion">descripcion mega corta y con gran contenido que debe ser rellenada individualmente por cada elemento llamado casa2, aunque quizas era preferible que fuera mas grande para que ocupara todo el contenido de la caja de texto</p>
+              <p class="descripcion" id="descripcion2">descripcion mega corta y con gran contenido que debe ser rellenada individualmente por cada elemento llamado casa2, aunque quizas era preferible que fuera mas grande para que ocupara todo el contenido de la caja de texto</p>
               <p class="precio">45€</p>
               <a href="reserva.html">
                 <div>
@@ -53,10 +63,13 @@
               </a>
             </article>
             <article>
-              <img src="img/casa3.jpg" alt="Foto casa3" width="120" height="80"/>
-              <h3>Casa 3</h3>
+              <img src="img/casa3.jpg" alt="Foto casa3" width="120" height="80" id="casa3"/>
+              <img src="img/7.jpg" class="oculta" />
+              <img src="img/8.jpg" class="oculta" />
+              <img src="img/9.jpg" class="oculta" />
+              <h3 id="titulo3">Casa 3</h3>
               <hr>
-              <p class="descripcion">descripcion mega corta y con gran contenido que debe ser rellenada individualmente por cada elemento llamado casa3, aunque quizas era preferible que fuera mas grande para que ocupara todo el contenido de la caja de texto</p>
+              <p class="descripcion" id="descripcion3">descripcion mega corta y con gran contenido que debe ser rellenada individualmente por cada elemento llamado casa3, aunque quizas era preferible que fuera mas grande para que ocupara todo el contenido de la caja de texto</p>
               <p class="precio">85€</p>
               <a href="reserva.html">
                 <div>
@@ -67,10 +80,13 @@
               </a>
             </article>
             <article>
-              <img src="img/casa4.jpg" alt="Foto casa4" width="120" height="80"/>
-              <h3>Casa 4</h3>
+              <img src="img/casa4.jpg" alt="Foto casa4" width="120" height="80" id="casa4"/>
+              <img src="img/10.jpg" class="oculta" />
+              <img src="img/11.jpg" class="oculta" />
+              <img src="img/12.jpg" class="oculta" />
+              <h3 id="titulo4">Casa 4</h3>
               <hr>
-              <p class="descripcion">descripcion mega corta y con gran contenido que debe ser rellenada individualmente por cada elemento llamado casa4, aunque quizas era preferible que fuera mas grande para que ocupara todo el contenido de la caja de texto</p>
+              <p class="descripcion" id="descripcion4">descripcion mega corta y con gran contenido que debe ser rellenada individualmente por cada elemento llamado casa4, aunque quizas era preferible que fuera mas grande para que ocupara todo el contenido de la caja de texto</p>
               <p class="precio">15€</p>
               <a href="reserva.html">
                 <div>
@@ -105,13 +121,14 @@
       <footer>
         <ul id="icons">
           <li class="first">Contacto:</li>
-          <li><a href="https://www.facebook.com/pedro.jonathan.ramos" class="normaltip" title="Facebook"><img src="img/icon1.jpg" alt=""></a></li>
-          <li><a href="https://twitter.com/RaRuP777" class="normaltip" title="Twitter"><img src="img/icon2.jpg" alt=""></a></li>
-          <li><a href="https://github.com/rarup777" class="normaltip" title="Github"><img src="img/icon3.png" alt=""></a></li>
-          <li><a href="http://pjdaw.tk/" class="normaltip" title="Blogger"><img src="img/icon4.png" alt=""></a></li>
+          <li><a href="https://www.facebook.com/pedro.jonathan.ramos" class="normaltip" title="Facebook"><img src="img/icon1.jpg" id="f1"></a></li>
+          <li><a href="https://twitter.com/RaRuP777" class="normaltip" title="Twitter"><img src="img/icon2.jpg" id="f2"></a></li>
+          <li><a href="https://github.com/rarup777" class="normaltip" title="Github"><img src="img/icon3.png" id="f3"></a></li>
+          <li><a href="http://pjdaw.tk/" class="normaltip" title="Blogger"><img src="img/icon4.png" id="f4"></a></li>
         </ul>
         Pedro J. Ramos &copy;<br>2º DAW 2015/2016<br>
       </footer>
     </div>
+  <script src="js/lightbox.js"></script>
   </body>
 </html>

@@ -161,3 +161,7 @@ footer {
 footer ul li {
   list-style: none;
 }
+
+.descripcion, .oculta {
+    display: none;
+}

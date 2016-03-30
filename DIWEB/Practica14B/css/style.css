@@ -1,0 +1,20 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	background: #c1c1c1 url(../img/portfolio.png) no-repeat center fixed;
+	background-size: 60%;
+	font-size: 1em;
+	font-family: 'Raleway', Arial, sans-serif;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.elementos{
+	*display: none;
+}
+
+nav{
+  text-align: center;
+}

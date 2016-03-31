@@ -94,15 +94,6 @@ header h2 {
 	text-align: justify;
 }
 
-#social img {
-		display: block;
-		margin: 0 auto;
-		margin-top: 1em;
-		transition: 1s all;
-		height: 64px;
-		width: 64px;
-}
-
 #yo img:hover {
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
 	transform: scale(1.1);
@@ -180,46 +171,39 @@ header h2 {
 	width: 100%;
 }
 
-#contacto h2 {
-	color: black;
-	font-size: 20px;
-	text-transform: uppercase;
-}
-
-
-
-
-
-
-
-
-
-
 #contacto {
-	padding-top: 2em;
-	min-height: 480px;
-	width: 100%;
 	background: green;
 	color: black;
-}
-
-#contacto form {
-	text-align: center;
-	width: 50%;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	width: 100%;
 }
 
 #contacto article {
 	text-align: center;
 }
 
+#contacto h2 {
+	color: black;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+#contacto p {
+	font-size: 16px;
+	padding-bottom: 1em;
+}
+
+#contacto label {
+	display: none;
+}
+
 #contacto .button {
 	background: #FFFFFF;
-	border: 2px solid rgba(0,0,0,0.6);
+	border: 2px solid black;
 	color: #000000;
 	display: inline;
-	letter-spacing: 0.1em;
-	margin: 0 auto;
-	margin-top: 2.5em;
+	margin-top: 2em;
 	padding: 0.5em 2em;
 	text-transform: uppercase;
 }
@@ -229,20 +213,30 @@ header h2 {
 	color: #FFFFFF;
 }
 
-#contacto input[type=text] {
-	border: none;
-	border-bottom: 1px solid #EEEEEE;
-	display: block;
-	margin-left: 1.2em;
-	margin-bottom: 1.8em;
-	width: 80%;
+#contacto input[type=text], #contacto textarea {
+	margin-left: 0.5em;
+	margin-bottom: 1em;
+	width: 100%;
 }
 
-#contacto p {
-	font-size: 16px;
-	margin: 1.2em;
-	margin-bottom: 2em; 
-	text-align: justify;
+input[required]{
+	border-color:blue;
+}
+
+input:invalid{
+	border-color:red;
+}
+
+textarea[required]{
+	border-color:blue;
+}
+
+textarea:invalid{
+	border-color:red;
+}
+
+.error {
+	color: red;
 }
 
 footer {

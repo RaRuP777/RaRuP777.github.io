@@ -13,13 +13,14 @@
 		<link rel="stylesheet" type="text/css" href="css/style3.css">
 		<script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/form.js"></script>
+		<script type="text/javascript" src="js/validar.js"></script>
 	</head>
 	<body>
 		<header>
 			<nav>
 				<ul>
 					<li><a href="#yo" class="yo">Quien Soy</a></li>
-					<li><a href="#smr">Trabajos Sistemas</a></li>
 					<li><a href="#daw" class="daw">Trabajos Web</a></li>
 					<li><a href="#contacto" class="contacto">Contacto</a></li>
 				</ul>
@@ -89,22 +90,22 @@
 			<section id="contacto">
 				<article>
 					<h2>Formulario de Contacto</h2>
-					<p class="email">pedro.jonathan.ramos@gmail.com</p>
+					<p><a href="pedro.jonathan.ramos@gmail.com">pedro.jonathan.ramos@gmail.com</a></p>
 					<form>
 						<fieldset><table>
 		            		<tr>
 		              			<td><label for ="nombre" >Nombre</label></td>
-		              			<td><input type = "text" id="nombre" placeholder="Nombre" required/>
-					                <span id = "errorNombre" class="error"></span></td>
+		              			<td><input type = "text" id="nombre" placeholder="Nombre" required/></td>
+					            <td><span id = "errorNombre" class="error"></span></td>
 		            		</tr>
 				            <tr>
 								<td><label for ="email" >Correo electrónico </label></td>
-								<td><input type = "text" id="email" placeholder="algo@ejemplo.com" required/>
-									<span id = 'errorEmail' class="error"></span></td>
+								<td><input type = "text" id="email" placeholder="algo@ejemplo.com" required/></td>
+								<td><span id = 'errorEmail' class="error"></span></td>
 							</tr>
 							<tr>
 								<td><label for ="mensaje" >Mensaje</label></td>
-								<td><textarea cols="40" rows="10" required></textarea></td>
+								<td><textarea cols="35" rows="10" placeholder="mensaje" required></textarea></td>
 							</tr>
 						</table></fieldset>
 						<div id="button">

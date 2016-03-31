@@ -80,32 +80,12 @@
 		padding-top: 4px;
 		font-size: 32px;
 	}
-
-
-
-
-
-
-
-	#contacto button {
-		margin-top: 3em;
-	}
-
-	#contacto .email {
-		font-size: 18px;
+	
+	#contacto label {
+		display: inline;
 	}
 	
-	#contacto h2 {
-		padding-bottom: 0.5em;
-	}
-	
-	#contacto input[type=text] {
+	#contacto input[type=text], #contacto textarea {
 		margin-left: 4em;
-	}
-	
-	#contacto p {
-		margin-left: 4em;
-		margin-right: 4em;
-		margin-bottom: 2em; 
 	}
 }

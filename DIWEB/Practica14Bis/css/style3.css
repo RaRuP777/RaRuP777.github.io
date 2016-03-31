@@ -33,17 +33,20 @@
 		width: 300px;
 	}
 
-
-
-
-	
-	#contacto input[type=text] {
-		font-size: 18px;
-		margin-left: 6em;
+	#daw h2 {
+		font-size: 36px;
 	}
 
-	#contacto p {
+	#contacto h2 {
+		font-size: 36px;
+	}
+
+	#contacto p, #contacto label {
 		font-size: 18px;
-		text-align: center;
+	}
+	
+	#contacto input[type=text], #contacto textarea {
+		font-size: 18px;
+		margin-left: 6em;
 	}
 }

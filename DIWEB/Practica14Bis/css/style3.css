@@ -44,6 +44,10 @@
 	#contacto p, #contacto label {
 		font-size: 18px;
 	}
+
+	#contacto label {
+		display: inline;
+	}
 	
 	#contacto input[type=text], #contacto textarea {
 		font-size: 18px;

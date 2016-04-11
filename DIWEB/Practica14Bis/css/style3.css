@@ -8,16 +8,30 @@
 		padding-top: 1.5em;
 	}
 
-	nav ul li {
+	nav ul a li {
 		border: none;
 	}
 
-	nav ul li:hover {
-		border: none;
+	nav ul a li:hover {
+	    border: 1px solid blue;
+	    text-shadow: 0 0 0px;
+	}
+	 
+	nav ul a li:hover {
+	    color: blue;
+	}
+
+	#yo, #daw, #contacto {
+		background: url("../img/daw.png") no-repeat center center fixed;
+		background-size: cover;
+		opacity: 1;
+		min-height: 768px;
+		color: white;
 	}
 
 	#yo h2 {
 		font-size: 36px;
+		color: white;
 	}
 
 	#yo p {
@@ -28,29 +42,33 @@
 		width: 50%;
 	}
 
-	#yo img {
+	#yo article img {
 		height: 300px;
 		width: 300px;
 	}
 
 	#daw h2 {
 		font-size: 36px;
+		color: white;
+	}
+
+	#daw article {
+		width: 35%;
+		margin-left: 5%;
 	}
 
 	#contacto h2 {
 		font-size: 36px;
-	}
-
-	#contacto p, #contacto label {
-		font-size: 18px;
+		color: white;
 	}
 
 	#contacto label {
-		display: inline;
+		color: white;
 	}
 	
 	#contacto input[type=text], #contacto textarea {
 		font-size: 18px;
 		margin-left: 6em;
+		margin-top: 0;
 	}
 }

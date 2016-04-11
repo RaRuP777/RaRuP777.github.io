@@ -24,4 +24,12 @@ $(function() {
 			scrollTop: pos
 		}, 2000);
 	});
+
+	$(".top").click(function(evento) {
+		evento.preventDefault();
+		pos = $("#top").offset().top;
+		$("html, body").animate({
+			scrollTop: pos
+		}, 2000);
+	});
 });

@@ -1,11 +1,25 @@
 * {
 	margin: 0;
 	padding: 0;
+	font-family: 'Roboto';
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-ThinItalic-webfont.eot');
+    src: url('Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-ThinItalic-webfont.woff') format('woff'),
+         url('Roboto-ThinItalic-webfont.ttf') format('truetype'),
+         url('Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg'); (under the Apache Software License). 
+    font-weight: 200;
+    font-style: italic;
 }
 
 header {
-	background-color: white;
-	min-height: 480px;
+	background-color: red;
+	opacity: 0.5;
+	width: 100%;
+    height: 100%;
 }
 
 h1 {
@@ -33,29 +47,37 @@ nav {
 	width: 100%;
 }
 
-nav ul li {
+nav ul a li {
 	display: block;
 	list-style: none;
 	margin: 0.5em;
 	padding: 0.5em;
 	transition: all 0.4s;
 	border: 1px solid black;
+	border-radius: 10px;
 }
 
-nav ul li a {
+nav ul a {
 	color: black;
 	text-decoration: none;
 	text-transform: uppercase;
 	transition: all 1s;
 }
 
-nav ul li:hover {
-	transform: scale(1.1);
-	border: 1px solid blue;
+nav ul a li:hover {
+	transform: scale(1.2);
+	border: 0;
 }
 
-nav ul li a:hover {
-	color: blue;
+nav ul a li:hover {
+	color: purple;
+	text-shadow: 0 0 5px #fff,
+		0 0 10px #fff, 0 0 15px #fff,
+		0 0 20px cyan,
+		0 0 30px cyan,
+		0 0 40px cyan,
+		0 0 50px cyan,
+		0 0 75px cyan;
 }
 
 header h1 {
@@ -74,10 +96,17 @@ header h2 {
 	100% { opacity: 1; }
 }
 
+.subir {
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+
 #yo {
 	padding-top: 1em;
 	padding-bottom: 1em;
 	width: 100%;
+    height: 100%;
 	background: cyan;
 	opacity: 0.5;
 	color: black;
@@ -95,7 +124,7 @@ header h2 {
 	text-align: justify;
 }
 
-#yo img {
+#yo article img {
 	display: none;
 }
 
@@ -179,6 +208,7 @@ header h2 {
 	padding-top: 1em;
 	padding-bottom: 1em;
 	width: 100%;
+    height: 100%;
 }
 
 #contacto article {
@@ -191,16 +221,15 @@ header h2 {
 	text-transform: uppercase;
 }
 
-#contacto p {
-	font-size: 16px;
-	padding-bottom: 1em;
-}
-
 #contacto label {
 	display: none;
 }
 
 #contacto .button {
+	font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 8px 8px 8px 8px;
 	background: #FFFFFF;
 	border: 2px solid black;
 	color: #000000;

@@ -1,5 +1,9 @@
 @media screen and (min-width: 768px) {
 
+	* {
+		font-family: 'Bookman Old Style', serif;
+	}
+	
 	header {
 		background: url("../img/portfolio.png") no-repeat center center fixed;
 		background-size: cover;
@@ -19,7 +23,7 @@
 		padding-top: 2em;
 	}
 
-	nav ul li {
+	nav ul a li {
 		display: inline-block;
 	}
 
@@ -33,12 +37,15 @@
 		margin: 1em;
 	}
 
-	#yo img {
+	#yo article img {
 		height: 200px;
 		width: 200px;
+		display: inline-block;
+		margin-left: 2em;
+		margin-top: 2em;
 	}
 
-	#yo img:hover {
+	#yo article img:hover {
 		box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
 		transform: scale(1.1);
 	}
@@ -49,16 +56,11 @@
 		width: 60%;
 	}
 
-	#yo img {
-		display: inline-block;
-		margin-left: 2em;
-		margin-top: 2em;
-	}
-
 	#daw {
 		padding: 0.5em;
 		padding-bottom: 1em;
 		padding-top: 2em;
+		height: 100%;
 	}
 
 	#daw h2 {
@@ -70,10 +72,6 @@
 		font-size: 30px;
 		padding-top: 1em;
 	}
-	
-	.contenido p {
-		font-size: 18px;
-	}
 
 	#daw article {
 		display: inline-block;
@@ -81,12 +79,29 @@
 		height: 230px;
 	}
 
+	#contacto form * {
+		margin: 1em;
+	}
+
 	#contacto h2 {
-		padding-top: 4px;
+		padding: 4px;
 		font-size: 32px;
+	}
+
+	#contacto label {
+		font-size: 20px;
+	}
+
+	#contacto label {
+		display: inline;
 	}
 	
 	#contacto input[type=text], #contacto textarea {
 		margin-left: 4em;
 	}
+	
+	#contacto .button {
+		margin-right: 2em;
+	}
+	
 }

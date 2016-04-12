@@ -3,9 +3,9 @@
 	* {
 		font-family: 'Bookman Old Style', serif;
 	}
-	
+
 	header {
-		background: url("../img/portfolio.png") no-repeat center center fixed;
+		background: url("../img/portada.jpg") no-repeat center center fixed;
 		background-size: cover;
 		opacity: 0.5;
 		min-height: 768px;
@@ -13,23 +13,40 @@
 
 	header h1 {
 		padding-top: 4em;
-	}
-
-	header h2 {
-		padding-top: 1em;
+		font-size: 52px;
+		padding-bottom: 1em;
 	}
 
 	nav {
 		padding-top: 2em;
 	}
 
+	nav ul a {
+		font-size: 27px;
+		color: white;
+	}
+
 	nav ul a li {
 		display: inline-block;
+	}
+
+	.subir {
+		width: 40px;
+		height: 40px;
+	}
+
+	#yo, #daw, #contacto {
+		background: url("../img/daw.png") no-repeat center center fixed;
+		background-size: cover;
+		opacity: 1;
+		min-height: 768px;
+		color: white;
 	}
 
 	#yo h2 {
 		padding-top: 4px;
 		font-size: 32px;
+		color: white;
 	}
 
 	#yo p {
@@ -37,7 +54,7 @@
 		margin: 1em;
 	}
 
-	#yo article img {
+	#foto {
 		height: 200px;
 		width: 200px;
 		display: inline-block;
@@ -45,12 +62,12 @@
 		margin-top: 2em;
 	}
 
-	#yo article img:hover {
+	#foto:hover {
 		box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
 		transform: scale(1.1);
 	}
 
-	#yo #biografia {
+	#biografia {
 		display: inline-block;
 		vertical-align: top;
 		width: 60%;
@@ -66,6 +83,7 @@
 	#daw h2 {
 		padding-top: 4px;
 		font-size: 32px;
+		color: white;
 	}
 	
 	.contenido h3 {
@@ -86,22 +104,21 @@
 	#contacto h2 {
 		padding: 4px;
 		font-size: 32px;
+		color: white;
 	}
 
 	#contacto label {
 		font-size: 20px;
-	}
-
-	#contacto label {
 		display: inline;
-	}
-	
-	#contacto input[type=text], #contacto textarea {
-		margin-left: 4em;
+		color: white;
 	}
 	
 	#contacto .button {
 		margin-right: 2em;
+	}
+
+	footer {
+		display: none;
 	}
 	
 }

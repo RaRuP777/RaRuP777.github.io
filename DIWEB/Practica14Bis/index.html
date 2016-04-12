@@ -30,7 +30,7 @@
 			<h2>Técnico en Sistemas</h2>
 		</header>
 		<main>
-			<section id="yo"><a href="#top"><img src="img/subir.png" class="subir"></a>
+			<section id="yo"><a class="top" href="#top"><img src="img/subir.png" class="subir"></a>
 				<article>
 					<h2>Pedro Ramos Ruiz</h2>
 					<div id="biografia">
@@ -41,10 +41,10 @@
 						<p>Fué entonces cuando mi ansia de aprender me llevó a realizar las pruebas de acceso en ese mismo mes obteniendo una calificación de 7,00</p>
 						<p>Decidí entonces profundizar más en los conceptos del desarrollo de aplicaciones web y me matriculé en el Ciclo de Desarrollo de Aplicaciones Web impartido en el I.E.S. "Gran Capitán" de Córdoba estudios que comencé en septiembre de 2.014</p>
 					</div>
-					<img src="img/yo.jpg">
+					<img src="img/yo.jpg" id="foto">
 				</article>
 			</section>
-			<section id="daw"><a href="#top"><img src="img/subir.png" class="subir"></a>
+			<section id="daw"><a class="top" href="#top"><img src="img/subir.png" class="subir"></a>
 				<h2>Diseños Web</h2>
 				<article>
 					<div id="p9" class="imagen">
@@ -87,41 +87,36 @@
 					</div>
 				</article>
 			</section>
-			<section id="contacto"><a href="#top"><img src="img/subir.png" class="subir"></a>
+			<section id="contacto"><a class="top" href="#top"><img src="img/subir.png" class="subir"></a>
 				<article>
-					<h2>Formulario de Contacto</h2>
+					<h2>Contacto</h2>
 					<form>
-						<fieldset><table>
-		            		<tr>
-		              			<td><label for ="nombre" >Nombre</label></td>
-		              			<td><input type = "text" id="nombre" placeholder="Nombre" required/></td>
-					            <td><span id = "errorNombre" class="error"></span></td>
-		            		</tr>
-				            <tr>
-								<td><label for ="email" >Correo electrónico </label></td>
-								<td><input type = "text" id="email" placeholder="algo@ejemplo.com" required/></td>
-								<td><span id = 'errorEmail' class="error"></span></td>
-							</tr>
-							<tr>
-								<td><label for ="mensaje" >Mensaje</label></td>
-								<td><textarea cols="35" rows="10" placeholder="mensaje" required></textarea></td>
-							</tr>
-						</table></fieldset>
+						<fieldset>
+		            		<label for ="nombre" >Nombre</label>
+		              		<input type = "text" id="nombre" placeholder="Nombre" required/>
+					        <span id = "errorNombre" class="error"></span>
+		            		<label for ="email" >Correo electrónico </label>
+		            		<input type = "text" id="email" placeholder="algo@ejemplo.com" required/>
+		            		<span id = 'errorEmail' class="error"></span>
+		            		<label for ="mensaje" >Mensaje</label>
+		            		<textarea cols="35" rows="6" placeholder="mensaje" required></textarea>
+						</fieldset>
 						<div id="button">
 		            		<input type = "button" class="button" value = "Enviar"  id = "enviar">
 		            		<input type = "reset" class="button" value = "Limpiar" id = "limpiar">
 	          			</div>
 					</form>
+					<footer>
+						<ul>
+			  				<li><a href="https://www.facebook.com/pedro.jonathan.ramos" title="Facebook"><img src="img/icon1.jpg" alt="Facebook"></a></li>
+			  				<li><a href="https://twitter.com/RaRuP777" title="Twitter"><img src="img/icon2.jpg" alt="Twitter"></a></li>
+			  				<li><a href="https://github.com/rarup777" title="Github"><img src="img/icon3.png" alt="Github"></a></li>
+			  				<li><a href="http://pjdaw.tk/" title="Blogger"><img src="img/icon4.png" alt="Blogger"></a></li>
+						</ul>
+					</footer>
 				</article>
 			</section>
 		</main>
-		<footer>
-			<ul>
-  				<li><a href="https://www.facebook.com/pedro.jonathan.ramos" title="Facebook"><img src="img/icon1.jpg" alt="Facebook"></a></li>
-  				<li><a href="https://twitter.com/RaRuP777" title="Twitter"><img src="img/icon2.jpg" alt="Twitter"></a></li>
-  				<li><a href="https://github.com/rarup777" title="Github"><img src="img/icon3.png" alt="Github"></a></li>
-  				<li><a href="http://pjdaw.tk/" title="Blogger"><img src="img/icon4.png" alt="Blogger"></a></li>
-			</ul>
-		</footer>
+		
 	</body>
 </html>

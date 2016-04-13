@@ -8,11 +8,11 @@ function validarObligatorio(valor){
 //función validación del nombre
 function validarNombre(valor){
 	if(validarObligatorio(valor.trim())){
-		errorNombre.innerHTML = "El nombre debe ser rellenado";
+		errorNombre.innerHTML = "(El nombre debe ser rellenado)";
 		return false;
 	}
 	if(valor.trim().length < 4){
-		errorNombre.innerHTML = "Formato incorrecto (al menos debe tener 4 caracteres)";
+		errorNombre.innerHTML = "(Formato incorrecto, mínimo 4 caracteres)";
 		return false;
 	}
 	errorNombre.innerHTML = "";
@@ -22,11 +22,11 @@ function validarNombre(valor){
 //funcion validación del email
 function validarEmail(valor){
 	if(validarObligatorio(valor.trim())){
-		errorEmail.innerHTML = "El email debe ser rellenado";
+		errorEmail.innerHTML = "(El email debe ser rellenado)";
 		return false;
 	}
 	if(!/^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$/.test(valor.trim())){
-		errorEmail.innerHTML = "Formato incorrecto (algo@ejemplo.com)";
+		errorEmail.innerHTML = "(Formato incorrecto, algo@ejemplo.com)";
 		return false;
 	}
 	errorEmail.innerHTML="";

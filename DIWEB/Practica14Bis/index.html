@@ -12,6 +12,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style2.css">
 		<link rel="stylesheet" type="text/css" href="css/style3.css">
 		<script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 		<script type="text/javascript" src="js/form.js"></script>
 		<script type="text/javascript" src="js/validar.js"></script>
@@ -93,11 +94,11 @@
 					<form>
 						<fieldset>
 		            		<label for ="nombre" >Nombre</label>
+		              		<span id = "errorNombre" class="error"></span>
 		              		<input type = "text" id="nombre" placeholder="Nombre" required/>
-					        <span id = "errorNombre" class="error"></span>
 		            		<label for ="email" >Correo electrónico </label>
-		            		<input type = "text" id="email" placeholder="algo@ejemplo.com" required/>
 		            		<span id = 'errorEmail' class="error"></span>
+		            		<input type = "text" id="email" placeholder="algo@ejemplo.com" required/>
 		            		<label for ="mensaje" >Mensaje</label>
 		            		<textarea cols="35" rows="6" placeholder="mensaje" required></textarea>
 						</fieldset>
@@ -111,7 +112,6 @@
 			  				<li><a href="https://www.facebook.com/pedro.jonathan.ramos" title="Facebook"><img src="img/icon1.jpg" alt="Facebook"></a></li>
 			  				<li><a href="https://twitter.com/RaRuP777" title="Twitter"><img src="img/icon2.jpg" alt="Twitter"></a></li>
 			  				<li><a href="https://github.com/rarup777" title="Github"><img src="img/icon3.png" alt="Github"></a></li>
-			  				<li><a href="http://pjdaw.tk/" title="Blogger"><img src="img/icon4.png" alt="Blogger"></a></li>
 						</ul>
 					</footer>
 				</article>

@@ -5,25 +5,24 @@
 	}
 
 	header h1 {
-		padding-top: 1.5em;
 		font-size: 62px;
 	}
 
-	nav ul a li {
-		border: none;
+	header h2 {
+		font-size: 32px;
 	}
 
 	nav ul a {
 		font-size: 32px;
 	}
 
+	nav ul a li {
+		border: none;
+	}
+
 	nav ul a li:hover {
 	    border: 1px solid black;
 	    text-shadow: 0 0 0px;
-	    transform: scale(1);
-	}
-	 
-	nav ul a li:hover {
 	    color: black;
 	}
 
@@ -32,29 +31,20 @@
 		height: 60px;
 	}
 
-	#yo, #daw, #contacto {
-		min-height: 600px;
-	}
-
-	#yo h2 {
+	#yo h2, #daw h2, #contacto h2 {
 		font-size: 36px;
 	}
 
 	#yo p {
 		font-size: 18px;
-	}
-
-	#yo #biografia {
-		*width: 50%;
+		margin: 1.2em;
 	}
 
 	#foto {
 		height: 300px;
-		width: 300px;
-	}
-
-	#daw h2 {
-		font-size: 36px;
+		width: 250px;
+		margin-left: 4em;
+		margin-top: 4em;
 	}
 
 	#daw article {
@@ -62,11 +52,11 @@
 		margin-left: 5%;
 	}
 
-	#contacto h2 {
-		font-size: 36px;
+	.contenido h3 {
+		font-size: 34px;
 	}
-	
-	#contacto input[type=text], #contacto textarea {
-		font-size: 18px;
+
+	#contacto .button {
+		margin-right: 3em;
 	}
 }

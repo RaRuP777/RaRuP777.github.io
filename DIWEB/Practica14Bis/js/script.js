@@ -30,6 +30,7 @@ $(function() {
 		pos = $("#top").offset().top;
 		$("html, body").animate({
 			scrollTop: pos
-		}, 2000);
+		}, 1000);
 	});
+
 });

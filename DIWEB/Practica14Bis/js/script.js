@@ -15,6 +15,7 @@ $(function() {
 		$("html, body").animate({
 			scrollTop: pos
 		}, 2000);
+		$("footer").hide();
 	});
 
 	$(".contacto").click(function(evento) {
@@ -31,6 +32,7 @@ $(function() {
 		$("html, body").animate({
 			scrollTop: pos
 		}, 1000);
+		$("footer").show();
 	});
 
 });

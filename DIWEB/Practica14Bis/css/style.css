@@ -10,7 +10,7 @@
     src: url('Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
          url('Roboto-ThinItalic-webfont.woff') format('woff'),
          url('Roboto-ThinItalic-webfont.ttf') format('truetype'),
-         url('Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg'); (under the Apache Software License). 
+         url('Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg'); 
     font-weight: 200;
     font-style: italic;
 }
@@ -96,6 +96,7 @@ header h2 {
 	width: 30px;
 	height: 30px;
 	position: absolute;
+	margin-left: 0.5em;
 }
 
 #yo {
@@ -115,9 +116,13 @@ header h2 {
 }
 
 #yo p {
-	font-size: 12px;
+	font-size: 13px;
 	margin: 0.8em;
 	text-align: justify;
+}
+
+#yo #nomovil {
+	display: none;
 }
 
 #foto {
@@ -202,7 +207,7 @@ header h2 {
 }
 
 #contacto form {
-	padding-top: 8px;
+	padding-top: 12px;
 }
 
 #contacto article {
@@ -216,7 +221,6 @@ header h2 {
 #contacto .button {
 	font-weight: bold;
     cursor: pointer;
-    border: 1px solid grey;
     border-radius: 8px 8px 8px 8px;
 	background: white;
 	border: 2px solid black;

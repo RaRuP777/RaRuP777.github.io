@@ -61,6 +61,10 @@
 		margin: 1em;
 	}
 
+	#yo #nomovil {
+		display: block;
+	}
+
 	#foto {
 		height: 200px;
 		width: 150px;

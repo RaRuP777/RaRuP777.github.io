@@ -52,7 +52,7 @@
 	}
 
 	#yo p {
-		font-size: 18px;
+		font-size: 20px;
 		margin: 1.2em;
 	}
 
@@ -113,6 +113,8 @@
 		width: 45px;
 		margin-left: 45px;
 		margin-right: 45px;
+		margin-top: 10px;
+		margin-bottom: 10px;
 	}
 
 }

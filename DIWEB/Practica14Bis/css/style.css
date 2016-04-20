@@ -16,8 +16,9 @@
 }
 
 header {
-	background-color: #e57373;
-	opacity: 0.9;
+	background: url("../img/portadamovil.jpg") no-repeat center center fixed;
+	background-size: cover;
+	opacity: 0.5;
 	width: 100%;
     height: 100%;
 }
@@ -62,7 +63,7 @@ nav ul a li {
 }
 
 nav ul a li:hover {
-	border: 0;
+	border: 1px solid white;
 }
 
 nav ul a li:hover {
@@ -99,25 +100,25 @@ header h2 {
 	margin-left: 0.5em;
 }
 
-#yo {
+#yo, #daw, #contacto {
 	padding-top: 1em;
 	padding-bottom: 1em;
 	width: 100%;
     height: 100%;
-	background: #f06292;
+	background: url("../img/daw.png") no-repeat center center fixed;
+	background-size: cover;
 	opacity: 0.9;
-	color: black;
+	color: white;
 }
 
 #yo h2, #daw h2, #contacto h2 {
-	color: black;
 	font-size: 20px;
 	text-transform: uppercase;
 }
 
 #yo p {
 	font-size: 13px;
-	margin: 0.8em;
+	margin: 1.5em;
 	text-align: justify;
 }
 
@@ -129,19 +130,9 @@ header h2 {
 	display: none;
 }
 
-#daw {
-	background: #ba68c8;
-	opacity: 0.9;
-	color: black;
-	padding-top: 1em;
-	padding-bottom: 1em;
-	width: 100%;
-}
-
 #daw article {
 	padding: 1em;
 	margin-bottom: 0.5em;
-	max-width: 100%;
 	opacity: 0.8;
 	vertical-align: top;
 }
@@ -196,16 +187,6 @@ header h2 {
 	width: 100%;
 }
 
-#contacto {
-	background: #9575cd;
-	opacity: 0.9;
-	color: black;
-	padding-top: 1em;
-	padding-bottom: 1em;
-	width: 100%;
-    height: 100%;
-}
-
 #contacto form {
 	padding-top: 12px;
 }
@@ -256,6 +237,7 @@ input:invalid{
 
 footer {
 	background: grey;
+	opacity: 0.7;
 	text-align: center;
 	position: fixed;
   	bottom: 0;
@@ -263,14 +245,17 @@ footer {
 }
 
 footer img {
-	height: 35px;
-	margin: 15px;
+	height: 40px;
+	width: 40px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 	transition: all 0.4s;
-	width: 35px;
 }
 
 footer img:hover {
-	transform: scale(1.5);
+	transform: scale(1.6);
 }
 
 footer ul li {

@@ -1,15 +1,26 @@
 @media screen and (min-width: 1280px) {
-	
-	header, #yo, #daw, #contacto {
-		min-height: 600px;
+
+	* {
+		font-family: 'Bookman Old Style', serif;
+	}
+
+	header {
+		background: url("../img/portada.jpg") no-repeat center center fixed;
+		background-size: cover;
 	}
 
 	header h1 {
 		font-size: 62px;
+		padding-top: 2em;
+		padding-bottom: 1em;
 	}
 
 	header h2 {
-		font-size: 32px;
+		font-size: 28px;
+	}
+
+	nav {
+		padding-top: 2em;
 	}
 
 	nav ul a {
@@ -18,21 +29,26 @@
 
 	nav ul a li {
 		border: none;
+		display: inline-block;
 	}
 
 	nav ul a li:hover {
-	    border: 1px solid black;
-	    text-shadow: 0 0 0px;
-	    color: black;
+		border: none;
 	}
 
 	.subir {
-		width: 60px;
-		height: 60px;
+		width: 40px;
+		height: 40px;
+	}
+
+	#yo, #daw, #contacto {
+		background: url("../img/daw.png") no-repeat center center fixed;
+		background-size: cover;
 	}
 
 	#yo h2, #daw h2, #contacto h2 {
 		font-size: 36px;
+		padding-top: 4px;
 	}
 
 	#yo p {
@@ -40,23 +56,63 @@
 		margin: 1.2em;
 	}
 
+	#yo #nomovil {
+		display: block;
+	}
+
 	#foto {
+		display: inline-block;
 		height: 300px;
 		width: 250px;
 		margin-left: 4em;
 		margin-top: 4em;
 	}
 
+	#foto:hover {
+		box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+		transform: scale(1.3);
+	}
+
+	#biografia {
+		display: inline-block;
+		vertical-align: top;
+		width: 60%;
+	}
+
 	#daw article {
 		width: 35%;
-		margin-left: 5%;
+		margin-left: 7%;
+		display: inline-block;
 	}
 
 	.contenido h3 {
 		font-size: 34px;
 	}
 
-	#contacto .button {
-		margin-right: 3em;
+	#contacto fieldset {
+		margin: 1em;
 	}
+
+	#contacto label {
+		font-size: 20px;
+		display: block;
+		color: white;
+	}
+
+	#contacto input[type=text], #contacto textarea {
+		font-size: 18px;
+		width: 96%;
+	}
+	
+	#contacto .button {
+		margin-right: 2em;
+	}
+
+	footer img {
+		height: 45px;
+		width: 45px;
+		margin-left: 45px;
+		margin-right: 45px;
+	}
+
 }

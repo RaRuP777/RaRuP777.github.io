@@ -1,0 +1,52 @@
+@media screen and (min-width: 1920px) {
+
+	nav ul a li {
+		margin-left: 2em;
+		margin-right: 2em;
+	}
+
+	.subir {
+		width: 50px;
+		height: 50px;
+	}
+
+	#yo h2, #daw h2, #contacto h2 {
+		font-size: 42px;
+	}
+
+	#yo p {
+		font-size: 24px;
+		margin: 1.4em;
+	}
+
+	#foto {
+		height: 400px;
+		width: 350px;
+	}
+
+	#daw article {
+		width: 20%;
+	}
+
+	#contacto label {
+		font-size: 30px;
+	}
+
+	#contacto input[type=text], #contacto textarea {
+		font-size: 30px;
+		width: 80%;
+	}
+
+	footer {
+		background: transparent;
+	  	bottom: 80px;
+	}
+
+	footer img {
+		height: 75px;
+		width: 75px;
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+
+}

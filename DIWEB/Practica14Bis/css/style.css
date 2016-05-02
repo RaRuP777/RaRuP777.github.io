@@ -116,20 +116,6 @@ header h2 {
 	text-transform: uppercase;
 }
 
-#yo p {
-	font-size: 13px;
-	margin: 1.5em;
-	text-align: justify;
-}
-
-#yo #nomovil {
-	display: none;
-}
-
-#foto {
-	display: none;
-}
-
 #daw article {
 	padding: 1em;
 	margin-bottom: 0.5em;
@@ -261,4 +247,31 @@ footer img:hover {
 footer ul li {
 	display: inline-block;
 	list-style: none;
+}
+
+#yo article div {
+	margin: 1em;
+}
+
+.logos{
+	width: 80px;
+	height: 80px;
+	padding-left: 1%;
+	padding-right: 1%;
+	margin-top: 10px;
+}
+
+#html5, #css3, #js, #java {
+	animation-name: presentacion;
+	animation-duration: 3s;
+}
+
+#jquery, #python, #moodle{
+	animation-name: presentacion;
+	animation-duration: 6s;	
+}
+
+#windows, #linux, #android{
+	animation-name: presentacion;
+	animation-duration: 9s;
 }

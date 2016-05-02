@@ -51,34 +51,6 @@
 		padding-top: 4px;
 	}
 
-	#yo p {
-		font-size: 20px;
-		margin: 1.2em;
-	}
-
-	#yo #nomovil {
-		display: block;
-	}
-
-	#foto {
-		display: inline-block;
-		height: 300px;
-		width: 250px;
-		margin-left: 4em;
-		margin-top: 4em;
-	}
-
-	#foto:hover {
-		box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
-		transform: scale(1.3);
-	}
-
-	#biografia {
-		display: inline-block;
-		vertical-align: top;
-		width: 60%;
-	}
-
 	#daw article {
 		width: 35%;
 		margin-left: 7%;
@@ -115,6 +87,29 @@
 		margin-right: 45px;
 		margin-top: 10px;
 		margin-bottom: 10px;
+	}
+
+	#yo article div {
+		margin: 5em;
+	}
+
+	.logos{
+		width: 100px;
+		height: 100px;
+		padding-left: 6%;
+		padding-right: 6%;
+	}
+
+	#jquery, #python, #moodle{
+		width: 80px;
+		height: 80px;
+		padding-bottom: 10%;
+	}
+
+	#windows, #linux, #android{
+		width: 50px;
+		height: 50px;
+		padding-bottom: 5%;
 	}
 
 }

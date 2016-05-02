@@ -7,6 +7,7 @@ $(function() {
 		$("html, body").animate({
 			scrollTop: pos
 		}, 2000);
+		$("footer").hide();
 	});
 
 	$(".daw").click(function(evento) {

@@ -14,16 +14,6 @@
 		font-size: 42px;
 	}
 
-	#yo p {
-		font-size: 24px;
-		margin: 1.4em;
-	}
-
-	#foto {
-		height: 400px;
-		width: 350px;
-	}
-
 	#daw article {
 		width: 20%;
 	}
@@ -47,6 +37,21 @@
 		width: 75px;
 		margin-left: 100px;
 		margin-right: 100px;
+	}
+
+	.logos{
+		width: 150px;
+		height: 150px;
+	}
+
+	#jquery, #python, #moodle{
+		width: 120px;
+		height: 120px;
+	}
+
+	#windows, #linux, #android{
+		width: 75px;
+		height: 75px;
 	}
 
 }

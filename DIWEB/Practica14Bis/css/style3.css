@@ -93,20 +93,20 @@
 		margin: 5em;
 	}
 
-	.logos{
+	.logos1{
 		width: 100px;
 		height: 100px;
 		padding-left: 6%;
 		padding-right: 6%;
 	}
 
-	#jquery, #python, #moodle{
+	.logos2{
 		width: 80px;
 		height: 80px;
 		padding-bottom: 10%;
 	}
 
-	#windows, #linux, #android{
+	.logos3{
 		width: 50px;
 		height: 50px;
 		padding-bottom: 5%;

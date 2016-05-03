@@ -1,18 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: 'Roboto';
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('Roboto-ThinItalic-webfont.eot');
-    src: url('Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Roboto-ThinItalic-webfont.woff') format('woff'),
-         url('Roboto-ThinItalic-webfont.ttf') format('truetype'),
-         url('Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg'); 
-    font-weight: 200;
-    font-style: italic;
+	font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -253,25 +242,11 @@ footer ul li {
 	margin: 1em;
 }
 
-.logos{
+.logos1, .logos2, .logos3 {
 	width: 80px;
 	height: 80px;
 	padding-left: 1%;
 	padding-right: 1%;
 	margin-top: 10px;
-}
-
-#html5, #css3, #js, #java {
-	animation-name: presentacion;
-	animation-duration: 3s;
-}
-
-#jquery, #python, #moodle{
-	animation-name: presentacion;
-	animation-duration: 6s;	
-}
-
-#windows, #linux, #android{
-	animation-name: presentacion;
-	animation-duration: 9s;
+	display: none;
 }

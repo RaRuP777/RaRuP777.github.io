@@ -39,17 +39,17 @@
 		margin-right: 100px;
 	}
 
-	.logos{
+	.logos1{
 		width: 150px;
 		height: 150px;
 	}
 
-	#jquery, #python, #moodle{
+	.logos2{
 		width: 120px;
 		height: 120px;
 	}
 
-	#windows, #linux, #android{
+	.logos3{
 		width: 75px;
 		height: 75px;
 	}

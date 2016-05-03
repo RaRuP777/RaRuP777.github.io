@@ -8,6 +8,15 @@ $(function() {
 			scrollTop: pos
 		}, 2000);
 		$("footer").hide();
+		$( ".logos1" ).animate({
+		    height: "toggle"
+		 }, 3000, function() {});
+		$( ".logos2" ).animate({
+		    height: "toggle"
+		 }, 5000, function() {});
+		$( ".logos3" ).animate({
+		    height: "toggle"
+		 }, 7000, function() {});
 	});
 
 	$(".daw").click(function(evento) {

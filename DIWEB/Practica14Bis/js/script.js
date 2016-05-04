@@ -1,6 +1,5 @@
 $(function() {
 	var pos;
-	var efecto = false;
 	
 	$(".yo").click(function(evento) {
 		evento.preventDefault();
@@ -8,18 +7,18 @@ $(function() {
 		$("html, body").animate({
 			scrollTop: pos
 		}, 2000);
-		if (efecto==false){
-			$( ".logos1" ).animate({
-			    height: "toggle"
-			 }, 3000, function() {});
-			$( ".logos2" ).animate({
-			    height: "toggle"
-			 }, 5000, function() {});
-			$( ".logos3" ).animate({
-			    height: "toggle"
-			 }, 7000, function() {});
-			efecto = true;
-		}
+		$(".logos1").hide();
+		$(".logos2").hide();
+		$(".logos3").hide();
+		$( ".logos1" ).animate({
+		    height: "toggle"
+		 }, 3000, function() {});
+		$( ".logos2" ).animate({
+		    height: "toggle"
+		 }, 5000, function() {});
+		$( ".logos3" ).animate({
+		    height: "toggle"
+		 }, 7000, function() {});
 	});
 
 	$(".daw").click(function(evento) {

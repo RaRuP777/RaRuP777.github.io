@@ -54,6 +54,7 @@
 	#daw article {
 		width: 35%;
 		margin-left: 7%;
+		margin-top: 3%;
 		display: inline-block;
 	}
 
@@ -68,7 +69,7 @@
 	#contacto label {
 		font-size: 20px;
 		display: block;
-		color: white;
+		color: black;
 	}
 
 	#contacto input[type=text], #contacto textarea {
@@ -78,6 +79,7 @@
 	
 	#contacto .button {
 		margin-right: 2em;
+		font-size: 20px;
 	}
 
 	footer img {
@@ -97,6 +99,7 @@
 		width: 120px;
 		height: 120px;
 		padding-left: 8%;
+		padding-right: 1%;
 	}
 
 	.logos2{
@@ -104,6 +107,7 @@
 		height: 100px;
 		padding-bottom: 10%;
 		padding-left: 8%;
+		padding-right: 1%;
 	}
 
 	.logos3{
@@ -111,6 +115,7 @@
 		height: 80px;
 		padding-bottom: 5%;
 		padding-left: 8%;
+		padding-right: 1%;
 	}
 
 }

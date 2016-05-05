@@ -253,13 +253,14 @@ footer ul li {
 }
 
 #yo article div {
-	margin: 1em;
+	margin: 2em;
+	text-align: center;
 }
 
 .logos1, .logos2, .logos3 {
-	width: 80px;
-	height: 80px;
-	padding-left: 1%;
-	padding-right: 1%;
-	margin-top: 10px;
+	width: 100px;
+	height: 100px;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-top: 5px;
 }

@@ -5,6 +5,18 @@
 		margin-right: 2em;
 	}
 
+	header h1 {
+		font-size: 68px;
+	}
+
+	header h2 {
+		font-size: 32px;
+	}
+
+	nav ul a {
+		font-size: 36px;
+	}
+
 	.subir {
 		width: 50px;
 		height: 50px;
@@ -40,18 +52,18 @@
 	}
 
 	.logos1{
-		width: 150px;
-		height: 150px;
+		width: 170px;
+		height: 170px;
 	}
 
 	.logos2{
-		width: 120px;
-		height: 120px;
+		width: 140px;
+		height: 140px;
 	}
 
 	.logos3{
-		width: 75px;
-		height: 75px;
+		width: 120px;
+		height: 120px;
 	}
 
 }

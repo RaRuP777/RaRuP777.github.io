@@ -94,7 +94,7 @@ header h2 {
 	padding-bottom: 1em;
 	width: 100%;
     height: 100%;
-	background: url("../img/daw.png") no-repeat center center fixed;
+	background: url("../img/daw2movil.jpg") no-repeat center center fixed;
 	background-size: cover;
 	opacity: 0.9;
 	color: white;
@@ -103,6 +103,15 @@ header h2 {
 #yo h2, #daw h2, #contacto h2 {
 	font-size: 20px;
 	text-transform: uppercase;
+}
+
+#contacto h2, #yo h2 {
+	color: black;
+}
+
+#daw {
+	background: url("../img/webs.png") no-repeat center center fixed;
+	background-size: cover;
 }
 
 #daw article {
@@ -162,6 +171,11 @@ header h2 {
 	width: 100%;
 }
 
+#contacto {
+	background: url("../img/contacto.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+
 #contacto form {
 	padding-top: 12px;
 }
@@ -195,7 +209,7 @@ header h2 {
 #contacto input[type=text], #contacto textarea {
 	margin-bottom: 1em;
 	width: 100%;
-	color: grey;
+	color: black;
 }
 
 input[required]{

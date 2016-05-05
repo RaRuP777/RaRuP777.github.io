@@ -41,8 +41,8 @@
 		height: 40px;
 	}
 
-	#yo, #daw, #contacto {
-		background: url("../img/daw.png") no-repeat center center fixed;
+	#yo, {
+		background: url("../img/daw2.jpg") no-repeat center center fixed;
 		background-size: cover;
 	}
 
@@ -94,22 +94,21 @@
 	}
 
 	.logos1{
-		width: 100px;
-		height: 100px;
+		width: 120px;
+		height: 120px;
 		padding-left: 8%;
-		padding-right: 8%;
 	}
 
 	.logos2{
-		width: 80px;
-		height: 80px;
+		width: 100px;
+		height: 100px;
 		padding-bottom: 10%;
 		padding-left: 8%;
 	}
 
 	.logos3{
-		width: 50px;
-		height: 50px;
+		width: 80px;
+		height: 80px;
 		padding-bottom: 5%;
 		padding-left: 8%;
 	}

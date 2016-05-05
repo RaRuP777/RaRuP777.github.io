@@ -7,6 +7,7 @@ $(function() {
 		$("html, body").animate({
 			scrollTop: pos
 		}, 2000);
+		$("footer").hide();
 		$(".logos1").hide();
 		$(".logos2").hide();
 		$(".logos3").hide();

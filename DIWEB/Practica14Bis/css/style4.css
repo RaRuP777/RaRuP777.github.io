@@ -10,7 +10,7 @@
 	}
 
 	header h2 {
-		font-size: 32px;
+		font-size: 40px;
 	}
 
 	nav ul a {
@@ -31,18 +31,22 @@
 		margin-left: 14%;
 	}
 
+	.contenido h3 {
+		font-size: 40px;
+	}
+
 	#contacto label {
 		font-size: 30px;
 	}
 
 	#contacto input[type=text], #contacto textarea {
-		font-size: 28px;
+		font-size: 26px;
 		width: 60%;
 	}
 
 	footer {
 		background: transparent;
-	  	bottom: 80px;
+	  	bottom: 20px;
 	}
 
 	footer img {

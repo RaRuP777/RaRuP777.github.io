@@ -1,0 +1,118 @@
+@media screen and (min-width: 800px) {
+
+	* {
+		font-family: 'Bookman Old Style', serif;
+	}
+
+	header {
+		background: url("../img/portada.jpg") no-repeat center center fixed;
+		background-size: cover;
+	}
+
+	header h1 {
+		font-size: 62px;
+		padding-top: 2em;
+		padding-bottom: 1em;
+	}
+
+	header h2 {
+		font-size: 28px;
+	}
+
+	nav {
+		padding-top: 2em;
+	}
+
+	nav ul a {
+		font-size: 32px;
+	}
+
+	nav ul a li {
+		border: none;
+		display: inline-block;
+	}
+
+	nav ul a li:hover {
+		border: none;
+	}
+
+	.subir {
+		width: 40px;
+		height: 40px;
+	}
+
+	#yo, {
+		background: url("../img/daw2.jpg") no-repeat center center fixed;
+		background-size: cover;
+	}
+
+	#yo h2, #daw h2, #contacto h2 {
+		font-size: 36px;
+		padding-top: 4px;
+	}
+
+	#daw article {
+		width: 35%;
+		margin-left: 7%;
+		margin-top: 3%;
+		display: inline-block;
+	}
+
+	.contenido h3 {
+		font-size: 34px;
+	}
+
+	#contacto fieldset {
+		margin: 1em;
+	}
+
+	#contacto label {
+		font-size: 20px;
+		display: block;
+		color: black;
+	}
+
+	#contacto input[type=text], #contacto textarea {
+		font-size: 16px;
+		width: 80%;
+	}
+	
+	#contacto .button {
+		margin-right: 2em;
+		font-size: 20px;
+	}
+
+	footer img {
+		height: 45px;
+		width: 45px;
+		margin-left: 45px;
+		margin-right: 45px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	#yo article div {
+		margin: 5em;
+	}
+
+	.logos1{
+		width: 120px;
+		height: 120px;
+		padding-right: 1%;
+	}
+
+	.logos2{
+		width: 100px;
+		height: 100px;
+		padding-bottom: 10%;
+		padding-right: 1%;
+	}
+
+	.logos3{
+		width: 80px;
+		height: 80px;
+		padding-bottom: 5%;
+		padding-right: 1%;
+	}
+
+}

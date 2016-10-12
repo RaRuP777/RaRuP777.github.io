@@ -1,11 +1,4 @@
 <?php
-	/**
-	* Calendario
-	*
-	*@Author: Pedro J. Ramos
-	*@Version: 12.0
-	*/
-	
 	echo "<br><a href='vercodigo.php?src=calendario.php'>Ver Codigo</a></br>";	
 
 	echo '<form action="calendario.php" method="post">';

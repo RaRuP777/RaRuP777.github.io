@@ -7,7 +7,7 @@
 	*/
 	echo "<br><a href='vercodigo.php?src=verbos.php'>Ver Codigo</a></br>";	
 	
-	$verbos=array(	array("become","became","become"),
+	$verbos=array(		array("become","became","become"),
 						array("begin","began","begun"),
 						array("bite","bit","bitten"),
 						array("bleed","bled","bled"),
@@ -22,11 +22,10 @@
 						array("drink","drank","drunk"),
 						array("drive","drove","driven"),
 						array("dig","dug","dug"),
-						array("do","did","done"),
-						array("","","")
+						array("do","did","done")
 						);
 	$verbos2=$verbos;
-	for ($k = 0; $k < count($verbos2); $k++){
+	for ($k = 0; $k < 11; $k++){
 		$verbos2[rand(0,(count($verbos2)-1))][rand(0,2)]="";
 	}
 	$fallos=-1;

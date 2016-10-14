@@ -27,6 +27,7 @@
 									),
 			);
 	echo "<center><h1>Restaurante Random</h1>";
+	echo "<h2>Carta Completa</h2>";
 	echo "<table>";
 	foreach ($menu as $key => $valor){
 		echo "<tr>";
@@ -40,13 +41,18 @@
 		}
 		echo "</tr>";
 	}
-	echo "<h1>Menu del Dia</h1>";
-	$primero = $menu["Primeros"][rand(0,2)];
-	$segundo = $menu["Segundos"][rand(0,2)];
-	$postre = $menu["Postres"][rand(0,2)];
-	for ($k = 0; $k < 2; $k++){
-		echo $primero[$k]."<br/>";
-		echo $segundo[$k]."<br/>";
-		echo $postre[$k]."<br/>";
+	echo "</table>";
+	echo "<h2>Menu del Dia</h2>";
+	$precio = 0;
+	foreach ($menu as $key => $value) {
+		$random = numeroAleatorio();
+		echo $value[$random][0]."<br>";
+		$precio+=$value[$random][2];
 	}
+	echo "El precio del Menu es: ".$precio;
+		
+	function numeroAleatorio (){
+		return rand(0,2);
+	}
+	
 ?>

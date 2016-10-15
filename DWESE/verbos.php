@@ -7,10 +7,15 @@
 	*/
 	echo "<br><a href='vercodigo.php?src=verbos.php'>Ver Codigo</a></br>";	
 	
-	$verbos=array(		array("become","became","become"),
+	$verbos=array(		array("awake","awoke","awoken"),
+						array("beat","beat","beaten"),
+						array("become","became","become"),
 						array("begin","began","begun"),
+						array("bend","bent","bent"),
+						array("bet","bet","bet"),
 						array("bite","bit","bitten"),
 						array("bleed","bled","bled"),
+						array("blow","blew","blown"),
 						array("break","broke","broken"),
 						array("bring","brought","brought"),
 						array("build","built","built"),

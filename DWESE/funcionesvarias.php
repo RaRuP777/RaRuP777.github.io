@@ -26,4 +26,28 @@
 			return true;
 		return false;
 	}
+
+	function posicion ($cadena, $char){
+		for ($i=0; $i < strlen($cadena); $i++) { 
+			if ($cadena[$i]==$char)
+				return $i;
+		}
+		return false;
+	}
+
+	function letraamayusculas ($letra){
+		return strtoupper($letra);
+	}
+
+	function cadenaamayusculas ($cadena){
+		return strtoupper($cadena);
+	}
+
+	function sumacadenas ($cadena1, $cadena2){
+		return $cadena1.$cadena2;
+	}
+
+	function cuadrado ($numero){
+		return pow($numero, 2);
+	}
 ?>

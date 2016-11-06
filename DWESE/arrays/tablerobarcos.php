@@ -1,10 +1,5 @@
 <?php
-	/**
-	* Tablero para jugar al juego de los barcos 
-	*
-	*@Author: Pedro J. Ramos
-	*@Version: 1.0
-	*/
+
 	echo "<br><a href='vercodigo.php?src=tablerobarcos.php'>Ver Codigo</a></br>";	
 	
 	$tablero=array("A"=>array(0, 1, 1, 0, 0, 0, 0, 0, 0, 0),

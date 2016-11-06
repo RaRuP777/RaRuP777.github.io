@@ -1,10 +1,5 @@
 <?php
-	/**
-	* Verbos irregulares en inglés 
-	*
-	*@Author: Pedro J. Ramos
-	*@Version: 1.0
-	*/
+
 	echo "<br><a href='vercodigo.php?src=verbos.php'>Ver Codigo</a></br>";	
 	
 	$verbos=array(		array("awake","awoke","awoken"),

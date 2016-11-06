@@ -1,9 +1,4 @@
 <?php
-	/**
-	*Suma Numeros
-	*@Author: Pedro J. Ramos
-	*@Version: 7.0
-	*/
 	
 	echo "<br><a href='vercodigo.php?src=sumanumeros.php'>Ver Codigo</a></br>";	
 

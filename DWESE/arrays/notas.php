@@ -1,10 +1,5 @@
 <?php
-	/**
-	* Nota de los alumnos de 2º DAW para el módulo DWES. 
-	*
-	*@Author: Pedro J. Ramos
-	*@Version: 1.0
-	*/
+
 	echo "<br><a href='vercodigo.php?src=notas.php'>Ver Codigo</a></br>";	
 	
 	$notas=array(	"Fran"=>array(rand(1,10),rand(1,10),rand(1,10)),

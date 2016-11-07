@@ -35,6 +35,17 @@
 		return false;
 	}
 
+	function ocurrencias ($cadena, $char){
+		$ocurrencias=0;
+		for ($i=0; $i < strlen($cadena); $i++) { 
+			if ($cadena[$i]==$char)
+				$ocurrencias++;
+		}
+		if ($ocurrencias>0)
+			return $ocurrencias;
+		return false;
+	}
+
 	function letraamayusculas ($letra){
 		return strtoupper($letra);
 	}

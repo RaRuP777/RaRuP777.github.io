@@ -19,9 +19,7 @@
 	echo 
 		'<form action="paises.php" method="post">
 		<fieldset>
-		<label>País</label>
-		<select name="paises">'
-	;
+		<label>País</label><select name="paises">';
 	foreach ($paises as $pais=> $dato) {
 		if (isset($_POST['enviar'])) {
 			if (strcmp($dato['País'], $_POST['paises']) == 0) {
@@ -34,8 +32,7 @@
 		'</select>
 		</fieldset>
 		<input type="submit" name="enviar" value="Enviar" />
-		</form>'
-	;
+		</form>';
 	if (isset ($_POST['enviar'])) {
 		foreach ($paises as $pais => $dato) {    
 			if (strcmp ($dato['País'],$_POST['paises']) == 0) {

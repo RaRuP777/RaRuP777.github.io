@@ -40,17 +40,19 @@
 		<?php
 	
 			if (isset($_POST['enviar'])) {
-				echo '<h1>Curriculum Vitae</h1>';
-				echo "<table>";
-				echo "<tr><th>Nombre</th><td>" . $_POST['nombre'] . "</td></tr>";
-				echo "<tr><th>Apellidos</th><td>" . $_POST['apellidos'] . "</td></tr>";
-				echo "<tr><th>Sexo</th><td>" . $_POST['sexo'] . "</td></tr>";
-				echo "<tr><th>E-mail</th><td>" . $_POST['email'] . "</td></tr>";
-				echo "<tr><th>Teléfono</th><td>" . $_POST['telefono'] . "</td></tr>";
-				echo "<tr><th>Experiencia Laboral</th><td>" . $_POST['laboral'] . "</td></tr>";
-				echo "<tr><th>Estudios realizados</th><td>" . $_POST['estudios'] . "</td></tr>";
-				echo "<tr><th>Jornada laboral</th><td>" . $_POST['jornada'] . "</td></tr>";
-				echo "<tr><th>idiomas</th><td><ul>";
+				echo 
+					"<h1>Curriculum Vitae</h1>
+					<table>
+						<tr><th>Nombre</th><td>" . $_POST['nombre'] . "</td></tr>
+						<tr><th>Apellidos</th><td>" . $_POST['apellidos'] . "</td></tr>
+						<tr><th>Sexo</th><td>" . $_POST['sexo'] . "</td></tr>
+						<tr><th>E-mail</th><td>" . $_POST['email'] . "</td></tr>
+						<tr><th>Teléfono</th><td>" . $_POST['telefono'] . "</td></tr>
+						<tr><th>Experiencia Laboral</th><td>" . $_POST['laboral'] . "</td></tr>
+						<tr><th>Estudios realizados</th><td>" . $_POST['estudios'] . "</td></tr>
+						<tr><th>Jornada laboral</th><td>" . $_POST['jornada'] . "</td></tr>
+						<tr><th>idiomas</th><td><ul>"
+				;
 				if (!empty($_POST['idiomas'])) {
 					foreach ($_POST['idiomas'] as $idioma) {
 						echo "<li>$idioma</li>"; 
@@ -59,8 +61,7 @@
 				else {
 					echo "Ningún idioma";
 				}
-				echo "</ul></td></tr>";
-				echo "</table>";
+				echo "</ul></td></tr></table>";
 			}
 		?>
 	</body>

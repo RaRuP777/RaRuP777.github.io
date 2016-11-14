@@ -8,6 +8,7 @@
 		$suma+=$ventas[$i];
 	}
 
-	echo "Las ventas totales de la tienda son: ".$suma."<br>";
-	echo "El promedio de ventas de la tienda es: ".$suma/count($ventas);
+	echo 
+	"Las ventas totales de la tienda son: ".$suma."<br>
+	El promedio de ventas de la tienda es: ".$suma/count($ventas);
 ?>

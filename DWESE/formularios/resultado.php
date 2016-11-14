@@ -8,8 +8,10 @@
 		for ($i = 0; $i < $_POST['numeros']; $i++) {
 			$total += $_POST['numero'. $i];
 		}
-		echo "<tr><th>Total</th><td>" . $total . "</td></tr>";
-		echo "</ul></td></tr>";
-		echo "</table>";
+		echo 
+			"<tr><th>Total</th><td>" . $total . "</td></tr>
+			</ul></td></tr>
+			</table>"
+		;
 	}
 ?>

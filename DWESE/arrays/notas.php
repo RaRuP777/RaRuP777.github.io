@@ -28,8 +28,7 @@
 
 	echo "<center><table>";
 	foreach ($notas as $key => $valor){
-		echo "<tr>";
-		echo "<td>".$key."</td>";
+		echo "<tr><td>".$key."</td>";
 		for($i = 0; $i < 3; $i++) {
 			echo "<td>".$notas[$key][$i]."  </td>";
 		}

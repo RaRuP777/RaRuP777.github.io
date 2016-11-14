@@ -43,16 +43,18 @@
 		echo "<center><h1>Has cometido ". $fallos ." fallos</h1></center>";
 	}
 	else{
-		echo "<form action='verbos.php' method='post'>";
-		echo "<fieldset>";
-		echo "<center><h1>VERBOS IRREGULARES<br/><hr/>";
-		echo "<h3>Rellena los campos que faltan</h3><br/>";
-		echo "<table border='1' width='500'>";
-		echo "<tr>";
-		echo "<th>Presente</th>";
-		echo "<th>Pasado</th>";
-		echo "<th>Participio</th>";
-		echo "<tr>";
+		echo 
+			"<form action='verbos.php' method='post'>
+				<fieldset>
+					<center><h1>VERBOS IRREGULARES<br/><hr/>
+					<h3>Rellena los campos que faltan</h3><br/>
+					<table border='1' width='500'>
+						<tr>
+							<th>Presente</th>
+							<th>Pasado</th>
+							<th>Participio</th>
+						<tr>"
+		;
 		for ($i = 0; $i < count($verbos); $i++) {
 			echo "<tr>";
 			for($j = 0; $j < 3; $j++) {
@@ -66,10 +68,11 @@
 			}
 			echo "</tr>";
 		}
-		echo "</center></table><br/><hr/>";
-		echo "</fieldset><br/>";
-		//----------------------------------------------------------------//
-		echo "<input type='submit' name='enviar' value='enviar'>";
-		echo "</form>";
+		echo
+			"</center></table><br/><hr/>
+			</fieldset><br/>
+			<input type='submit' name='enviar' value='enviar'>
+			</form>"
+		;
 	}
 ?>

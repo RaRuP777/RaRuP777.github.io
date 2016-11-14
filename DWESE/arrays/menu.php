@@ -18,12 +18,12 @@
 									array("Fruta","Foto",2),
 									),
 			);
-	echo "<center><h1>Restaurante Random</h1>";
-	echo "<h2>Carta Completa</h2>";
-	echo "<table>";
+	echo 
+		"<center><h1>Restaurante Random</h1>
+		<h2>Carta Completa</h2>
+		<table>";
 	foreach ($menu as $key => $valor){
-		echo "<tr>";
-		echo "<td>".$key."</td>";
+		echo "<tr><td>".$key."</td>";
 		for($i = 0; $i < 3; $i++) {
 			echo "<tr>";
 			for ($j=0; $j < 3; $j++) { 
@@ -33,8 +33,8 @@
 		}
 		echo "</tr>";
 	}
-	echo "</table>";
-	echo "<h2>Menu del Dia</h2>";
+	echo "</table>
+		<h2>Menu del Dia</h2>";
 	$precio = 0;
 	foreach ($menu as $key => $value) {
 		$random = numeroAleatorio();

@@ -25,8 +25,8 @@
 				<td>9</td>
 				<td>10</td>';
 	foreach ($tablero as $key =>$valor){
-		echo "<tr>";
-		echo "<td>$key</td>";
+		echo "<tr>
+				<td>$key</td>";
 		for($i = 0; $i < 10; $i++) {
 			echo '<td width="50" height="50" bgcolor="'.aguaBarco($tablero[$key][$i]).'"></td>';
 		}
